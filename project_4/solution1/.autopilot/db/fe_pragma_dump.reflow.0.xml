@@ -1,0 +1,5 @@
+<pragmas>
+<pragma file="../../../../OneDrive/Desktop/vitis/main.cpp" line="4" pragmaType="interface" parentfunction="multiplier" mode="ap_none" port="a" name="" register="0"/>
+<pragma file="../../../../OneDrive/Desktop/vitis/main.cpp" line="5" pragmaType="interface" parentfunction="multiplier" mode="ap_none" port="b" name="" register="0"/>
+<pragma file="../../../../OneDrive/Desktop/vitis/main.cpp" line="6" pragmaType="interface" parentfunction="multiplier" mode="ap_none" port="c" name="" register="0"/>
+</pragmas>

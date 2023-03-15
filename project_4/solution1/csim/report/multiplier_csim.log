@@ -1,0 +1,17 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../../../../../OneDrive/Desktop/vitis/main_tb.cpp in debug mode
+   Compiling ../../../../../../../../OneDrive/Desktop/vitis/main.cpp in debug mode
+   Generating csim.exe
+16 * 1 = 16
+16 * 2 = 32
+16 * 3 = 48
+16 * 4 = 64
+16 * 5 = 80
+16 * 6 = 96
+16 * 7 = 112
+16 * 8 = 128
+16 * 9 = 144
+16 * 10 = 160
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************
