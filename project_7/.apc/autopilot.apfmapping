@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="hls_arbitary.h" path="C:\Users\velic\OneDrive\Desktop\vitis\hls_arbitary.h"/>
+    <originFiles name="hls_arbitary.cpp" path="C:\Users\velic\OneDrive\Desktop\vitis\hls_arbitary.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="hls_arbitary_tb.cpp" path="C:\Users\velic\OneDrive\Desktop\vitis\hls_arbitary_tb.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

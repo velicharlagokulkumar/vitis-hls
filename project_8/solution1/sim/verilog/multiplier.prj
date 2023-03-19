@@ -1,0 +1,6 @@
+sv work "glbl.v"
+sv xil_defaultlib "multiplier.autotb.v"
+sv xil_defaultlib "multiplier.v"
+sv xil_defaultlib "multiplier_mul_28s_28s_56_3_1.v"
+sv xil_defaultlib "dataflow_monitor.sv"
+

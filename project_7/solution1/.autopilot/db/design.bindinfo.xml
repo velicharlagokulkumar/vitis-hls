@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BindInfo>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op mul" ID="" IMPL="auto" LATENCY="1" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_32s_32_2_1_U1" SOURCE="../../../../OneDrive/Desktop/vitis/hls_arbitary.cpp:7" VARIABLE="mul_ln7" MODULE="multiplier" LOOP="" BUNDLEDNAME="" DSP="3" BRAM="0" URAM="0"/>
+</BindInfo>

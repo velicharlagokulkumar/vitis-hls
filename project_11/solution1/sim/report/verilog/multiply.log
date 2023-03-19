@@ -1,0 +1,112 @@
+INFO: [COSIM-47] Using XSIM for RTL simulation.
+INFO: [COSIM-14] Instrumenting C test bench ...
+   Build using "C:/Xilinx/Vitis_HLS/2022.2/tps/win64/msys64/mingw64/bin/g++"
+   Compiling hls_stream1.cpp_pre.cpp.tb.cpp
+   Compiling apatb_multiply.cpp
+   Compiling hls_stream1_tb.cpp_pre.cpp.tb.cpp
+   Compiling apatb_multiply_util.cpp
+   Compiling apatb_multiply_ir.ll
+   Generating cosim.tv.exe
+INFO: [COSIM-302] Starting C TB testing ... 
+INFO: [COSIM-333] Generating C post check test bench ...
+INFO: [COSIM-12] Generating RTL test bench ...
+INFO: [COSIM-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM-323] Starting verilog simulation. 
+INFO: [COSIM-15] Starting XSIM ...
+INFO: [COSIM-316] Starting C post checking ...
+17*1=17
+17*2=34
+17*3=51
+17*4=68
+17*5=85
+17*6=102
+17*7=119
+17*8=136
+17*9=153
+17*10=170
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 1
+
+C:\Users\velic\AppData\Roaming\Xilinx\Vitis\project_11\solution1\sim\verilog>set PATH= 
+
+C:\Users\velic\AppData\Roaming\Xilinx\Vitis\project_11\solution1\sim\verilog>call C:/Xilinx/Vivado/2022.2/bin/xelab xil_defaultlib.apatb_multiply_top glbl -Oenable_linking_all_libraries  -prj multiply.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm  -L floating_point_v7_0_20 -L floating_point_v7_1_15 --lib "ieee_proposed=./ieee_proposed" -s multiply  
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_multiply_top glbl -Oenable_linking_all_libraries -prj multiply.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_0_20 -L floating_point_v7_1_15 --lib ieee_proposed=./ieee_proposed -s multiply 
+Multi-threading is on. Using 2 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/velic/AppData/Roaming/Xilinx/Vitis/project_11/solution1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/velic/AppData/Roaming/Xilinx/Vitis/project_11/solution1/sim/verilog/AESL_autofifo_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autofifo_A
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/velic/AppData/Roaming/Xilinx/Vitis/project_11/solution1/sim/verilog/AESL_autofifo_B.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autofifo_B
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/velic/AppData/Roaming/Xilinx/Vitis/project_11/solution1/sim/verilog/AESL_autofifo_C.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autofifo_C
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/velic/AppData/Roaming/Xilinx/Vitis/project_11/solution1/sim/verilog/multiply.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_multiply_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/velic/AppData/Roaming/Xilinx/Vitis/project_11/solution1/sim/verilog/multiply.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multiply
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/velic/AppData/Roaming/Xilinx/Vitis/project_11/solution1/sim/verilog/multiply_mul_32s_32s_32_2_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multiply_mul_32s_32s_32_2_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/velic/AppData/Roaming/Xilinx/Vitis/project_11/solution1/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.multiply_mul_32s_32s_32_2_1(NUM_...
+Compiling module xil_defaultlib.multiply
+Compiling module xil_defaultlib.AESL_autofifo_A
+Compiling module xil_defaultlib.AESL_autofifo_B
+Compiling module xil_defaultlib.AESL_autofifo_C
+Compiling module xil_defaultlib.nodf_module_intf
+Compiling module xil_defaultlib.dataflow_monitor_1
+Compiling module xil_defaultlib.apatb_multiply_top
+Compiling module work.glbl
+Built simulation snapshot multiply
+
+****** xsim v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/multiply/xsim_script.tcl
+# xsim {multiply} -autoloadwcfg -tclbatch {multiply.tcl}
+Time resolution is 1 ps
+source multiply.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 10 [0.00%] @ "125000"
+// RTL Simulation : 1 / 10 [100.00%] @ "175000"
+// RTL Simulation : 2 / 10 [100.00%] @ "215000"
+// RTL Simulation : 3 / 10 [100.00%] @ "255000"
+// RTL Simulation : 4 / 10 [100.00%] @ "295000"
+// RTL Simulation : 5 / 10 [100.00%] @ "335000"
+// RTL Simulation : 6 / 10 [100.00%] @ "375000"
+// RTL Simulation : 7 / 10 [100.00%] @ "415000"
+// RTL Simulation : 8 / 10 [100.00%] @ "455000"
+// RTL Simulation : 9 / 10 [100.00%] @ "495000"
+// RTL Simulation : 10 / 10 [100.00%] @ "535000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 595 ns : File "C:/Users/velic/AppData/Roaming/Xilinx/Vitis/project_11/solution1/sim/verilog/multiply.autotb.v" Line 324
+## quit
+INFO: [Common 17-206] Exiting xsim at Sun Mar 19 13:49:47 2023...
+17*1=17
+17*2=34
+17*3=51
+17*4=68
+17*5=85
+17*6=102
+17*7=119
+17*8=136
+17*9=153
+17*10=170
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 1
+INFO: [COSIM-1000] *** C/RTL co-simulation finished: PASS ***

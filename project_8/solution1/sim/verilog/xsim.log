@@ -1,0 +1,38 @@
+#-----------------------------------------------------------
+# xsim v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Sun Mar 19 14:38:35 2023
+# Process ID: 12540
+# Current directory: C:/Users/velic/AppData/Roaming/Xilinx/Vitis/project_8/solution1/sim/verilog
+# Command line: xsim.exe -mode tcl -source {xsim.dir/multiplier/xsim_script.tcl}
+# Log file: C:/Users/velic/AppData/Roaming/Xilinx/Vitis/project_8/solution1/sim/verilog/xsim.log
+# Journal file: C:/Users/velic/AppData/Roaming/Xilinx/Vitis/project_8/solution1/sim/verilog\xsim.jou
+# Running On: GOKUL-KUMAR, OS: Windows, CPU Frequency: 2712 MHz, CPU Physical cores: 2, Host memory: 8336 MB
+#-----------------------------------------------------------
+source xsim.dir/multiplier/xsim_script.tcl
+# xsim {multiplier} -autoloadwcfg -tclbatch {multiplier.tcl}
+Time resolution is 1 ps
+source multiplier.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 10 [0.00%] @ "125000"
+// RTL Simulation : 1 / 10 [100.00%] @ "165000"
+// RTL Simulation : 2 / 10 [100.00%] @ "195000"
+// RTL Simulation : 3 / 10 [100.00%] @ "225000"
+// RTL Simulation : 4 / 10 [100.00%] @ "255000"
+// RTL Simulation : 5 / 10 [100.00%] @ "285000"
+// RTL Simulation : 6 / 10 [100.00%] @ "315000"
+// RTL Simulation : 7 / 10 [100.00%] @ "345000"
+// RTL Simulation : 8 / 10 [100.00%] @ "375000"
+// RTL Simulation : 9 / 10 [100.00%] @ "405000"
+// RTL Simulation : 10 / 10 [100.00%] @ "435000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 495 ns : File "C:/Users/velic/AppData/Roaming/Xilinx/Vitis/project_8/solution1/sim/verilog/multiplier.autotb.v" Line 333
+## quit
+INFO: [Common 17-206] Exiting xsim at Sun Mar 19 14:38:37 2023...

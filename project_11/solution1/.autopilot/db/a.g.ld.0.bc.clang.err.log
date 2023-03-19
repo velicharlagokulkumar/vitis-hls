@@ -1,0 +1,3 @@
+remark: ../../../../OneDrive/Desktop/vitis/hls_stream1.cpp:3:0: Aggregating fifo (hls::stream) variable 'C' with compact=bit mode in 64-bits
+remark: ../../../../OneDrive/Desktop/vitis/hls_stream1.cpp:3:0: Aggregating fifo (hls::stream) variable 'B' with compact=bit mode in 32-bits
+remark: ../../../../OneDrive/Desktop/vitis/hls_stream1.cpp:3:0: Aggregating fifo (hls::stream) variable 'A' with compact=bit mode in 32-bits

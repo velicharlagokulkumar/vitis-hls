@@ -1,0 +1,520 @@
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z020clg484-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 6.113 seconds; current allocated memory: 0.328 MB.
+INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 2 seconds. Total elapsed time: 21.977 seconds; peak allocated memory: 98.734 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z020clg484-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 10.176 seconds; current allocated memory: 98.363 MB.
+INFO: [HLS 200-10] Analyzing design file '../../../../OneDrive/Desktop/vitis/multiplier.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 10.828 seconds; current allocated memory: 99.164 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 10.234 seconds; current allocated memory: 99.742 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.009 seconds; current allocated memory: 99.742 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.056 seconds; current allocated memory: 104.188 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.109 seconds; current allocated memory: 105.359 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.232 seconds; current allocated memory: 125.562 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.217 seconds; current allocated memory: 125.598 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'multiplier' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'multiplier' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.625 seconds; current allocated memory: 125.598 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.377 seconds; current allocated memory: 125.598 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'multiplier' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'multiplier/a' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'multiplier/b' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'multiplier/c' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'c' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on function 'multiplier' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_32s_32_2_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'multiplier'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.178 seconds; current allocated memory: 125.598 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.62 seconds; current allocated memory: 129.195 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 0.618 seconds; current allocated memory: 132.195 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for multiplier.
+INFO: [VLOG 209-307] Generating Verilog RTL for multiplier.
+INFO: [HLS 200-789] **** Estimated Fmax: 144.68 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 25.267 seconds; current allocated memory: 34.000 MB.
+INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 3 seconds. Total elapsed time: 38.802 seconds; peak allocated memory: 132.430 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z020clg484-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 10.374 seconds; current allocated memory: 97.133 MB.
+INFO: [HLS 200-10] Analyzing design file '../../../../OneDrive/Desktop/vitis/multiplier.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 25.2 seconds; current allocated memory: 97.844 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<10, 8, false, (ap_q_mode)0, (ap_o_mode)0, 0>::operator!() const' into 'ap_fixed_base<10, 8, false, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<10, 8, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<10, 8, false, (ap_q_mode)0, (ap_o_mode)0, 0>(ap_fixed_base<10, 8, false, (ap_q_mode)0, (ap_o_mode)0, 0> const&)' (C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h:808:9)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi10ELb0EEC2EDq10_j' into 'ap_fixed_base<10, 8, false, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<10, 8, false, (ap_q_mode)0, (ap_o_mode)0, 0>(ap_fixed_base<10, 8, false, (ap_q_mode)0, (ap_o_mode)0, 0> const&)' (C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h:401:80)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<10, 8, false, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<10, 8, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<10, 8, false, (ap_q_mode)0, (ap_o_mode)0, 0>(ap_fixed_base<10, 8, false, (ap_q_mode)0, (ap_o_mode)0, 0> const&)' into 'ap_fixed_base<10, 8, false, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<10, 8, false, (ap_q_mode)0, (ap_o_mode)0, 0>(ap_fixed_base<10, 8, false, (ap_q_mode)0, (ap_o_mode)0, 0> const&)' (C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h:403:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<10, 8, false, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<10, 8, false, (ap_q_mode)0, (ap_o_mode)0, 0>(ap_fixed_base<10, 8, false, (ap_q_mode)0, (ap_o_mode)0, 0> const&)' into 'ap_ufixed<10, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_ufixed<10, 8, false, (ap_q_mode)0, (ap_o_mode)0, 0>(ap_fixed_base<10, 8, false, (ap_q_mode)0, (ap_o_mode)0, 0> const&)'
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<10, 8, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<22, 17, true, (ap_q_mode)5, (ap_o_mode)0, 0>& ap_fixed_base<22, 17, true, (ap_q_mode)5, (ap_o_mode)0, 0>::operator=<10, 8, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<10, 8, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h:808:9)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi22ELb1EEC2EDq22_i' into 'ap_fixed_base<22, 17, true, (ap_q_mode)5, (ap_o_mode)0, 0>::ap_fixed_base<10, 8, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<10, 8, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h:401:80)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<22, 17, true, (ap_q_mode)5, (ap_o_mode)0, 0>& ap_fixed_base<22, 17, true, (ap_q_mode)5, (ap_o_mode)0, 0>::operator=<10, 8, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<10, 8, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<22, 17, true, (ap_q_mode)5, (ap_o_mode)0, 0>::ap_fixed_base<10, 8, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<10, 8, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h:403:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<22, 17, true, (ap_q_mode)5, (ap_o_mode)0, 0>::ap_fixed_base<10, 8, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<10, 8, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed<22, 17, (ap_q_mode)5, (ap_o_mode)0, 0>::ap_fixed<10, 8, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<10, 8, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)'
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<28, 20, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<28, 20, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h:808:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<28, 20, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<28, 20, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<28, 20, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(int)' (C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h:530:146)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<28, 20, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(int)' into 'ap_fixed_base<22, 17, true, (ap_q_mode)5, (ap_o_mode)0, 0>::RType<6, 3, true>::mult ap_fixed_base<22, 17, true, (ap_q_mode)5, (ap_o_mode)0, 0>::operator*<6, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>(ap_fixed_base<6, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h:1270:55)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<28, 20, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(int)' into 'ap_fixed_base<22, 17, true, (ap_q_mode)5, (ap_o_mode)0, 0>::RType<6, 3, true>::mult ap_fixed_base<22, 17, true, (ap_q_mode)5, (ap_o_mode)0, 0>::operator*<6, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>(ap_fixed_base<6, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h:1270:61)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<28, 20, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<36, 30, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<36, 30, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<28, 20, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<28, 20, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h:808:9)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi36ELb1EEC2EDq36_i' into 'ap_fixed_base<36, 30, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<28, 20, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<28, 20, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h:401:80)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<36, 30, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<36, 30, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<28, 20, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<28, 20, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<36, 30, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<28, 20, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<28, 20, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h:403:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<36, 30, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<28, 20, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<28, 20, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed<36, 30, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed<28, 20, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<28, 20, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)'
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<10, 8, false, (ap_q_mode)0, (ap_o_mode)0, 0>::operator+()' into 'cpp_ap_fixed(ap_ufixed<10, 8, (ap_q_mode)0, (ap_o_mode)0, 0>, ap_fixed<6, 3, (ap_q_mode)0, (ap_o_mode)3, 0>)' (../../../../OneDrive/Desktop/vitis/multiplier.cpp:14:7)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<22, 17, true, (ap_q_mode)5, (ap_o_mode)0, 0>::RType<6, 3, true>::mult ap_fixed_base<22, 17, true, (ap_q_mode)5, (ap_o_mode)0, 0>::operator*<6, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>(ap_fixed_base<6, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0> const&) const' into 'cpp_ap_fixed(ap_ufixed<10, 8, (ap_q_mode)0, (ap_o_mode)0, 0>, ap_fixed<6, 3, (ap_q_mode)0, (ap_o_mode)3, 0>)' (../../../../OneDrive/Desktop/vitis/multiplier.cpp:15:13)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 10.418 seconds; current allocated memory: 98.863 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.008 seconds; current allocated memory: 98.863 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.782 seconds; current allocated memory: 112.598 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.356 seconds; current allocated memory: 124.566 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.954 seconds; current allocated memory: 155.383 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.46 seconds; current allocated memory: 158.168 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'cpp_ap_fixed' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'cpp_ap_fixed' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=r_V_1) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.282 seconds; current allocated memory: 158.168 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.332 seconds; current allocated memory: 158.168 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'cpp_ap_fixed' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'cpp_ap_fixed/d_in1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'cpp_ap_fixed/d_in2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'cpp_ap_fixed' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Generating core module 'mul_mul_13ns_6s_19_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'cpp_ap_fixed'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.202 seconds; current allocated memory: 158.168 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 2.56 seconds; current allocated memory: 160.988 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 1.27 seconds; current allocated memory: 164.770 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for cpp_ap_fixed.
+INFO: [VLOG 209-307] Generating Verilog RTL for cpp_ap_fixed.
+INFO: [HLS 200-789] **** Estimated Fmax: 465.12 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 3 seconds. CPU system time: 2 seconds. Elapsed time: 44.164 seconds; current allocated memory: 67.902 MB.
+INFO: [HLS 200-112] Total CPU user time: 7 seconds. Total CPU system time: 4 seconds. Total elapsed time: 60.734 seconds; peak allocated memory: 165.035 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z020clg484-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 11.221 seconds; current allocated memory: 130.074 MB.
+INFO: [HLS 200-10] Analyzing design file '../../../../OneDrive/Desktop/vitis/multiplier.cpp' ... 
+ERROR: [HLS 207-812] 'multi.h' file not found (../../../../OneDrive/Desktop/vitis/multiplier.cpp:1:10)
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 7.491 seconds; current allocated memory: 0.254 MB.
+INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 3 seconds. Total elapsed time: 52.845 seconds; peak allocated memory: 130.344 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z020clg484-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 12.583 seconds; current allocated memory: 123.578 MB.
+INFO: [HLS 200-10] Analyzing design file '../../../../OneDrive/Desktop/vitis/multiplier.cpp' ... 
+ERROR: [HLS 207-812] 'multi.h' file not found (../../../../OneDrive/Desktop/vitis/multiplier.cpp:1:10)
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 22.288 seconds; current allocated memory: 0.199 MB.
+INFO: [HLS 200-112] Total CPU user time: 4 seconds. Total CPU system time: 3 seconds. Total elapsed time: 74.488 seconds; peak allocated memory: 123.773 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z020clg484-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 10.203 seconds; current allocated memory: 96.754 MB.
+INFO: [HLS 200-10] Analyzing design file '../../../../OneDrive/Desktop/vitis/multiplier.cpp' ... 
+ERROR: [HLS 207-812] 'multi.h' file not found (../../../../OneDrive/Desktop/vitis/multiplier.cpp:1:10)
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.923 seconds; current allocated memory: 0.199 MB.
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 14.277 seconds; peak allocated memory: 96.961 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z020clg484-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 10.281 seconds; current allocated memory: 96.742 MB.
+INFO: [HLS 200-10] Analyzing design file '../../../../OneDrive/Desktop/vitis/multiplier.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 18.917 seconds; current allocated memory: 97.715 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 9.459 seconds; current allocated memory: 98.312 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.013 seconds; current allocated memory: 98.312 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 1.551 seconds; current allocated memory: 103.883 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.223 seconds; current allocated memory: 105.977 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.316 seconds; current allocated memory: 127.227 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.548 seconds; current allocated memory: 127.258 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'multiplier' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'multiplier' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.084 seconds; current allocated memory: 127.258 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.476 seconds; current allocated memory: 127.258 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'multiplier' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'multiplier/a' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'multiplier/b' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'multiplier/c' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'c' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on function 'multiplier' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_32s_32_2_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'multiplier'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.359 seconds; current allocated memory: 127.258 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.979 seconds; current allocated memory: 131.926 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.793 seconds; current allocated memory: 134.043 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for multiplier.
+INFO: [VLOG 209-307] Generating Verilog RTL for multiplier.
+INFO: [HLS 200-789] **** Estimated Fmax: 144.68 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 35.017 seconds; current allocated memory: 37.492 MB.
+INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 2 seconds. Total elapsed time: 48.877 seconds; peak allocated memory: 134.305 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg484-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: source ./project_8/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name multiplier multiplier 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 10.382 seconds; current allocated memory: 0.328 MB.
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 2 seconds. Total elapsed time: 26.88 seconds; peak allocated memory: 99.008 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg484-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: source ./project_8/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name multiplier multiplier 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 10.214 seconds; current allocated memory: 97.121 MB.
+INFO: [HLS 200-10] Analyzing design file '../../../../OneDrive/Desktop/vitis/multiplier.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 8.728 seconds; current allocated memory: 97.699 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<56, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<56, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h:808:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<56, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<56, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<56, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(int)' (C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h:530:146)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<56, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(int)' into 'ap_fixed_base<28, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<28, 4, true>::mult ap_fixed_base<28, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator*<28, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<28, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h:1270:55)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<56, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(int)' into 'ap_fixed_base<28, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<28, 4, true>::mult ap_fixed_base<28, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator*<28, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<28, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h:1270:61)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<28, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<28, 4, true>::mult ap_fixed_base<28, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator*<28, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<28, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' into 'multiplier(ap_fixed<28, 4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<28, 4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<56, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (../../../../OneDrive/Desktop/vitis/multiplier.cpp:7:9)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 6.566 seconds; current allocated memory: 98.215 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.009 seconds; current allocated memory: 98.215 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.057 seconds; current allocated memory: 107.953 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.091 seconds; current allocated memory: 115.008 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.121 seconds; current allocated memory: 140.738 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.081 seconds; current allocated memory: 142.789 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'multiplier' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'multiplier' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.264 seconds; current allocated memory: 142.789 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.065 seconds; current allocated memory: 142.789 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'multiplier' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'multiplier/a' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'multiplier/b' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'multiplier/c' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'c' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on function 'multiplier' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Generating core module 'mul_28s_28s_56_3_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'multiplier'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.137 seconds; current allocated memory: 142.789 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.51 seconds; current allocated memory: 146.230 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.537 seconds; current allocated memory: 148.844 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for multiplier.
+INFO: [VLOG 209-307] Generating Verilog RTL for multiplier.
+INFO: [HLS 200-789] **** Estimated Fmax: 141.24 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 17.288 seconds; current allocated memory: 51.852 MB.
+INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 2 seconds. Total elapsed time: 30.133 seconds; peak allocated memory: 149.043 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg484-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: source ./project_8/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name multiplier multiplier 
+INFO: [HLS 200-1510] Running: cosim_design 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+INFO: [COSIM 212-302] Starting C TB testing ... 
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [COSIM 212-316] Starting C post checking ...
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 72.044 seconds; current allocated memory: 10.484 MB.
+INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 2 seconds. Total elapsed time: 84.594 seconds; peak allocated memory: 107.711 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg484-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: source ./project_8/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name multiplier multiplier 
+INFO: [HLS 200-1510] Running: csim_design -clean -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 3.231 seconds; current allocated memory: 0.227 MB.
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 2 seconds. Total elapsed time: 16.766 seconds; peak allocated memory: 102.625 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg484-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: source ./project_8/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name multiplier multiplier 
+INFO: [HLS 200-1510] Running: csim_design -clean -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 3.079 seconds; current allocated memory: 0.336 MB.
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 2 seconds. Total elapsed time: 16.188 seconds; peak allocated memory: 98.801 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg484-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: source ./project_8/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name multiplier multiplier 
+INFO: [HLS 200-1510] Running: csim_design -clean -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 9.127 seconds; current allocated memory: 0.312 MB.
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 2 seconds. Total elapsed time: 22.32 seconds; peak allocated memory: 97.715 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg484-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: source ./project_8/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name multiplier multiplier 
+INFO: [HLS 200-1510] Running: csim_design -clean -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 8.12 seconds; current allocated memory: 0.309 MB.
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 2 seconds. Total elapsed time: 21.644 seconds; peak allocated memory: 102.742 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg484-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: source ./project_8/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name multiplier multiplier 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 10.149 seconds; current allocated memory: 96.766 MB.
+INFO: [HLS 200-10] Analyzing design file '../../../../OneDrive/Desktop/vitis/hls_fixedpoint.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 14.006 seconds; current allocated memory: 97.672 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<56, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<56, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h:808:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<56, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<56, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<56, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(int)' (C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h:530:146)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<56, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(int)' into 'ap_fixed_base<28, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<28, 4, true>::mult ap_fixed_base<28, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator*<28, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<28, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h:1270:55)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<56, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(int)' into 'ap_fixed_base<28, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<28, 4, true>::mult ap_fixed_base<28, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator*<28, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<28, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h:1270:61)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<28, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<28, 4, true>::mult ap_fixed_base<28, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator*<28, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<28, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' into 'multiplier(ap_fixed<28, 4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<28, 4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<56, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (../../../../OneDrive/Desktop/vitis/hls_fixedpoint.cpp:7:9)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 9.797 seconds; current allocated memory: 98.355 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 98.359 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.329 seconds; current allocated memory: 108.141 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.226 seconds; current allocated memory: 115.523 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.338 seconds; current allocated memory: 141.277 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.365 seconds; current allocated memory: 143.078 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'multiplier' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'multiplier' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 0.807 seconds; current allocated memory: 143.078 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.487 seconds; current allocated memory: 143.078 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'multiplier' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'multiplier/a' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'multiplier/b' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'multiplier/c' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'c' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on function 'multiplier' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Generating core module 'mul_28s_28s_56_3_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'multiplier'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.329 seconds; current allocated memory: 143.078 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.702 seconds; current allocated memory: 146.867 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.564 seconds; current allocated memory: 149.035 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for multiplier.
+INFO: [VLOG 209-307] Generating Verilog RTL for multiplier.
+INFO: [HLS 200-789] **** Estimated Fmax: 141.24 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 29.104 seconds; current allocated memory: 52.539 MB.
+INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 2 seconds. Total elapsed time: 41.665 seconds; peak allocated memory: 149.371 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg484-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: source ./project_8/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name multiplier multiplier 
+INFO: [HLS 200-1510] Running: cosim_design 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+INFO: [COSIM 212-302] Starting C TB testing ... 
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [COSIM 212-316] Starting C post checking ...
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 40.636 seconds; current allocated memory: 9.508 MB.
+INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 2 seconds. Total elapsed time: 53.214 seconds; peak allocated memory: 106.727 MB.

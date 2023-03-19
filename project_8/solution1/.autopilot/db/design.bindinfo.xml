@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BindInfo>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op mul" ID="" IMPL="auto" LATENCY="2" OPTYPE="mul" PRAGMA="" RTLNAME="mul_28s_28s_56_3_1_U1" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h:1273" VARIABLE="r_V" MODULE="multiplier" LOOP="" BUNDLEDNAME="" DSP="3" BRAM="0" URAM="0"/>
+</BindInfo>

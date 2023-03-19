@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="hls_fixedpoint.cpp" path="C:\Users\velic\OneDrive\Desktop\vitis\hls_fixedpoint.cpp"/>
+    <originFiles name="hls_fixedpoint.h" path="C:\Users\velic\OneDrive\Desktop\vitis\hls_fixedpoint.h"/>
+  </source>
+  <testbench>
+    <originFiles name="hls_fixedpoint_tb.cpp" path="C:\Users\velic\OneDrive\Desktop\vitis\hls_fixedpoint_tb.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

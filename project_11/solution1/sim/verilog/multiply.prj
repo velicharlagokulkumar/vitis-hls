@@ -1,0 +1,9 @@
+sv work "glbl.v"
+sv xil_defaultlib "AESL_autofifo_A.v"
+sv xil_defaultlib "AESL_autofifo_B.v"
+sv xil_defaultlib "AESL_autofifo_C.v"
+sv xil_defaultlib "multiply.autotb.v"
+sv xil_defaultlib "multiply.v"
+sv xil_defaultlib "multiply_mul_32s_32s_32_2_1.v"
+sv xil_defaultlib "dataflow_monitor.sv"
+

@@ -1,0 +1,142 @@
+
+
+================================================================
+== Vitis HLS Report for 'multiply'
+================================================================
+* Date:           Sun Mar 19 13:44:35 2023
+
+* Version:        2022.2 (Build 3670227 on Oct 13 2022)
+* Project:        project_11
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  6.912 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max    | min | max |   Type  |
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |        3|        3|  30.000 ns|  30.000 ns|    4|    4|       no|
+    +---------+---------+-----------+-----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 4
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 3.47>
+ST_1 : Operation 5 [1/1] (3.47ns)   --->   "%a = read i32 @_ssdm_op_Read.ap_fifo.volatile.i32P0A, i32 %A" [../../../../OneDrive/Desktop/vitis/hls_stream1.cpp:7]   --->   Operation 5 'read' 'a' <Predicate = true> <Delay = 3.47> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 3.47> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 6 [1/1] (3.47ns)   --->   "%b = read i32 @_ssdm_op_Read.ap_fifo.volatile.i32P0A, i32 %B" [../../../../OneDrive/Desktop/vitis/hls_stream1.cpp:8]   --->   Operation 6 'read' 'b' <Predicate = true> <Delay = 3.47> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 3.47> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+
+State 2 <SV = 1> <Delay = 6.91>
+ST_2 : Operation 7 [2/2] (6.91ns)   --->   "%result = mul i32 %b, i32 %a" [../../../../OneDrive/Desktop/vitis/hls_stream1.cpp:9]   --->   Operation 7 'mul' 'result' <Predicate = true> <Delay = 6.91> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 1> <II = 1> <Delay = 6.91> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 3 <SV = 2> <Delay = 6.91>
+ST_3 : Operation 8 [1/2] (6.91ns)   --->   "%result = mul i32 %b, i32 %a" [../../../../OneDrive/Desktop/vitis/hls_stream1.cpp:9]   --->   Operation 8 'mul' 'result' <Predicate = true> <Delay = 6.91> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 1> <II = 1> <Delay = 6.91> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 4 <SV = 3> <Delay = 3.47>
+ST_4 : Operation 9 [1/1] (0.00ns)   --->   "%spectopmodule_ln2 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_1" [../../../../OneDrive/Desktop/vitis/hls_stream1.cpp:2]   --->   Operation 9 'spectopmodule' 'spectopmodule_ln2' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 10 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %A, void @empty_0, i32 0, i32 0, void @empty, i32 0, i32 0, void @empty, void @empty, void @empty, i32 0, i32 0, i32 0, i32 0, void @empty, void @empty, i32 4294967295, i32 0"   --->   Operation 10 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 11 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %A"   --->   Operation 11 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 12 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %B, void @empty_0, i32 0, i32 0, void @empty, i32 0, i32 0, void @empty, void @empty, void @empty, i32 0, i32 0, i32 0, i32 0, void @empty, void @empty, i32 4294967295, i32 0"   --->   Operation 12 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 13 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %B"   --->   Operation 13 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 14 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %C, void @empty_0, i32 0, i32 0, void @empty, i32 0, i32 0, void @empty, void @empty, void @empty, i32 0, i32 0, i32 0, i32 0, void @empty, void @empty, i32 4294967295, i32 0"   --->   Operation 14 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 15 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i64 %C"   --->   Operation 15 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 16 [1/1] (0.00ns)   --->   "%sext_ln9 = sext i32 %result" [../../../../OneDrive/Desktop/vitis/hls_stream1.cpp:9]   --->   Operation 16 'sext' 'sext_ln9' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 17 [1/1] (3.47ns)   --->   "%write_ln10 = write void @_ssdm_op_Write.ap_fifo.volatile.i64P0A, i64 %C, i64 %sext_ln9" [../../../../OneDrive/Desktop/vitis/hls_stream1.cpp:10]   --->   Operation 17 'write' 'write_ln10' <Predicate = true> <Delay = 3.47> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 3.47> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_4 : Operation 18 [1/1] (0.00ns)   --->   "%ret_ln11 = ret" [../../../../OneDrive/Desktop/vitis/hls_stream1.cpp:11]   --->   Operation 18 'ret' 'ret_ln11' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 2.7ns.
+
+ <State 1>: 3.48ns
+The critical path consists of the following:
+	fifo read operation ('a', ../../../../OneDrive/Desktop/vitis/hls_stream1.cpp:7) on port 'A' (../../../../OneDrive/Desktop/vitis/hls_stream1.cpp:7) [11]  (3.48 ns)
+
+ <State 2>: 6.91ns
+The critical path consists of the following:
+	'mul' operation ('result', ../../../../OneDrive/Desktop/vitis/hls_stream1.cpp:9) [13]  (6.91 ns)
+
+ <State 3>: 6.91ns
+The critical path consists of the following:
+	'mul' operation ('result', ../../../../OneDrive/Desktop/vitis/hls_stream1.cpp:9) [13]  (6.91 ns)
+
+ <State 4>: 3.48ns
+The critical path consists of the following:
+	fifo write operation ('write_ln10', ../../../../OneDrive/Desktop/vitis/hls_stream1.cpp:10) on port 'C' (../../../../OneDrive/Desktop/vitis/hls_stream1.cpp:10) [15]  (3.48 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

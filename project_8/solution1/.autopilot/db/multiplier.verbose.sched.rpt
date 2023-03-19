@@ -1,0 +1,137 @@
+
+
+================================================================
+== Vitis HLS Report for 'multiplier'
+================================================================
+* Date:           Sun Mar 19 14:37:33 2023
+
+* Version:        2022.2 (Build 3670227 on Oct 13 2022)
+* Project:        project_8
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.080 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max    | min | max |   Type  |
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |        2|        2|  20.000 ns|  20.000 ns|    3|    3|       no|
+    +---------+---------+-----------+-----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 3
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 7.08>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%b_read = read i28 @_ssdm_op_Read.ap_none.i28, i28 %b" [../../../../OneDrive/Desktop/vitis/hls_fixedpoint.cpp:2]   --->   Operation 4 'read' 'b_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%a_read = read i28 @_ssdm_op_Read.ap_none.i28, i28 %a" [../../../../OneDrive/Desktop/vitis/hls_fixedpoint.cpp:2]   --->   Operation 5 'read' 'a_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%sext_ln1271 = sext i28 %a_read"   --->   Operation 6 'sext' 'sext_ln1271' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%sext_ln1273 = sext i28 %b_read"   --->   Operation 7 'sext' 'sext_ln1273' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [3/3] (7.08ns)   --->   "%r_V = mul i56 %sext_ln1273, i56 %sext_ln1271"   --->   Operation 8 'mul' 'r_V' <Predicate = true> <Delay = 7.08> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 2> <II = 1> <Delay = 7.08> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 2 <SV = 1> <Delay = 7.08>
+ST_2 : Operation 9 [2/3] (7.08ns)   --->   "%r_V = mul i56 %sext_ln1273, i56 %sext_ln1271"   --->   Operation 9 'mul' 'r_V' <Predicate = true> <Delay = 7.08> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 2> <II = 1> <Delay = 7.08> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 3 <SV = 2> <Delay = 7.08>
+ST_3 : Operation 10 [1/1] (0.00ns)   --->   "%spectopmodule_ln2 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_1" [../../../../OneDrive/Desktop/vitis/hls_fixedpoint.cpp:2]   --->   Operation 10 'spectopmodule' 'spectopmodule_ln2' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 11 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i28 %a"   --->   Operation 11 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 12 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i28 %a, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 12 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 13 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i28 %b"   --->   Operation 13 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 14 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i28 %b, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 14 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 15 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i56 %c"   --->   Operation 15 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 16 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i56 %c, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 16 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 17 [1/3] (7.08ns)   --->   "%r_V = mul i56 %sext_ln1273, i56 %sext_ln1271"   --->   Operation 17 'mul' 'r_V' <Predicate = true> <Delay = 7.08> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 2> <II = 1> <Delay = 7.08> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 18 [1/1] (0.00ns)   --->   "%write_ln7 = write void @_ssdm_op_Write.ap_none.i56P0A, i56 %c, i56 %r_V" [../../../../OneDrive/Desktop/vitis/hls_fixedpoint.cpp:7]   --->   Operation 18 'write' 'write_ln7' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 19 [1/1] (0.00ns)   --->   "%ret_ln8 = ret" [../../../../OneDrive/Desktop/vitis/hls_fixedpoint.cpp:8]   --->   Operation 19 'ret' 'ret_ln8' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 2.7ns.
+
+ <State 1>: 7.08ns
+The critical path consists of the following:
+	wire read operation ('b_read', ../../../../OneDrive/Desktop/vitis/hls_fixedpoint.cpp:2) on port 'b' (../../../../OneDrive/Desktop/vitis/hls_fixedpoint.cpp:2) [11]  (0 ns)
+	'mul' operation ('r.V') [15]  (7.08 ns)
+
+ <State 2>: 7.08ns
+The critical path consists of the following:
+	'mul' operation ('r.V') [15]  (7.08 ns)
+
+ <State 3>: 7.08ns
+The critical path consists of the following:
+	'mul' operation ('r.V') [15]  (7.08 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

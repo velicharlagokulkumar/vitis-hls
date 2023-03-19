@@ -1,0 +1,17 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../../../../../OneDrive/Desktop/vitis/hls_fixedpoint_tb.cpp in debug mode
+   Compiling ../../../../../../../../OneDrive/Desktop/vitis/hls_fixedpoint.cpp in debug mode
+   Generating csim.exe
+4.125*3.26459=13.4664
+4.56215*2.45689=11.2087
+3.69846*2.45689=9.0867
+3.69846*2.45689=9.0867
+1.25698*3.56987=4.48728
+1.45679*5.62337=8.19206
+5.66843*6.54566=37.1036
+6.22556*5.63611=35.088
+4.69852*2.56985=12.0745
+1.56399*3.26563=5.10744
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

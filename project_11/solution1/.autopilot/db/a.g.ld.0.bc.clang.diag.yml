@@ -1,0 +1,51 @@
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: ../../../../OneDrive/Desktop/vitis/hls_stream1.cpp, 
+                   Line: 3, Column: 0 }
+Function:        _Z8multiplyRN3hls6streamIiLi0EEES2_RNS0_IxLi0EEE
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        'fifo (hls::stream)'
+  - String:          ' variable '''
+  - Name:            C
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '64'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: ../../../../OneDrive/Desktop/vitis/hls_stream1.cpp, 
+                   Line: 3, Column: 0 }
+Function:        _Z8multiplyRN3hls6streamIiLi0EEES2_RNS0_IxLi0EEE
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        'fifo (hls::stream)'
+  - String:          ' variable '''
+  - Name:            B
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '32'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: ../../../../OneDrive/Desktop/vitis/hls_stream1.cpp, 
+                   Line: 3, Column: 0 }
+Function:        _Z8multiplyRN3hls6streamIiLi0EEES2_RNS0_IxLi0EEE
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        'fifo (hls::stream)'
+  - String:          ' variable '''
+  - Name:            A
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '32'
+  - String:          '-bits'
+...

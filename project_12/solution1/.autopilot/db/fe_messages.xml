@@ -1,0 +1,39 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_ref.h:678:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="and_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_ref.h:692:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="or_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_ref.h:706:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="xor_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/velic/AppData/Roaming/Xilinx/Vitis/project_12/solution1/csynth.tcl:15:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="multiply" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=multiply" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h:808:9" msg_body="Inlining function 'ap_fixed_base&lt;32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::operator!() const' into 'ap_fixed_base&lt;56, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp; ap_fixed_base&lt;56, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::operator=&lt;32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;(ap_fixed_base&lt;32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const&amp;)'">
+        <args Callee="ap_fixed_base&lt;32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::operator!() const" Caller="ap_fixed_base&lt;56, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp; ap_fixed_base&lt;56, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::operator=&lt;32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;(ap_fixed_base&lt;32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h:530:146" msg_body="Inlining function 'ap_fixed_base&lt;56, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp; ap_fixed_base&lt;56, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::operator=&lt;32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;(ap_fixed_base&lt;32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const&amp;)' into 'ap_fixed_base&lt;56, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::ap_fixed_base(int)'">
+        <args Callee="ap_fixed_base&lt;56, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp; ap_fixed_base&lt;56, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::operator=&lt;32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;(ap_fixed_base&lt;32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const&amp;)" Caller="ap_fixed_base&lt;56, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::ap_fixed_base(int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h:1270:55" msg_body="Inlining function 'ap_fixed_base&lt;56, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::ap_fixed_base(int)' into 'ap_fixed_base&lt;28, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::RType&lt;28, 4, true&gt;::mult ap_fixed_base&lt;28, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::operator*&lt;28, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;(ap_fixed_base&lt;28, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const&amp;) const'">
+        <args Callee="ap_fixed_base&lt;56, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::ap_fixed_base(int)" Caller="ap_fixed_base&lt;28, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::RType&lt;28, 4, true&gt;::mult ap_fixed_base&lt;28, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::operator*&lt;28, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;(ap_fixed_base&lt;28, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const&amp;) const"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h:1270:61" msg_body="Inlining function 'ap_fixed_base&lt;56, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::ap_fixed_base(int)' into 'ap_fixed_base&lt;28, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::RType&lt;28, 4, true&gt;::mult ap_fixed_base&lt;28, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::operator*&lt;28, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;(ap_fixed_base&lt;28, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const&amp;) const'">
+        <args Callee="ap_fixed_base&lt;56, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::ap_fixed_base(int)" Caller="ap_fixed_base&lt;28, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::RType&lt;28, 4, true&gt;::mult ap_fixed_base&lt;28, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::operator*&lt;28, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;(ap_fixed_base&lt;28, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const&amp;) const"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../../../../OneDrive/Desktop/vitis/hls_stream2.cpp:9:13" msg_body="Inlining function 'ap_fixed_base&lt;28, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::RType&lt;28, 4, true&gt;::mult ap_fixed_base&lt;28, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::operator*&lt;28, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;(ap_fixed_base&lt;28, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const&amp;) const' into 'multiply(hls::stream&lt;ap_fixed&lt;28, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;28, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;56, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 0&gt;&amp;)'">
+        <args Callee="ap_fixed_base&lt;28, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::RType&lt;28, 4, true&gt;::mult ap_fixed_base&lt;28, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::operator*&lt;28, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;(ap_fixed_base&lt;28, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const&amp;) const" Caller="multiply(hls::stream&lt;ap_fixed&lt;28, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;28, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;56, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 0&gt;&amp;)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="../../../../OneDrive/Desktop/vitis/hls_stream2.cpp:3:0" msg_body="Aggregating fifo (hls::stream) variable 'C' with compact=bit mode in 56-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="56" HwTyName="fifo (hls::stream)" Name="C"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="../../../../OneDrive/Desktop/vitis/hls_stream2.cpp:3:0" msg_body="Aggregating fifo (hls::stream) variable 'B' with compact=bit mode in 28-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="28" HwTyName="fifo (hls::stream)" Name="B"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="../../../../OneDrive/Desktop/vitis/hls_stream2.cpp:3:0" msg_body="Aggregating fifo (hls::stream) variable 'A' with compact=bit mode in 28-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="28" HwTyName="fifo (hls::stream)" Name="A"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

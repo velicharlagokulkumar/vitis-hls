@@ -1,24 +1,23 @@
-#include <stdio.h>
-#include "multiplier.h"
+#include "mulitiplier.h"
 int main() {
-   short result;
+	dinC_t result;
 // Define test inputs
-   char test_inputs[10][2] = {
-       {0x10, 0x01},
-       {0x10, 0x02},
-       {0x10, 0x03},
-       {0x10, 0x04},
-       {0x10, 0x05},
-       {0x10, 0x06},
-       {0x10, 0x07},
-       {0x10, 0x08},
-       {0x10, 0x09},
-	   {0x10, 0x0A}
+  dinA_t test_inputs[10][2] = {
+       {0x0011, 0x0001},
+       {0x0011, 0x0002},
+       {0x0011, 0x0003},
+       {0x0011, 0x0004},
+       {0x0011, 0x0005},
+       {0x0011, 0x0006},
+       {0x0011, 0x0007},
+       {0x0011, 0x0008},
+       {0x0011, 0x0009},
+	   {0x0011, 0x000A}
    };
    for (int i = 0; i < 10; i++)
    {
-    int a = test_inputs[i][0];
-    int b = test_inputs[i][1];
+	   dinA_t a = test_inputs[i][0];
+	   dinB_t b = test_inputs[i][1];
     multiplier(a, b, & result);
     printf("%d * %d = %d\n",a,b,result);
   }
