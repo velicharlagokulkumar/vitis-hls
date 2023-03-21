@@ -1,0 +1,5 @@
+multiply_mul_32s_32s_32_2_1
+multiply_regslice_both
+multiply_regslice_both
+multiply_regslice_both
+multiply

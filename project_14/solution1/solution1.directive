@@ -1,0 +1,15 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+    <sourceFile name="">
+        <directive functionName="multiply" label="" functionLabel="">
+            <pragma name="TOP">
+                <option name="name" value="multiply"/>
+            </pragma>
+        </directive>
+        <directive functionName="multiply" label="" functionLabel="">
+            <pragma name="TOP">
+                <option name="name" value="multiply"/>
+            </pragma>
+        </directive>
+    </sourceFile>
+</AutoPilot:ProjectResources>
+

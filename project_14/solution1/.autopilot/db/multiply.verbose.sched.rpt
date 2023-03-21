@@ -1,0 +1,141 @@
+
+
+================================================================
+== Vitis HLS Report for 'multiply'
+================================================================
+* Date:           Tue Mar 21 16:51:41 2023
+
+* Version:        2022.2 (Build 3670227 on Oct 13 2022)
+* Project:        project_14
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  6.912 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max    | min | max |   Type  |
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |        2|        2|  20.000 ns|  20.000 ns|    1|    1|      yes|
+    +---------+---------+-----------+-----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 0
+IsPipeline: 1
+IsRtlPipelined: 1
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 3
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 3
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 3, States = { 1 2 3 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 6.91>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%a = read i32 @_ssdm_op_Read.axis.volatile.i32P128A, i32 %A" [../../../../OneDrive/Desktop/vitis/hls_pipe1.cpp:13]   --->   Operation 4 'read' 'a' <Predicate = true> <Delay = 0.00> <CoreInst = "axis">   --->   Core 115 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%b = read i32 @_ssdm_op_Read.axis.volatile.i32P128A, i32 %B" [../../../../OneDrive/Desktop/vitis/hls_pipe1.cpp:14]   --->   Operation 5 'read' 'b' <Predicate = true> <Delay = 0.00> <CoreInst = "axis">   --->   Core 115 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_1 : Operation 6 [2/2] (6.91ns)   --->   "%result = mul i32 %b, i32 %a" [../../../../OneDrive/Desktop/vitis/hls_pipe1.cpp:15]   --->   Operation 6 'mul' 'result' <Predicate = true> <Delay = 6.91> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 1> <II = 1> <Delay = 6.91> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 2 <SV = 1> <Delay = 6.91>
+ST_2 : Operation 7 [1/2] (6.91ns)   --->   "%result = mul i32 %b, i32 %a" [../../../../OneDrive/Desktop/vitis/hls_pipe1.cpp:15]   --->   Operation 7 'mul' 'result' <Predicate = true> <Delay = 6.91> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 1> <II = 1> <Delay = 6.91> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 8 [1/1] (0.00ns)   --->   "%sext_ln15 = sext i32 %result" [../../../../OneDrive/Desktop/vitis/hls_pipe1.cpp:15]   --->   Operation 8 'sext' 'sext_ln15' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 9 [2/2] (0.00ns)   --->   "%write_ln16 = write void @_ssdm_op_Write.axis.volatile.i64P128A, i64 %C, i64 %sext_ln15" [../../../../OneDrive/Desktop/vitis/hls_pipe1.cpp:16]   --->   Operation 9 'write' 'write_ln16' <Predicate = true> <Delay = 0.00> <CoreInst = "axis">   --->   Core 115 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 10 [1/1] (0.00ns)   --->   "%specpipeline_ln8 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, void @empty_1" [../../../../OneDrive/Desktop/vitis/hls_pipe1.cpp:8]   --->   Operation 10 'specpipeline' 'specpipeline_ln8' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 11 [1/1] (0.00ns)   --->   "%spectopmodule_ln2 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_2" [../../../../OneDrive/Desktop/vitis/hls_pipe1.cpp:2]   --->   Operation 11 'spectopmodule' 'spectopmodule_ln2' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 12 [1/1] (0.00ns)   --->   "%specinterface_ln2 = specinterface void @_ssdm_op_SpecInterface, i32 0, void @empty_3, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0" [../../../../OneDrive/Desktop/vitis/hls_pipe1.cpp:2]   --->   Operation 12 'specinterface' 'specinterface_ln2' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 13 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %A, void @empty, i32 1, i32 1, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0"   --->   Operation 13 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 14 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %A"   --->   Operation 14 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 15 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %B, void @empty, i32 1, i32 1, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0"   --->   Operation 15 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 16 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %B"   --->   Operation 16 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 17 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %C, void @empty, i32 1, i32 1, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0"   --->   Operation 17 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 18 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i64 %C"   --->   Operation 18 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 19 [1/2] (0.00ns)   --->   "%write_ln16 = write void @_ssdm_op_Write.axis.volatile.i64P128A, i64 %C, i64 %sext_ln15" [../../../../OneDrive/Desktop/vitis/hls_pipe1.cpp:16]   --->   Operation 19 'write' 'write_ln16' <Predicate = true> <Delay = 0.00> <CoreInst = "axis">   --->   Core 115 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_3 : Operation 20 [1/1] (0.00ns)   --->   "%ret_ln17 = ret" [../../../../OneDrive/Desktop/vitis/hls_pipe1.cpp:17]   --->   Operation 20 'ret' 'ret_ln17' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 2.7ns.
+
+ <State 1>: 6.91ns
+The critical path consists of the following:
+	axis read operation ('a', ../../../../OneDrive/Desktop/vitis/hls_pipe1.cpp:13) on port 'A' (../../../../OneDrive/Desktop/vitis/hls_pipe1.cpp:13) [13]  (0 ns)
+	'mul' operation ('result', ../../../../OneDrive/Desktop/vitis/hls_pipe1.cpp:15) [15]  (6.91 ns)
+
+ <State 2>: 6.91ns
+The critical path consists of the following:
+	'mul' operation ('result', ../../../../OneDrive/Desktop/vitis/hls_pipe1.cpp:15) [15]  (6.91 ns)
+
+ <State 3>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

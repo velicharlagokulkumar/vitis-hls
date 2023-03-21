@@ -1,0 +1,10 @@
+<pragmas>
+<pragma file="" line="0" pragmaType="inline" parentfunction="read" off="0" region="0" recursive="0"/>
+<pragma file="../../../../OneDrive/Desktop/vitis/hls_pipe1.cpp" line="8" pragmaType="pipeline" parentfunction="multiply" off="0" ii="1" style=""/>
+<pragma file="../../../../OneDrive/Desktop/vitis/hls_pipe1.cpp" line="4" pragmaType="interface" parentfunction="multiply" mode="axis" port="A" register="0" register_mode="both" name="" depth="-1"/>
+<pragma file="../../../../OneDrive/Desktop/vitis/hls_pipe1.cpp" line="5" pragmaType="interface" parentfunction="multiply" mode="axis" port="B" register="0" register_mode="both" name="" depth="-1"/>
+<pragma file="../../../../OneDrive/Desktop/vitis/hls_pipe1.cpp" line="6" pragmaType="interface" parentfunction="multiply" mode="axis" port="C" register="0" register_mode="both" name="" depth="-1"/>
+<pragma file="../../../../OneDrive/Desktop/vitis/hls_pipe1.cpp" line="7" pragmaType="interface" parentfunction="multiply" mode="ap_ctrl_none" port="return" name=""/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="write" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="read" off="0" region="0" recursive="0"/>
+</pragmas>

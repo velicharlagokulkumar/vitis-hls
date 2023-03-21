@@ -1,0 +1,13 @@
+//// start to dump deadlock path for kernel 'apatb_multiply_top.kernel_monitor_top.axis_deadlock_report' ////
+
+//////////////////////////////////////////////////////////////////////////////
+// Following axis ports can not be accessed by kernel 'multiply' 
+//    port 'A' can not be read
+//    port 'B' can not be read
+//    port 'C' can not be written
+//
+//    Because the top pipeline FSM is blocked by following axis ports
+//////////////////////////////////////////////////////////////////////////////
+
+//// finish dumping deadlock path for kernel 'apatb_multiply_top.kernel_monitor_top.axis_deadlock_report' ////
+

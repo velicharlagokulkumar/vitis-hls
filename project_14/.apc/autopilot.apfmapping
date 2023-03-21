@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="hls_pipe1.cpp" path="C:\Users\velic\OneDrive\Desktop\vitis\hls_pipe1.cpp"/>
+    <originFiles name="hls_pipe1.h" path="C:\Users\velic\OneDrive\Desktop\vitis\hls_pipe1.h"/>
+  </source>
+  <testbench>
+    <originFiles name="hls_pipe1_tb.cpp" path="C:\Users\velic\OneDrive\Desktop\vitis\hls_pipe1_tb.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

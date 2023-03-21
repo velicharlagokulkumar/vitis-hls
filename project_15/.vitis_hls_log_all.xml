@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low." projectName="project_15" solutionName="solution1" date="2023-03-21T13:14:55.818+0530" type="Warning"/>
+      </synLog>
+      <simLog>
+        <logs message="WARNING: [VRFC 10-3645] port 'axis_block_info' remains unconnected for this instance [C:/Users/velic/AppData/Roaming/Xilinx/Vitis/project_15/solution1/sim/verilog/AESL_deadlock_kernel_monitor_top.v:20]&#xD;&#xA;Completed static elaboration&#xD;&#xA;Starting simulation data flow analysis&#xD;&#xA;Completed simulation data flow analysis&#xD;&#xA;Time Resolution for simulation is 1ps&#xD;&#xA;Compiling package xil_defaultlib.$unit_dataflow_monitor_sv&#xD;&#xA;Compiling module xil_defaultlib.multiply_mul_28s_28s_56_3_1(NUM_...&#xD;&#xA;Compiling module xil_defaultlib.multiply_regslice_both&#xD;&#xA;Compiling module xil_defaultlib.multiply_regslice_both(DataWidth...&#xD;&#xA;Compiling module xil_defaultlib.multiply&#xD;&#xA;Compiling module xil_defaultlib.fifo(DEPTH=1,WIDTH=32)&#xD;&#xA;Compiling module xil_defaultlib.AESL_axi_s_A&#xD;&#xA;Compiling module xil_defaultlib.AESL_axi_s_B&#xD;&#xA;Compiling module xil_defaultlib.fifo(DEPTH=1,WIDTH=56)&#xD;&#xA;Compiling module xil_defaultlib.AESL_axi_s_C&#xD;&#xA;Compiling module xil_defaultlib.AESL_deadlock_idx0_monitor&#xD;&#xA;Compiling module xil_defaultlib.AESL_deadlock_kernel_monitor_top...&#xD;&#xA;Compiling module xil_defaultlib.nodf_module_intf&#xD;&#xA;Compiling module xil_defaultlib.dataflow_monitor&#xD;&#xA;Compiling module xil_defaultlib.apatb_multiply_top&#xD;&#xA;Compiling module work.glbl&#xD;&#xA;Built simulation snapshot multiply&#xD;&#xA;&#xD;&#xA;****** xsim v2022.2 (64-bit)&#xD;&#xA;  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022&#xD;&#xA;  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022&#xD;&#xA;    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.&#xD;&#xA;&#xD;&#xA;source xsim.dir/multiply/xsim_script.tcl&#xD;&#xA;# xsim {multiply} -autoloadwcfg -tclbatch {multiply.tcl}&#xD;&#xA;Time resolution is 1 ps&#xD;&#xA;source multiply.tcl&#xD;&#xA;## run all&#xD;&#xA;////////////////////////////////////////////////////////////////////////////////////&#xD;&#xA;// Inter-Transaction Progress: Completed Transaction / Total Transaction&#xD;&#xA;// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%&#xD;&#xA;//&#xD;&#xA;// RTL Simulation : &quot;Inter-Transaction Progress&quot; [&quot;Intra-Transaction Progress&quot;] @ &quot;Simulation Time&quot;&#xD;&#xA;////////////////////////////////////////////////////////////////////////////////////&#xD;&#xA;// RTL Simulation : 0 / 10 [0.00%] @ &quot;125000&quot;&#xD;&#xA;find kernel block.&#xD;&#xA;&#xD;&#xA;//////////////////////////////////////////////////////////////////////////////&#xD;&#xA;// Following axis ports can not be accessed by kernel 'multiply' &#xD;&#xA;//    port 'A' can not be read&#xD;&#xA;//    port 'B' can not be read&#xD;&#xA;//    port 'C' can not be written&#xD;&#xA;//&#xD;&#xA;//    Because the top pipeline FSM is blocked by following axis ports&#xD;&#xA;//////////////////////////////////////////////////////////////////////////////&#xD;&#xA;&#xD;&#xA;// RTL Simulation : 1 / 10 [100.00%] @ &quot;185000&quot;&#xD;&#xA;// RTL Simulation : 2 / 10 [100.00%] @ &quot;195000&quot;&#xD;&#xA;// RTL Simulation : 3 / 10 [100.00%] @ &quot;205000&quot;&#xD;&#xA;// RTL Simulation : 4 / 10 [100.00%] @ &quot;215000&quot;&#xD;&#xA;// RTL Simulation : 5 / 10 [100.00%] @ &quot;225000&quot;&#xD;&#xA;// RTL Simulation : 6 / 10 [100.00%] @ &quot;235000&quot;&#xD;&#xA;// RTL Simulation : 7 / 10 [100.00%] @ &quot;245000&quot;&#xD;&#xA;// RTL Simulation : 8 / 10 [100.00%] @ &quot;255000&quot;&#xD;&#xA;// RTL Simulation : 9 / 10 [100.00%] @ &quot;265000&quot;&#xD;&#xA;// RTL Simulation : 10 / 10 [100.00%] @ &quot;275000&quot;&#xD;&#xA;////////////////////////////////////////////////////////////////////////////////////&#xD;&#xA;$finish called at time : 335 ns : File &quot;C:/Users/velic/AppData/Roaming/Xilinx/Vitis/project_15/solution1/sim/verilog/multiply.autotb.v&quot; Line 224&#xD;&#xA;## quit" projectName="project_15" solutionName="solution1" date="2023-03-21T13:16:50.290+0530" type="Warning"/>
+      </simLog>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>
