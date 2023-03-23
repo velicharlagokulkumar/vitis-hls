@@ -1,0 +1,9 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../../../../../OneDrive/Desktop/vitis/alu_tb2.cpp in debug mode
+   Compiling ../../../../../../../../OneDrive/Desktop/vitis/alu.cpp in debug mode
+   Generating csim.exe
+all the read input sets passed
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 1
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

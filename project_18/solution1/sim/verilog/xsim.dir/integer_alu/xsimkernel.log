@@ -1,0 +1,7 @@
+Running: xsim.dir/integer_alu/xsimk.exe -simmode gui -wdb integer_alu.wdb -simrunnum 0 -socket 50299
+Design successfully loaded
+Design Loading Memory Usage: 7280 KB (Peak: 7280 KB)
+Design Loading CPU Usage: 46 ms
+Simulation completed
+Simulation Memory Usage: 9240 KB (Peak: 9240 KB)
+Simulation CPU Usage: 62 ms

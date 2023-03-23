@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="alu.cpp" path="C:\Users\velic\OneDrive\Desktop\vitis\alu.cpp"/>
+    <originFiles name="alu.h" path="C:\Users\velic\OneDrive\Desktop\vitis\alu.h"/>
+  </source>
+  <testbench>
+    <originFiles name="alu_tb2.cpp" path="C:\Users\velic\OneDrive\Desktop\vitis\alu_tb2.cpp"/>
+    <originFiles name="input.dat" path="C:\Users\velic\OneDrive\Desktop\vitis\input.dat"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

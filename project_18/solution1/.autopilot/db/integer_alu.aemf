@@ -1,0 +1,733 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1679578948180">
+  <ports id="1" name="in1" type="PortType" originalName="in1" coreId="1702129263" bitwidth="8">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="2" name="in2" type="PortType" originalName="in2" coreId="1819633247" bitwidth="8">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="3" name="op" type="PortType" originalName="op" coreId="0" bitwidth="8">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="4" name="out_r" type="PortType" originalName="out" coreId="2863553744" bitwidth="16" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <edges id="62" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="64" source_obj="//@ports.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="66" source_obj="//@ports.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="67" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="68" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="69" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.8" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="72" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.7" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="75" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.6" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="78" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.5" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="81" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.4" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="84" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="87" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="90" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="91" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.7/@node_objs.0"/>
+  <edges id="92" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.7/@node_objs.1"/>
+  <edges id="93" source_obj="//@regions.0/@basic_blocks.7/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.7/@node_objs.2"/>
+  <edges id="94" source_obj="//@regions.0/@basic_blocks.7/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.7/@node_objs.2"/>
+  <edges id="95" source_obj="//@regions.0/@basic_blocks.7/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.7/@node_objs.3"/>
+  <edges id="96" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.8" sink_obj="//@regions.0/@basic_blocks.7/@node_objs.4"/>
+  <edges id="97" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.6/@node_objs.0"/>
+  <edges id="98" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.6/@node_objs.1"/>
+  <edges id="99" source_obj="//@regions.0/@basic_blocks.6/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.6/@node_objs.2"/>
+  <edges id="100" source_obj="//@regions.0/@basic_blocks.6/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.6/@node_objs.2"/>
+  <edges id="101" source_obj="//@regions.0/@basic_blocks.6/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.6/@node_objs.3"/>
+  <edges id="102" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.8" sink_obj="//@regions.0/@basic_blocks.6/@node_objs.4"/>
+  <edges id="103" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.5/@node_objs.0"/>
+  <edges id="104" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.5/@node_objs.1"/>
+  <edges id="105" source_obj="//@regions.0/@basic_blocks.5/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.5/@node_objs.2"/>
+  <edges id="106" source_obj="//@regions.0/@basic_blocks.5/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.5/@node_objs.2"/>
+  <edges id="107" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.8" sink_obj="//@regions.0/@basic_blocks.5/@node_objs.3"/>
+  <edges id="108" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.0"/>
+  <edges id="109" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.1"/>
+  <edges id="110" source_obj="//@regions.0/@basic_blocks.4/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.2"/>
+  <edges id="111" source_obj="//@regions.0/@basic_blocks.4/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.2"/>
+  <edges id="112" source_obj="//@regions.0/@basic_blocks.4/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.3"/>
+  <edges id="113" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.8" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.4"/>
+  <edges id="114" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.0"/>
+  <edges id="115" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.0"/>
+  <edges id="116" source_obj="//@regions.0/@basic_blocks.3/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.1"/>
+  <edges id="117" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.8" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.2"/>
+  <edges id="118" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.0"/>
+  <edges id="119" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.0"/>
+  <edges id="120" source_obj="//@regions.0/@basic_blocks.2/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.1"/>
+  <edges id="121" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.8" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.2"/>
+  <edges id="122" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="123" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="124" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="125" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.8" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.2"/>
+  <edges id="126" source_obj="//@regions.0/@basic_blocks.2/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.8/@node_objs.0"/>
+  <edges id="127" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.2" sink_obj="//@regions.0/@basic_blocks.8/@node_objs.0"/>
+  <edges id="128" source_obj="//@regions.0/@basic_blocks.3/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.8/@node_objs.0"/>
+  <edges id="129" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.3" sink_obj="//@regions.0/@basic_blocks.8/@node_objs.0"/>
+  <edges id="130" source_obj="//@regions.0/@basic_blocks.4/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.8/@node_objs.0"/>
+  <edges id="131" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.4" sink_obj="//@regions.0/@basic_blocks.8/@node_objs.0"/>
+  <edges id="132" source_obj="//@regions.0/@basic_blocks.5/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.8/@node_objs.0"/>
+  <edges id="133" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.5" sink_obj="//@regions.0/@basic_blocks.8/@node_objs.0"/>
+  <edges id="134" source_obj="//@regions.0/@basic_blocks.6/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.8/@node_objs.0"/>
+  <edges id="135" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.6" sink_obj="//@regions.0/@basic_blocks.8/@node_objs.0"/>
+  <edges id="136" source_obj="//@regions.0/@basic_blocks.7/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.8/@node_objs.0"/>
+  <edges id="137" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.7" sink_obj="//@regions.0/@basic_blocks.8/@node_objs.0"/>
+  <edges id="138" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.8/@node_objs.0"/>
+  <edges id="139" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.8/@node_objs.0"/>
+  <edges id="142" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.8/@node_objs.0"/>
+  <edges id="145" source_obj="//@regions.0/@basic_blocks.8/@node_objs.1" sink_obj="//@ports.3"/>
+  <edges id="146" source_obj="//@regions.0/@basic_blocks.8/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.8/@node_objs.1"/>
+  <edges id="250" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.8"/>
+  <edges id="251" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.7"/>
+  <edges id="252" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.6"/>
+  <edges id="253" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.5"/>
+  <edges id="254" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.4"/>
+  <edges id="255" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.3"/>
+  <edges id="256" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.2"/>
+  <edges id="257" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1"/>
+  <edges id="258" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.8"/>
+  <edges id="259" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.2" sink_obj="//@regions.0/@basic_blocks.8"/>
+  <edges id="260" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.3" sink_obj="//@regions.0/@basic_blocks.8"/>
+  <edges id="261" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.4" sink_obj="//@regions.0/@basic_blocks.8"/>
+  <edges id="262" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.5" sink_obj="//@regions.0/@basic_blocks.8"/>
+  <edges id="263" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.6" sink_obj="//@regions.0/@basic_blocks.8"/>
+  <edges id="264" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.7" sink_obj="//@regions.0/@basic_blocks.8"/>
+  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" iiViolation="" id="235" pipe_depth="14" RegionName="integer_alu">
+    <basic_blocks id="20" name="entry" type="BlockType">
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>sw.epilog</controlOutputObjs>
+      <controlOutputObjs>sw.bb</controlOutputObjs>
+      <controlOutputObjs>sw.bb5</controlOutputObjs>
+      <controlOutputObjs>sw.bb8</controlOutputObjs>
+      <controlOutputObjs>sw.bb10</controlOutputObjs>
+      <controlOutputObjs>sw.bb13</controlOutputObjs>
+      <controlOutputObjs>sw.bb16</controlOutputObjs>
+      <controlOutputObjs>sw.bb19</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="15" name="a_V" lineNumber="19" originalName="a.V" fileName="../../../../OneDrive/Desktop/vitis/alu.cpp" fileDirectory=".." coreName="axis" implIndex="axi4stream" control="no" opType="adapter" coreId="115" contextFuncName="integer_alu" bitwidth="8" opcode="read" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../../../OneDrive/Desktop/vitis/alu.cpp" linenumber="19" fileDirectory="C:\Users\velic\AppData\Roaming\Xilinx\Vitis" functionName="integer_alu"/>
+        <dataInputObjs>in1</dataInputObjs>
+        <dataOutputObjs>sext</dataOutputObjs>
+        <dataOutputObjs>sext</dataOutputObjs>
+        <dataOutputObjs>sext</dataOutputObjs>
+        <dataOutputObjs>sext</dataOutputObjs>
+        <dataOutputObjs>and</dataOutputObjs>
+        <dataOutputObjs>or</dataOutputObjs>
+        <dataOutputObjs>xor</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="16" name="b_V" lineNumber="20" originalName="b.V" fileName="../../../../OneDrive/Desktop/vitis/alu.cpp" fileDirectory=".." coreName="axis" implIndex="axi4stream" control="no" opType="adapter" coreId="115" contextFuncName="integer_alu" bitwidth="8" opcode="read" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../../../OneDrive/Desktop/vitis/alu.cpp" linenumber="20" fileDirectory="C:\Users\velic\AppData\Roaming\Xilinx\Vitis" functionName="integer_alu"/>
+        <dataInputObjs>in2</dataInputObjs>
+        <dataOutputObjs>sext</dataOutputObjs>
+        <dataOutputObjs>sext</dataOutputObjs>
+        <dataOutputObjs>sext</dataOutputObjs>
+        <dataOutputObjs>sext</dataOutputObjs>
+        <dataOutputObjs>and</dataOutputObjs>
+        <dataOutputObjs>or</dataOutputObjs>
+        <dataOutputObjs>xor</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="17" name="op_read" lineNumber="21" fileName="../../../../OneDrive/Desktop/vitis/alu.cpp" fileDirectory=".." coreName="axis" implIndex="axi4stream" control="no" opType="adapter" coreId="115" contextFuncName="integer_alu" bitwidth="8" opcode="read" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../../../OneDrive/Desktop/vitis/alu.cpp" linenumber="21" fileDirectory="C:\Users\velic\AppData\Roaming\Xilinx\Vitis" functionName="integer_alu"/>
+        <dataInputObjs>op</dataInputObjs>
+        <dataOutputObjs>trunc</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="18" name="operation_V" lineNumber="21" originalName="operation.V" fileName="../../../../OneDrive/Desktop/vitis/alu.cpp" fileDirectory=".." rtlName="operation_V_fu_101_p1" coreId="51" contextFuncName="integer_alu" bitwidth="3" opcode="trunc" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../../../OneDrive/Desktop/vitis/alu.cpp" linenumber="21" fileDirectory="C:\Users\velic\AppData\Roaming\Xilinx\Vitis" functionName="integer_alu"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>switch</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="19" name="_ln22" lineNumber="22" fileName="../../../../OneDrive/Desktop/vitis/alu.cpp" fileDirectory=".." coreId="50" contextFuncName="integer_alu" opcode="switch" m_display="0" m_delay="2.18" m_topoIndex="5" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../../../OneDrive/Desktop/vitis/alu.cpp" linenumber="22" fileDirectory="C:\Users\velic\AppData\Roaming\Xilinx\Vitis" functionName="integer_alu"/>
+        <dataInputObjs>trunc</dataInputObjs>
+        <controlInputObjs>sw.epilog</controlInputObjs>
+        <controlInputObjs>sw.bb</controlInputObjs>
+        <controlInputObjs>sw.bb5</controlInputObjs>
+        <controlInputObjs>sw.bb8</controlInputObjs>
+        <controlInputObjs>sw.bb10</controlInputObjs>
+        <controlInputObjs>sw.bb13</controlInputObjs>
+        <controlInputObjs>sw.bb16</controlInputObjs>
+        <controlInputObjs>sw.bb19</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <fileValidLineNumbers fileName="../../../../OneDrive/Desktop/vitis/alu.cpp">
+        <validLinenumbers>19</validLinenumbers>
+        <validLinenumbers>20</validLinenumbers>
+        <validLinenumbers>21</validLinenumbers>
+        <validLinenumbers>22</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="24" name="sw.bb19" type="BlockType">
+      <controlInputObjs>entry</controlInputObjs>
+      <controlOutputObjs>switch</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>sw.epilog</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="21" name="ret_V_6" lineNumber="1499" originalName="ret.V" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." rtlName="ret_V_6_fu_119_p2" coreName="LogicGate" implIndex="auto" control="no" opType="xor" coreId="74" contextFuncName="operator_xor_8_true_8_true" bitwidth="8" opcode="xor" nodeLabel="11.0" m_display="0" m_delay="0.99" m_topoIndex="9" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" linenumber="1499" fileDirectory="C:\Users\velic\AppData\Roaming\Xilinx\Vitis" functionName="operator^&amp;lt;8, true, 8, true&amp;gt;"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>sext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="22" name="sext_ln42" lineNumber="42" fileName="../../../../OneDrive/Desktop/vitis/alu.cpp" fileDirectory=".." rtlName="sext_ln42_fu_123_p1" coreId="51" contextFuncName="integer_alu" bitwidth="16" opcode="sext" nodeLabel="11.0" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../../../OneDrive/Desktop/vitis/alu.cpp" linenumber="42" fileDirectory="C:\Users\velic\AppData\Roaming\Xilinx\Vitis" functionName="integer_alu"/>
+        <dataInputObjs>xor</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="23" name="br_ln42" lineNumber="42" fileName="../../../../OneDrive/Desktop/vitis/alu.cpp" fileDirectory=".." coreId="50" contextFuncName="integer_alu" opcode="br" nodeLabel="11.0" m_display="0" m_delay="2.18" m_topoIndex="11" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../../../OneDrive/Desktop/vitis/alu.cpp" linenumber="42" fileDirectory="C:\Users\velic\AppData\Roaming\Xilinx\Vitis" functionName="integer_alu"/>
+        <controlInputObjs>sw.epilog</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="../../../../OneDrive/Desktop/vitis/alu.cpp">
+        <validLinenumbers>42</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h">
+        <validLinenumbers>1499</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="28" name="sw.bb16" type="BlockType">
+      <controlInputObjs>entry</controlInputObjs>
+      <controlOutputObjs>switch</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>sw.epilog</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="25" name="ret_V_5" lineNumber="1498" originalName="ret.V" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." rtlName="ret_V_5_fu_127_p2" coreName="LogicGate" implIndex="auto" control="no" opType="or" coreId="74" contextFuncName="operator_or_8_true_8_true" bitwidth="8" opcode="or" nodeLabel="11.0" m_display="0" m_delay="0.99" m_topoIndex="12" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" linenumber="1498" fileDirectory="C:\Users\velic\AppData\Roaming\Xilinx\Vitis" functionName="operator|&amp;lt;8, true, 8, true&amp;gt;"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>sext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="26" name="sext_ln39" lineNumber="39" fileName="../../../../OneDrive/Desktop/vitis/alu.cpp" fileDirectory=".." rtlName="sext_ln39_fu_131_p1" coreId="50" contextFuncName="integer_alu" bitwidth="16" opcode="sext" nodeLabel="11.0" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../../../OneDrive/Desktop/vitis/alu.cpp" linenumber="39" fileDirectory="C:\Users\velic\AppData\Roaming\Xilinx\Vitis" functionName="integer_alu"/>
+        <dataInputObjs>or</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="27" name="br_ln40" lineNumber="40" fileName="../../../../OneDrive/Desktop/vitis/alu.cpp" fileDirectory=".." coreId="50" contextFuncName="integer_alu" opcode="br" nodeLabel="11.0" m_display="0" m_delay="2.18" m_topoIndex="14" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../../../OneDrive/Desktop/vitis/alu.cpp" linenumber="40" fileDirectory="C:\Users\velic\AppData\Roaming\Xilinx\Vitis" functionName="integer_alu"/>
+        <controlInputObjs>sw.epilog</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="../../../../OneDrive/Desktop/vitis/alu.cpp">
+        <validLinenumbers>39</validLinenumbers>
+        <validLinenumbers>40</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h">
+        <validLinenumbers>1498</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="32" name="sw.bb13" type="BlockType">
+      <controlInputObjs>entry</controlInputObjs>
+      <controlOutputObjs>switch</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>sw.epilog</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="29" name="ret_V_4" lineNumber="1497" originalName="ret.V" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." rtlName="ret_V_4_fu_135_p2" coreName="LogicGate" implIndex="auto" control="no" opType="and" coreId="74" contextFuncName="operator_8_true_8_true_s" bitwidth="8" opcode="and" nodeLabel="11.0" m_display="0" m_delay="0.99" m_topoIndex="15" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" linenumber="1497" fileDirectory="C:\Users\velic\AppData\Roaming\Xilinx\Vitis" functionName="operator&amp;amp;&amp;lt;8, true, 8, true&amp;gt;"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>sext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="30" name="sext_ln36" lineNumber="36" fileName="../../../../OneDrive/Desktop/vitis/alu.cpp" fileDirectory=".." rtlName="sext_ln36_fu_139_p1" coreId="51" contextFuncName="integer_alu" bitwidth="16" opcode="sext" nodeLabel="11.0" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../../../OneDrive/Desktop/vitis/alu.cpp" linenumber="36" fileDirectory="C:\Users\velic\AppData\Roaming\Xilinx\Vitis" functionName="integer_alu"/>
+        <dataInputObjs>and</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="31" name="br_ln37" lineNumber="37" fileName="../../../../OneDrive/Desktop/vitis/alu.cpp" fileDirectory=".." coreId="2906164944" contextFuncName="integer_alu" opcode="br" nodeLabel="11.0" m_display="0" m_delay="2.18" m_topoIndex="17" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../../../OneDrive/Desktop/vitis/alu.cpp" linenumber="37" fileDirectory="C:\Users\velic\AppData\Roaming\Xilinx\Vitis" functionName="integer_alu"/>
+        <controlInputObjs>sw.epilog</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="../../../../OneDrive/Desktop/vitis/alu.cpp">
+        <validLinenumbers>36</validLinenumbers>
+        <validLinenumbers>37</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h">
+        <validLinenumbers>1497</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="38" name="sw.bb10" type="BlockType">
+      <controlInputObjs>entry</controlInputObjs>
+      <controlOutputObjs>switch</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>sw.epilog</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="33" name="sext_ln1513" lineNumber="1513" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." rtlName="grp_fu_113_p0" coreId="4294967295" contextFuncName="operator_div_8_true_8_true" bitwidth="9" opcode="sext" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" linenumber="1513" fileDirectory="C:\Users\velic\AppData\Roaming\Xilinx\Vitis" functionName="operator/&amp;lt;8, true, 8, true&amp;gt;"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>sdiv</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="34" name="sext_ln1513_1" lineNumber="1513" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." coreId="4294967295" contextFuncName="operator_div_8_true_8_true" bitwidth="9" opcode="sext" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" linenumber="1513" fileDirectory="C:\Users\velic\AppData\Roaming\Xilinx\Vitis" functionName="operator/&amp;lt;8, true, 8, true&amp;gt;"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>sdiv</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="35" name="ret_V_3" lineNumber="1513" originalName="ret.V" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." rtlName="sdiv_9s_8s_9_13_1_U1" coreName="Divider" implIndex="auto" control="no" opType="sdiv" coreId="6" contextFuncName="operator_div_8_true_8_true" bitwidth="9" opcode="sdiv" nodeLatency="12" m_display="0" m_delay="3.74" m_topoIndex="8" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" linenumber="1513" fileDirectory="C:\Users\velic\AppData\Roaming\Xilinx\Vitis" functionName="operator/&amp;lt;8, true, 8, true&amp;gt;"/>
+        <dataInputObjs>sext</dataInputObjs>
+        <dataInputObjs>sext</dataInputObjs>
+        <dataOutputObjs>sext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="36" name="sext_ln33" lineNumber="33" fileName="../../../../OneDrive/Desktop/vitis/alu.cpp" fileDirectory=".." rtlName="sext_ln33_fu_187_p1" coreId="4294967295" contextFuncName="integer_alu" bitwidth="16" opcode="sext" nodeLabel="12.0" m_display="0" m_topoIndex="32" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../../../OneDrive/Desktop/vitis/alu.cpp" linenumber="33" fileDirectory="C:\Users\velic\AppData\Roaming\Xilinx\Vitis" functionName="integer_alu"/>
+        <dataInputObjs>sdiv</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="37" name="br_ln34" lineNumber="34" fileName="../../../../OneDrive/Desktop/vitis/alu.cpp" fileDirectory=".." coreId="2901391360" contextFuncName="integer_alu" opcode="br" nodeLabel="12.0" m_display="0" m_delay="2.18" m_topoIndex="33" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../../../OneDrive/Desktop/vitis/alu.cpp" linenumber="34" fileDirectory="C:\Users\velic\AppData\Roaming\Xilinx\Vitis" functionName="integer_alu"/>
+        <controlInputObjs>sw.epilog</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="../../../../OneDrive/Desktop/vitis/alu.cpp">
+        <validLinenumbers>33</validLinenumbers>
+        <validLinenumbers>34</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h">
+        <validLinenumbers>1513</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="43" name="sw.bb8" type="BlockType">
+      <controlInputObjs>entry</controlInputObjs>
+      <controlOutputObjs>switch</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>sw.epilog</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="39" name="sext_ln186_4" lineNumber="186" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." coreId="2906174496" contextFuncName="ap_int_base_8_true_s" bitwidth="16" opcode="sext" nodeLabel="11.0" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" linenumber="186" fileDirectory="C:\Users\velic\AppData\Roaming\Xilinx\Vitis" functionName="ap_int_base&amp;lt;8, true&amp;gt;"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>mul</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="40" name="sext_ln186_5" lineNumber="186" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." coreId="4294967295" contextFuncName="ap_int_base_8_true_s" bitwidth="16" opcode="sext" nodeLabel="11.0" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" linenumber="186" fileDirectory="C:\Users\velic\AppData\Roaming\Xilinx\Vitis" functionName="ap_int_base&amp;lt;8, true&amp;gt;"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>mul</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="41" name="ret_V_2" lineNumber="1494" originalName="ret.V" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." rtlName="mul_8s_8s_16_1_1_U2" coreName="Multiplier" implIndex="auto" control="no" opType="mul" coreId="3" contextFuncName="operator_mul_8_true_8_true" bitwidth="16" opcode="mul" nodeLabel="11.0" m_display="0" m_delay="4.17" m_topoIndex="20" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" linenumber="1494" fileDirectory="C:\Users\velic\AppData\Roaming\Xilinx\Vitis" functionName="operator*&amp;lt;8, true, 8, true&amp;gt;"/>
+        <dataInputObjs>sext</dataInputObjs>
+        <dataInputObjs>sext</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="42" name="br_ln31" lineNumber="31" fileName="../../../../OneDrive/Desktop/vitis/alu.cpp" fileDirectory=".." coreId="2906171136" contextFuncName="integer_alu" opcode="br" nodeLabel="11.0" m_display="0" m_delay="2.18" m_topoIndex="21" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../../../OneDrive/Desktop/vitis/alu.cpp" linenumber="31" fileDirectory="C:\Users\velic\AppData\Roaming\Xilinx\Vitis" functionName="integer_alu"/>
+        <controlInputObjs>sw.epilog</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="../../../../OneDrive/Desktop/vitis/alu.cpp">
+        <validLinenumbers>31</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h">
+        <validLinenumbers>186</validLinenumbers>
+        <validLinenumbers>1494</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="49" name="sw.bb5" type="BlockType">
+      <controlInputObjs>entry</controlInputObjs>
+      <controlOutputObjs>switch</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>sw.epilog</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="44" name="sext_ln186_2" lineNumber="186" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." rtlName="sext_ln186_2_fu_155_p1" coreId="4294967295" contextFuncName="ap_int_base_8_true_s" bitwidth="9" opcode="sext" nodeLabel="11.0" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" linenumber="186" fileDirectory="C:\Users\velic\AppData\Roaming\Xilinx\Vitis" functionName="ap_int_base&amp;lt;8, true&amp;gt;"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>sub</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="45" name="sext_ln186_3" lineNumber="186" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." rtlName="sext_ln186_3_fu_158_p1" coreId="4294967295" contextFuncName="ap_int_base_8_true_s" bitwidth="9" opcode="sext" nodeLabel="11.0" m_display="0" m_topoIndex="23" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" linenumber="186" fileDirectory="C:\Users\velic\AppData\Roaming\Xilinx\Vitis" functionName="ap_int_base&amp;lt;8, true&amp;gt;"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>sub</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="46" name="ret_V_1" lineNumber="1496" originalName="ret.V" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." rtlName="ret_V_1_fu_161_p2" coreName="Adder" implIndex="fabric" control="no" opType="sub" coreId="1" contextFuncName="operator_sub_8_true_8_true" bitwidth="9" opcode="sub" nodeLabel="11.0" m_display="0" m_delay="1.91" m_topoIndex="24" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" linenumber="1496" fileDirectory="C:\Users\velic\AppData\Roaming\Xilinx\Vitis" functionName="operator-&amp;lt;8, true, 8, true&amp;gt;"/>
+        <dataInputObjs>sext</dataInputObjs>
+        <dataInputObjs>sext</dataInputObjs>
+        <dataOutputObjs>sext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="47" name="sext_ln27" lineNumber="27" fileName="../../../../OneDrive/Desktop/vitis/alu.cpp" fileDirectory=".." rtlName="sext_ln27_fu_167_p1" coreId="2905983744" contextFuncName="integer_alu" bitwidth="16" opcode="sext" nodeLabel="11.0" m_display="0" m_topoIndex="25" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../../../OneDrive/Desktop/vitis/alu.cpp" linenumber="27" fileDirectory="C:\Users\velic\AppData\Roaming\Xilinx\Vitis" functionName="integer_alu"/>
+        <dataInputObjs>sub</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="48" name="br_ln28" lineNumber="28" fileName="../../../../OneDrive/Desktop/vitis/alu.cpp" fileDirectory=".." coreId="539437350" contextFuncName="integer_alu" opcode="br" nodeLabel="11.0" m_display="0" m_delay="2.18" m_topoIndex="26" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../../../OneDrive/Desktop/vitis/alu.cpp" linenumber="28" fileDirectory="C:\Users\velic\AppData\Roaming\Xilinx\Vitis" functionName="integer_alu"/>
+        <controlInputObjs>sw.epilog</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="../../../../OneDrive/Desktop/vitis/alu.cpp">
+        <validLinenumbers>27</validLinenumbers>
+        <validLinenumbers>28</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h">
+        <validLinenumbers>186</validLinenumbers>
+        <validLinenumbers>1496</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="55" name="sw.bb" type="BlockType">
+      <controlInputObjs>entry</controlInputObjs>
+      <controlOutputObjs>switch</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>sw.epilog</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="50" name="sext_ln186" lineNumber="186" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." rtlName="sext_ln186_fu_171_p1" coreId="640891764" contextFuncName="ap_int_base_8_true_s" bitwidth="9" opcode="sext" nodeLabel="11.0" m_display="0" m_topoIndex="27" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" linenumber="186" fileDirectory="C:\Users\velic\AppData\Roaming\Xilinx\Vitis" functionName="ap_int_base&amp;lt;8, true&amp;gt;"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="51" name="sext_ln186_1" lineNumber="186" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." rtlName="sext_ln186_1_fu_174_p1" coreId="1601465961" contextFuncName="ap_int_base_8_true_s" bitwidth="9" opcode="sext" nodeLabel="11.0" m_display="0" m_topoIndex="28" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" linenumber="186" fileDirectory="C:\Users\velic\AppData\Roaming\Xilinx\Vitis" functionName="ap_int_base&amp;lt;8, true&amp;gt;"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="52" name="ret_V" lineNumber="1495" originalName="ret.V" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." rtlName="ret_V_fu_177_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="operator_add_8_true_8_true" bitwidth="9" opcode="add" nodeLabel="11.0" m_display="0" m_delay="1.91" m_topoIndex="29" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" linenumber="1495" fileDirectory="C:\Users\velic\AppData\Roaming\Xilinx\Vitis" functionName="operator+&amp;lt;8, true, 8, true&amp;gt;"/>
+        <dataInputObjs>sext</dataInputObjs>
+        <dataInputObjs>sext</dataInputObjs>
+        <dataOutputObjs>sext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="53" name="sext_ln24" lineNumber="24" fileName="../../../../OneDrive/Desktop/vitis/alu.cpp" fileDirectory=".." rtlName="sext_ln24_fu_183_p1" coreId="997223777" contextFuncName="integer_alu" bitwidth="16" opcode="sext" nodeLabel="11.0" m_display="0" m_topoIndex="30" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../../../OneDrive/Desktop/vitis/alu.cpp" linenumber="24" fileDirectory="C:\Users\velic\AppData\Roaming\Xilinx\Vitis" functionName="integer_alu"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="54" name="br_ln25" lineNumber="25" fileName="../../../../OneDrive/Desktop/vitis/alu.cpp" fileDirectory=".." coreId="1869182069" contextFuncName="integer_alu" opcode="br" nodeLabel="11.0" m_display="0" m_delay="2.18" m_topoIndex="31" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../../../OneDrive/Desktop/vitis/alu.cpp" linenumber="25" fileDirectory="C:\Users\velic\AppData\Roaming\Xilinx\Vitis" functionName="integer_alu"/>
+        <controlInputObjs>sw.epilog</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="../../../../OneDrive/Desktop/vitis/alu.cpp">
+        <validLinenumbers>24</validLinenumbers>
+        <validLinenumbers>25</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h">
+        <validLinenumbers>186</validLinenumbers>
+        <validLinenumbers>1495</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="59" name="sw.epilog" type="BlockType">
+      <controlInputObjs>entry</controlInputObjs>
+      <controlInputObjs>sw.bb19</controlInputObjs>
+      <controlInputObjs>sw.bb16</controlInputObjs>
+      <controlInputObjs>sw.bb13</controlInputObjs>
+      <controlInputObjs>sw.bb10</controlInputObjs>
+      <controlInputObjs>sw.bb8</controlInputObjs>
+      <controlInputObjs>sw.bb5</controlInputObjs>
+      <controlInputObjs>sw.bb</controlInputObjs>
+      <controlOutputObjs>switch</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="56" name="result" originalName="ret.V" coreId="1730569589" bitwidth="16" opcode="phi" nodeLabel="12.0" m_display="0" m_topoIndex="34" m_clusterGroupNumber="-1">
+        <dataInputObjs>sext</dataInputObjs>
+        <dataInputObjs>sext</dataInputObjs>
+        <dataInputObjs>sext</dataInputObjs>
+        <dataInputObjs>mul</dataInputObjs>
+        <dataInputObjs>sext</dataInputObjs>
+        <dataInputObjs>sext</dataInputObjs>
+        <dataInputObjs>sext</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+        <controlInputObjs>sw.bb16</controlInputObjs>
+        <controlInputObjs>sw.bb13</controlInputObjs>
+        <controlInputObjs>sw.bb10</controlInputObjs>
+        <controlInputObjs>sw.bb8</controlInputObjs>
+        <controlInputObjs>sw.bb5</controlInputObjs>
+        <controlInputObjs>sw.bb</controlInputObjs>
+        <controlInputObjs>sw.bb19</controlInputObjs>
+        <controlInputObjs>entry</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="57" name="out_r_write_ln47" lineNumber="47" fileName="../../../../OneDrive/Desktop/vitis/alu.cpp" fileDirectory=".." coreName="axis" implIndex="axi4stream" control="no" opType="adapter" coreId="115" contextFuncName="integer_alu" opcode="write" nodeLabel="12.0" nodeLatency="1" m_display="0" m_topoIndex="35" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../../../OneDrive/Desktop/vitis/alu.cpp" linenumber="47" fileDirectory="C:\Users\velic\AppData\Roaming\Xilinx\Vitis" functionName="integer_alu"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>out_r</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="58" name="_ln48" lineNumber="48" fileName="../../../../OneDrive/Desktop/vitis/alu.cpp" fileDirectory=".." coreId="1043276322" contextFuncName="integer_alu" opcode="ret" nodeLabel="13.0" m_display="0" m_topoIndex="36" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../../../OneDrive/Desktop/vitis/alu.cpp" linenumber="48" fileDirectory="C:\Users\velic\AppData\Roaming\Xilinx\Vitis" functionName="integer_alu"/>
+      </node_objs>
+      <fileValidLineNumbers fileName="../../../../OneDrive/Desktop/vitis/alu.cpp">
+        <validLinenumbers>47</validLinenumbers>
+        <validLinenumbers>48</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <ScheduleInfo time="4"/>
+  <ScheduleInfo time="5"/>
+  <ScheduleInfo time="6"/>
+  <ScheduleInfo time="7"/>
+  <ScheduleInfo time="8"/>
+  <ScheduleInfo time="9"/>
+  <ScheduleInfo time="10"/>
+  <ScheduleInfo time="11"/>
+  <ScheduleInfo time="12"/>
+  <ScheduleInfo time="13"/>
+  <regnodes realName="result_reg_75">
+    <nodeIds>56</nodeIds>
+  </regnodes>
+  <regnodes realName="sext_ln39_reg_231">
+    <nodeIds>26</nodeIds>
+  </regnodes>
+  <regnodes realName="b_V_reg_202">
+    <nodeIds>16</nodeIds>
+  </regnodes>
+  <regnodes realName="sext_ln36_reg_236">
+    <nodeIds>30</nodeIds>
+  </regnodes>
+  <regnodes realName="a_V_reg_192">
+    <nodeIds>15</nodeIds>
+  </regnodes>
+  <regnodes realName="sext_ln42_reg_226">
+    <nodeIds>22</nodeIds>
+  </regnodes>
+  <regnodes realName="sext_ln24_reg_251">
+    <nodeIds>53</nodeIds>
+  </regnodes>
+  <regnodes realName="operation_V_reg_212">
+    <nodeIds>18</nodeIds>
+  </regnodes>
+  <regnodes realName="ret_V_2_reg_241">
+    <nodeIds>41</nodeIds>
+  </regnodes>
+  <regnodes realName="sext_ln1513_1_reg_221">
+    <nodeIds>34</nodeIds>
+  </regnodes>
+  <regnodes realName="sext_ln1513_reg_216">
+    <nodeIds>33</nodeIds>
+  </regnodes>
+  <regnodes realName="sext_ln27_reg_246">
+    <nodeIds>47</nodeIds>
+  </regnodes>
+  <expressionNodes realName="sext_ln1513_fu_105">
+    <nodeIds>33</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="ret_V_2_fu_149">
+    <nodeIds>41</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln39_fu_131">
+    <nodeIds>26</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="ret_V_6_fu_119">
+    <nodeIds>21</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="ret_V_1_fu_161">
+    <nodeIds>46</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="ret_V_5_fu_127">
+    <nodeIds>25</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="ret_V_fu_177">
+    <nodeIds>52</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln186_2_fu_155">
+    <nodeIds>44</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="ret_V_4_fu_135">
+    <nodeIds>29</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln186_3_fu_158">
+    <nodeIds>45</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln186_5_fu_146">
+    <nodeIds>40</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln36_fu_139">
+    <nodeIds>30</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln42_fu_123">
+    <nodeIds>22</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln33_fu_187">
+    <nodeIds>36</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln186_4_fu_143">
+    <nodeIds>39</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="operation_V_fu_101">
+    <nodeIds>18</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln186_1_fu_174">
+    <nodeIds>51</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln186_fu_171">
+    <nodeIds>50</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln27_fu_167">
+    <nodeIds>47</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln1513_1_fu_109">
+    <nodeIds>34</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="result_phi_fu_80">
+    <nodeIds>56</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln24_fu_183">
+    <nodeIds>53</nodeIds>
+  </expressionNodes>
+  <moduleNodes realName="grp_fu_113">
+    <nodeIds>35</nodeIds>
+  </moduleNodes>
+  <ioNodes realName="a_V_read_fu_50">
+    <nodeIds>15</nodeIds>
+  </ioNodes>
+  <ioNodes realName="grp_write_fu_68">
+    <nodeIds>57</nodeIds>
+  </ioNodes>
+  <ioNodes realName="b_V_read_fu_56">
+    <nodeIds>16</nodeIds>
+  </ioNodes>
+  <ioNodes realName="op_read_read_fu_62">
+    <nodeIds>17</nodeIds>
+  </ioNodes>
+  <ioPorts name="in1">
+    <contents name="read">
+      <nodeIds>15</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="in2">
+    <contents name="read">
+      <nodeIds>16</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="op">
+    <contents name="read">
+      <nodeIds>17</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="out_r">
+    <contents name="write">
+      <nodeIds>57</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="5" stage="1" latency="1"/>
+      <operations id="6" stage="1" latency="1"/>
+      <operations id="7" stage="1" latency="1"/>
+      <operations id="8" stage="1" latency="1"/>
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="34" stage="1" latency="1"/>
+      <operations id="35" stage="13" latency="13"/>
+    </states>
+    <states id="2">
+      <operations id="35" stage="12" latency="13"/>
+    </states>
+    <states id="3">
+      <operations id="35" stage="11" latency="13"/>
+    </states>
+    <states id="4">
+      <operations id="35" stage="10" latency="13"/>
+    </states>
+    <states id="5">
+      <operations id="35" stage="9" latency="13"/>
+    </states>
+    <states id="6">
+      <operations id="35" stage="8" latency="13"/>
+    </states>
+    <states id="7">
+      <operations id="35" stage="7" latency="13"/>
+    </states>
+    <states id="8">
+      <operations id="35" stage="6" latency="13"/>
+    </states>
+    <states id="9">
+      <operations id="35" stage="5" latency="13"/>
+    </states>
+    <states id="10">
+      <operations id="35" stage="4" latency="13"/>
+    </states>
+    <states id="11">
+      <operations id="35" stage="3" latency="13"/>
+    </states>
+    <states id="12">
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="35" stage="2" latency="13"/>
+      <operations id="39" stage="1" latency="1"/>
+      <operations id="40" stage="1" latency="1"/>
+      <operations id="41" stage="1" latency="1"/>
+      <operations id="42" stage="1" latency="1"/>
+      <operations id="44" stage="1" latency="1"/>
+      <operations id="45" stage="1" latency="1"/>
+      <operations id="46" stage="1" latency="1"/>
+      <operations id="47" stage="1" latency="1"/>
+      <operations id="48" stage="1" latency="1"/>
+      <operations id="50" stage="1" latency="1"/>
+      <operations id="51" stage="1" latency="1"/>
+      <operations id="52" stage="1" latency="1"/>
+      <operations id="53" stage="1" latency="1"/>
+      <operations id="54" stage="1" latency="1"/>
+    </states>
+    <states id="13">
+      <operations id="35" stage="1" latency="13"/>
+      <operations id="36" stage="1" latency="1"/>
+      <operations id="37" stage="1" latency="1"/>
+      <operations id="56" stage="1" latency="1"/>
+      <operations id="57" stage="2" latency="2"/>
+    </states>
+    <states id="14">
+      <operations id="57" stage="1" latency="2"/>
+      <operations id="58" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="5">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="5" outState="6">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="6" outState="7">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="7" outState="8">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="8" outState="9">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="9" outState="10">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="10" outState="11">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="11" outState="12">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="12" outState="13">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="13" outState="14">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="integer_alu" mII="1" mDepth="14" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="13" mMaxLatency="13">
+      <basicBlocks>20</basicBlocks>
+      <basicBlocks>24</basicBlocks>
+      <basicBlocks>28</basicBlocks>
+      <basicBlocks>32</basicBlocks>
+      <basicBlocks>38</basicBlocks>
+      <basicBlocks>43</basicBlocks>
+      <basicBlocks>49</basicBlocks>
+      <basicBlocks>55</basicBlocks>
+      <basicBlocks>59</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

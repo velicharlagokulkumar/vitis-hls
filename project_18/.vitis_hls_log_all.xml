@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low." projectName="project_18" solutionName="solution1" date="2023-03-23T19:12:27.665+0530" type="Warning"/>
+      </synLog>
+      <simLog>
+        <logs message="WARNING: [VRFC 10-3645] port 'axis_block_info' remains unconnected for this instance [C:/Users/velic/AppData/Roaming/Xilinx/Vitis/project_18/solution1/sim/verilog/AESL_deadlock_kernel_monitor_top.v:21]&#xD;&#xA;Completed static elaboration&#xD;&#xA;Starting simulation data flow analysis&#xD;&#xA;Completed simulation data flow analysis&#xD;&#xA;Time Resolution for simulation is 1ps&#xD;&#xA;Compiling package xil_defaultlib.$unit_dataflow_monitor_sv&#xD;&#xA;Compiling module xil_defaultlib.integer_alu_sdiv_9s_8s_9_13_1_di...&#xD;&#xA;Compiling module xil_defaultlib.integer_alu_sdiv_9s_8s_9_13_1(NU...&#xD;&#xA;Compiling module xil_defaultlib.integer_alu_mul_8s_8s_16_1_1(NUM...&#xD;&#xA;Compiling module xil_defaultlib.integer_alu_regslice_both(DataWi...&#xD;&#xA;Compiling module xil_defaultlib.integer_alu&#xD;&#xA;Compiling module xil_defaultlib.fifo(DEPTH=1)&#xD;&#xA;Compiling module xil_defaultlib.AESL_axi_s_in1&#xD;&#xA;Compiling module xil_defaultlib.AESL_axi_s_in2&#xD;&#xA;Compiling module xil_defaultlib.AESL_axi_s_op&#xD;&#xA;Compiling module xil_defaultlib.fifo(DEPTH=1,WIDTH=16)&#xD;&#xA;Compiling module xil_defaultlib.AESL_axi_s_out_r&#xD;&#xA;Compiling module xil_defaultlib.AESL_deadlock_idx0_monitor&#xD;&#xA;Compiling module xil_defaultlib.AESL_deadlock_kernel_monitor_top...&#xD;&#xA;Compiling module xil_defaultlib.nodf_module_intf&#xD;&#xA;Compiling module xil_defaultlib.dataflow_monitor_1&#xD;&#xA;Compiling module xil_defaultlib.apatb_integer_alu_top&#xD;&#xA;Compiling module work.glbl&#xD;&#xA;Built simulation snapshot integer_alu&#xD;&#xA;&#xD;&#xA;****** xsim v2022.2 (64-bit)&#xD;&#xA;  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022&#xD;&#xA;  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022&#xD;&#xA;    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.&#xD;&#xA;&#xD;&#xA;source xsim.dir/integer_alu/xsim_script.tcl&#xD;&#xA;# xsim {integer_alu} -autoloadwcfg -tclbatch {integer_alu.tcl}&#xD;&#xA;Time resolution is 1 ps&#xD;&#xA;source integer_alu.tcl&#xD;&#xA;## run all&#xD;&#xA;////////////////////////////////////////////////////////////////////////////////////&#xD;&#xA;// Inter-Transaction Progress: Completed Transaction / Total Transaction&#xD;&#xA;// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%&#xD;&#xA;//&#xD;&#xA;// RTL Simulation : &quot;Inter-Transaction Progress&quot; [&quot;Intra-Transaction Progress&quot;] @ &quot;Simulation Time&quot;&#xD;&#xA;////////////////////////////////////////////////////////////////////////////////////&#xD;&#xA;// RTL Simulation : 0 / 10 [0.00%] @ &quot;125000&quot;&#xD;&#xA;find kernel block.&#xD;&#xA;// RTL Simulation : 1 / 10 [92.31%] @ &quot;285000&quot;&#xD;&#xA;// RTL Simulation : 2 / 10 [92.31%] @ &quot;295000&quot;&#xD;&#xA;// RTL Simulation : 3 / 10 [92.31%] @ &quot;305000&quot;&#xD;&#xA;// RTL Simulation : 4 / 10 [92.31%] @ &quot;315000&quot;&#xD;&#xA;// RTL Simulation : 5 / 10 [92.31%] @ &quot;325000&quot;&#xD;&#xA;// RTL Simulation : 6 / 10 [92.31%] @ &quot;335000&quot;&#xD;&#xA;// RTL Simulation : 7 / 10 [92.31%] @ &quot;345000&quot;&#xD;&#xA;// RTL Simulation : 8 / 10 [92.31%] @ &quot;355000&quot;&#xD;&#xA;// RTL Simulation : 9 / 10 [92.31%] @ &quot;365000&quot;&#xD;&#xA;// RTL Simulation : 10 / 10 [100.00%] @ &quot;375000&quot;&#xD;&#xA;////////////////////////////////////////////////////////////////////////////////////&#xD;&#xA;$finish called at time : 435 ns : File &quot;C:/Users/velic/AppData/Roaming/Xilinx/Vitis/project_18/solution1/sim/verilog/integer_alu.autotb.v&quot; Line 321&#xD;&#xA;## quit" projectName="project_18" solutionName="solution1" date="2023-03-23T19:13:31.495+0530" type="Warning"/>
+      </simLog>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

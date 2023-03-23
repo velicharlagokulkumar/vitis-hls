@@ -1,0 +1,7 @@
+   Build using "C:/Xilinx/Vitis_HLS/2022.2/tps/win64/msys64/mingw64/bin/g++"
+   Compiling alu_tb2.cpp_pre.cpp.tb.cpp
+   Compiling apatb_integer_alu_util.cpp
+   Compiling alu.cpp_pre.cpp.tb.cpp
+   Compiling apatb_integer_alu.cpp
+   Compiling apatb_integer_alu_ir.ll
+   Generating cosim.tv.exe
