@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low." projectName="project_21" solutionName="solution1" date="2023-04-03T22:29:09.567+0530" type="Warning"/>
+      </synLog>
+      <simLog>
+        <logs message="WARNING: [VRFC 10-3645] port 'axis_block_info' remains unconnected for this instance [C:/Users/velic/AppData/Roaming/Xilinx/Vitis/project_21/solution1/sim/verilog/AESL_deadlock_kernel_monitor_top.v:19]&#xD;&#xA;Completed static elaboration&#xD;&#xA;Starting simulation data flow analysis&#xD;&#xA;Completed simulation data flow analysis&#xD;&#xA;Time Resolution for simulation is 1ps&#xD;&#xA;Compiling package xil_defaultlib.$unit_dataflow_monitor_sv&#xD;&#xA;Compiling module xil_defaultlib.dut_bram1_0_RAM_1P_BRAM_1R1W&#xD;&#xA;Compiling module xil_defaultlib.dut_bram1_1_RAM_1P_BRAM_1R1W&#xD;&#xA;Compiling module xil_defaultlib.dut_bram1_2_RAM_1P_BRAM_1R1W&#xD;&#xA;Compiling module xil_defaultlib.dut_bram1_4_RAM_1P_BRAM_1R1W&#xD;&#xA;Compiling module xil_defaultlib.dut_bram1_5_RAM_1P_BRAM_1R1W&#xD;&#xA;Compiling module xil_defaultlib.dut_mux_83_8_1_1(ID=1,din0_WIDTH...&#xD;&#xA;Compiling module xil_defaultlib.dut_flow_control_loop_pipe_seque...&#xD;&#xA;Compiling module xil_defaultlib.dut_dut_Pipeline_VITIS_LOOP_28_2&#xD;&#xA;Compiling module xil_defaultlib.dut_regslice_both(DataWidth=8)&#xD;&#xA;Compiling module xil_defaultlib.dut&#xD;&#xA;Compiling module xil_defaultlib.fifo(DEPTH=8)&#xD;&#xA;Compiling module xil_defaultlib.AESL_axi_s_output_r&#xD;&#xA;Compiling module xil_defaultlib.AESL_deadlock_idx0_monitor&#xD;&#xA;Compiling module xil_defaultlib.AESL_deadlock_kernel_monitor_top...&#xD;&#xA;Compiling module xil_defaultlib.nodf_module_intf&#xD;&#xA;Compiling module xil_defaultlib.upc_loop_intf(FSM_WIDTH=1)&#xD;&#xA;Compiling module xil_defaultlib.dataflow_monitor_1&#xD;&#xA;Compiling module xil_defaultlib.apatb_dut_top&#xD;&#xA;Compiling module work.glbl&#xD;&#xA;Built simulation snapshot dut&#xD;&#xA;&#xD;&#xA;****** xsim v2022.2 (64-bit)&#xD;&#xA;  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022&#xD;&#xA;  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022&#xD;&#xA;    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.&#xD;&#xA;&#xD;&#xA;source xsim.dir/dut/xsim_script.tcl&#xD;&#xA;# xsim {dut} -autoloadwcfg -tclbatch {dut.tcl}&#xD;&#xA;Time resolution is 1 ps&#xD;&#xA;source dut.tcl&#xD;&#xA;## run all&#xD;&#xA;////////////////////////////////////////////////////////////////////////////////////&#xD;&#xA;// Inter-Transaction Progress: Completed Transaction / Total Transaction&#xD;&#xA;// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%&#xD;&#xA;//&#xD;&#xA;// RTL Simulation : &quot;Inter-Transaction Progress&quot; [&quot;Intra-Transaction Progress&quot;] @ &quot;Simulation Time&quot;&#xD;&#xA;////////////////////////////////////////////////////////////////////////////////////&#xD;&#xA;// RTL Simulation : 0 / 8 [0.00%] @ &quot;125000&quot;&#xD;&#xA;// RTL Simulation : 1 / 8 [100.00%] @ &quot;265000&quot;&#xD;&#xA;// RTL Simulation : 2 / 8 [100.00%] @ &quot;395000&quot;&#xD;&#xA;// RTL Simulation : 3 / 8 [100.00%] @ &quot;525000&quot;&#xD;&#xA;// RTL Simulation : 4 / 8 [100.00%] @ &quot;655000&quot;&#xD;&#xA;// RTL Simulation : 5 / 8 [100.00%] @ &quot;785000&quot;&#xD;&#xA;// RTL Simulation : 6 / 8 [100.00%] @ &quot;915000&quot;&#xD;&#xA;// RTL Simulation : 7 / 8 [100.00%] @ &quot;1045000&quot;&#xD;&#xA;// RTL Simulation : 8 / 8 [100.00%] @ &quot;1175000&quot;&#xD;&#xA;////////////////////////////////////////////////////////////////////////////////////&#xD;&#xA;$finish called at time : 1235 ns : File &quot;C:/Users/velic/AppData/Roaming/Xilinx/Vitis/project_21/solution1/sim/verilog/dut.autotb.v&quot; Line 270&#xD;&#xA;## quit" projectName="project_21" solutionName="solution1" date="2023-04-03T22:33:35.905+0530" type="Warning"/>
+      </simLog>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

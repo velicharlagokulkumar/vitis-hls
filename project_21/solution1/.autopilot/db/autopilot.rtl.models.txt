@@ -1,0 +1,10 @@
+dut_mux_83_8_1_1
+dut_flow_control_loop_pipe_sequential_init
+dut_bram1_0_RAM_1P_BRAM_1R1W
+dut_bram1_1_RAM_1P_BRAM_1R1W
+dut_bram1_2_RAM_1P_BRAM_1R1W
+dut_bram1_4_RAM_1P_BRAM_1R1W
+dut_bram1_5_RAM_1P_BRAM_1R1W
+dut_regslice_both
+dut_Pipeline_VITIS_LOOP_28_2
+dut

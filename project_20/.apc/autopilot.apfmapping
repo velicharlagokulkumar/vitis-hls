@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="populate.dat" path="C:\Users\velic\OneDrive\Desktop\vitis\populate.dat"/>
+    <originFiles name="bram_A.cpp" path="C:\Users\velic\OneDrive\Desktop\vitis\bram_A.cpp"/>
+    <originFiles name="bram.h" path="C:\Users\velic\OneDrive\Desktop\vitis\bram.h"/>
+  </source>
+  <testbench>
+    <originFiles name="bram_A_tb.cpp" path="C:\Users\velic\OneDrive\Desktop\vitis\bram_A_tb.cpp"/>
+    <originFiles name="bramA_input.dat" path="C:\Users\velic\OneDrive\Desktop\vitis\bramA_input.dat"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

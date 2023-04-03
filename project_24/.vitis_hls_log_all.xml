@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low." projectName="project_24" solutionName="solution1" date="2023-04-03T17:59:22.753+0530" type="Warning"/>
+        <logs message="WARNING: [HLS 200-880] The II Violation in module 'dut' (loop 'VITIS_LOOP_22_1'): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1) between axis read operation ('in_stream_read_3', ../../../../OneDrive/Desktop/vitis/bram_B.cpp:21) on port 'in_stream' (../../../../OneDrive/Desktop/vitis/bram_B.cpp:21) and axis read operation ('in_stream_read', ../../../../OneDrive/Desktop/vitis/bram_B.cpp:18) on port 'in_stream' (../../../../OneDrive/Desktop/vitis/bram_B.cpp:18).&#xD;&#xA;Resolution: For help on HLS 200-880 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-880.html" projectName="project_24" solutionName="solution1" date="2023-04-03T17:59:21.652+0530" type="Warning"/>
+      </synLog>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

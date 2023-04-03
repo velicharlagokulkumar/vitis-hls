@@ -1,0 +1,3 @@
+dut_regslice_both
+dut_regslice_both
+dut

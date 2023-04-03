@@ -1,0 +1,16 @@
+<pragmas>
+<pragma file="../../../../OneDrive/Desktop/vitis/bram_B.cpp" line="23" pragmaType="pipeline" parentfunction="dut" off="0" ii="1" rewind="1" style=""/>
+<pragma file="../../../../OneDrive/Desktop/vitis/bram_B.cpp" line="13" pragmaType="interface" parentfunction="dut" mode="axis" port="out_stream" register="1" register_mode="both" name="" depth="-1"/>
+<pragma file="../../../../OneDrive/Desktop/vitis/bram_B.cpp" line="14" pragmaType="interface" parentfunction="dut" mode="axis" port="in_stream" register="1" register_mode="both" name="" depth="-1"/>
+<pragma file="../../../../OneDrive/Desktop/vitis/bram_B.cpp" line="17" pragmaType="array_reshape" parentfunction="dut" dim="1" factor="0" mode="complete" variable="bram"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<32>::ap_uint<8>(ap_uint<8> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<8>::ap_uint()" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="read" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="write" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" line="175" pragmaType="inline" parentfunction="ap_int_base<8, false>::ap_int_base()" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="read" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_common.h" line="523" pragmaType="inline" parentfunction="ssdm_int<32, false>::ssdm_int(unsigned int)" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" line="185" pragmaType="inline" parentfunction="ap_int_base<32, false>::ap_int_base<8, false>(ap_int_base<8, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_common.h" line="0" pragmaType="inline" parentfunction="ssdm_int<8, false>::ssdm_int()" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h" line="0" pragmaType="inline" parentfunction="checkOverflowCsim" off="0" region="0" recursive="0"/>
+</pragmas>

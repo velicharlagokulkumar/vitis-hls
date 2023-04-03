@@ -1,0 +1,182 @@
+
+
+================================================================
+== Vitis HLS Report for 'dut_Pipeline_VITIS_LOOP_38_3'
+================================================================
+* Date:           Sun Apr  2 17:25:23 2023
+
+* Version:        2022.2 (Build 3670227 on Oct 13 2022)
+* Project:        project_20
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  5.558 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       10|       10|  0.100 us|  0.100 us|   10|   10|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                   |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |     Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_38_3  |        8|        8|         2|          1|          1|     8|       yes|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 2
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 2
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 2, States = { 1 2 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 5.07>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%j_V = alloca i32 1"   --->   Operation 5 'alloca' 'j_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i6 %bram2_0, i64 666, i64 18, i64 18446744073709551615"   --->   Operation 6 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i6 %bram2_1, i64 666, i64 18, i64 18446744073709551615"   --->   Operation 7 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i6 %bram2_2, i64 666, i64 18, i64 18446744073709551615"   --->   Operation 8 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i6 %bram2_3, i64 666, i64 18, i64 18446744073709551615"   --->   Operation 9 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i6 %bram2_4, i64 666, i64 18, i64 18446744073709551615"   --->   Operation 10 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i6 %bram2_5, i64 666, i64 18, i64 18446744073709551615"   --->   Operation 11 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i6 %bram2_6, i64 666, i64 18, i64 18446744073709551615"   --->   Operation 12 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i6 %bram2_7, i64 666, i64 18, i64 18446744073709551615"   --->   Operation 13 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %output_r, void @empty_1, i32 0, i32 0, void @empty_2, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 14 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%trunc_ln1_read = read i3 @_ssdm_op_Read.ap_auto.i3, i3 %trunc_ln1"   --->   Operation 15 'read' 'trunc_ln1_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%trunc_ln_read = read i6 @_ssdm_op_Read.ap_auto.i6, i6 %trunc_ln"   --->   Operation 16 'read' 'trunc_ln_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (1.58ns)   --->   "%store_ln0 = store i4 0, i4 %j_V"   --->   Operation 17 'store' 'store_ln0' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.inc56"   --->   Operation 18 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%j_V_1 = load i4 %j_V"   --->   Operation 19 'load' 'j_V_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (1.30ns)   --->   "%icmp_ln1027 = icmp_eq  i4 %j_V_1, i4 8"   --->   Operation 20 'icmp' 'icmp_ln1027' <Predicate = true> <Delay = 1.30> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.30> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%empty = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 8, i64 8, i64 8"   --->   Operation 21 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (1.73ns)   --->   "%j_V_2 = add i4 %j_V_1, i4 1"   --->   Operation 22 'add' 'j_V_2' <Predicate = true> <Delay = 1.73> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%br_ln38 = br i1 %icmp_ln1027, void %for.inc56.split, void %for.end58.exitStub" [../../../../OneDrive/Desktop/vitis/bram_A.cpp:38]   --->   Operation 23 'br' 'br_ln38' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%trunc_ln1514 = trunc i4 %j_V_1"   --->   Operation 24 'trunc' 'trunc_ln1514' <Predicate = (!icmp_ln1027)> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%shl_ln = bitconcatenate i6 @_ssdm_op_BitConcatenate.i6.i3.i3, i3 %trunc_ln1514, i3 0"   --->   Operation 25 'bitconcatenate' 'shl_ln' <Predicate = (!icmp_ln1027)> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (1.82ns)   --->   "%add_ln1514 = add i6 %shl_ln, i6 %trunc_ln_read"   --->   Operation 26 'add' 'add_ln1514' <Predicate = (!icmp_ln1027)> <Delay = 1.82> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%trunc_ln3 = partselect i3 @_ssdm_op_PartSelect.i3.i6.i32.i32, i6 %add_ln1514, i32 3, i32 5" [../../../../OneDrive/Desktop/vitis/bram_A.cpp:40]   --->   Operation 27 'partselect' 'trunc_ln3' <Predicate = (!icmp_ln1027)> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%zext_ln40 = zext i3 %trunc_ln3" [../../../../OneDrive/Desktop/vitis/bram_A.cpp:40]   --->   Operation 28 'zext' 'zext_ln40' <Predicate = (!icmp_ln1027)> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%bram2_0_addr = getelementptr i6 %bram2_0, i64 0, i64 %zext_ln40" [../../../../OneDrive/Desktop/vitis/bram_A.cpp:40]   --->   Operation 29 'getelementptr' 'bram2_0_addr' <Predicate = (!icmp_ln1027)> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%bram2_1_addr = getelementptr i6 %bram2_1, i64 0, i64 %zext_ln40" [../../../../OneDrive/Desktop/vitis/bram_A.cpp:40]   --->   Operation 30 'getelementptr' 'bram2_1_addr' <Predicate = (!icmp_ln1027)> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%bram2_2_addr = getelementptr i6 %bram2_2, i64 0, i64 %zext_ln40" [../../../../OneDrive/Desktop/vitis/bram_A.cpp:40]   --->   Operation 31 'getelementptr' 'bram2_2_addr' <Predicate = (!icmp_ln1027)> <Delay = 0.00>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%bram2_3_addr = getelementptr i6 %bram2_3, i64 0, i64 %zext_ln40" [../../../../OneDrive/Desktop/vitis/bram_A.cpp:40]   --->   Operation 32 'getelementptr' 'bram2_3_addr' <Predicate = (!icmp_ln1027)> <Delay = 0.00>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%bram2_4_addr = getelementptr i6 %bram2_4, i64 0, i64 %zext_ln40" [../../../../OneDrive/Desktop/vitis/bram_A.cpp:40]   --->   Operation 33 'getelementptr' 'bram2_4_addr' <Predicate = (!icmp_ln1027)> <Delay = 0.00>
+ST_1 : Operation 34 [1/1] (0.00ns)   --->   "%bram2_5_addr = getelementptr i6 %bram2_5, i64 0, i64 %zext_ln40" [../../../../OneDrive/Desktop/vitis/bram_A.cpp:40]   --->   Operation 34 'getelementptr' 'bram2_5_addr' <Predicate = (!icmp_ln1027)> <Delay = 0.00>
+ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%bram2_6_addr = getelementptr i6 %bram2_6, i64 0, i64 %zext_ln40" [../../../../OneDrive/Desktop/vitis/bram_A.cpp:40]   --->   Operation 35 'getelementptr' 'bram2_6_addr' <Predicate = (!icmp_ln1027)> <Delay = 0.00>
+ST_1 : Operation 36 [1/1] (0.00ns)   --->   "%bram2_7_addr = getelementptr i6 %bram2_7, i64 0, i64 %zext_ln40" [../../../../OneDrive/Desktop/vitis/bram_A.cpp:40]   --->   Operation 36 'getelementptr' 'bram2_7_addr' <Predicate = (!icmp_ln1027)> <Delay = 0.00>
+ST_1 : Operation 37 [2/2] (3.25ns)   --->   "%bram2_0_load = load i3 %bram2_0_addr" [../../../../OneDrive/Desktop/vitis/bram_A.cpp:40]   --->   Operation 37 'load' 'bram2_0_load' <Predicate = (!icmp_ln1027)> <Delay = 3.25> <CoreInst = "RAM_1P_BRAM">   --->   Core 88 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_1 : Operation 38 [2/2] (3.25ns)   --->   "%bram2_1_load = load i3 %bram2_1_addr" [../../../../OneDrive/Desktop/vitis/bram_A.cpp:40]   --->   Operation 38 'load' 'bram2_1_load' <Predicate = (!icmp_ln1027)> <Delay = 3.25> <CoreInst = "RAM_1P_BRAM">   --->   Core 88 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_1 : Operation 39 [2/2] (3.25ns)   --->   "%bram2_2_load = load i3 %bram2_2_addr" [../../../../OneDrive/Desktop/vitis/bram_A.cpp:40]   --->   Operation 39 'load' 'bram2_2_load' <Predicate = (!icmp_ln1027)> <Delay = 3.25> <CoreInst = "RAM_1P_BRAM">   --->   Core 88 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_1 : Operation 40 [2/2] (3.25ns)   --->   "%bram2_3_load = load i3 %bram2_3_addr" [../../../../OneDrive/Desktop/vitis/bram_A.cpp:40]   --->   Operation 40 'load' 'bram2_3_load' <Predicate = (!icmp_ln1027)> <Delay = 3.25> <CoreInst = "RAM_1P_BRAM">   --->   Core 88 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_1 : Operation 41 [2/2] (3.25ns)   --->   "%bram2_4_load = load i3 %bram2_4_addr" [../../../../OneDrive/Desktop/vitis/bram_A.cpp:40]   --->   Operation 41 'load' 'bram2_4_load' <Predicate = (!icmp_ln1027)> <Delay = 3.25> <CoreInst = "RAM_1P_BRAM">   --->   Core 88 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_1 : Operation 42 [2/2] (3.25ns)   --->   "%bram2_5_load = load i3 %bram2_5_addr" [../../../../OneDrive/Desktop/vitis/bram_A.cpp:40]   --->   Operation 42 'load' 'bram2_5_load' <Predicate = (!icmp_ln1027)> <Delay = 3.25> <CoreInst = "RAM_1P_BRAM">   --->   Core 88 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_1 : Operation 43 [2/2] (3.25ns)   --->   "%bram2_6_load = load i3 %bram2_6_addr" [../../../../OneDrive/Desktop/vitis/bram_A.cpp:40]   --->   Operation 43 'load' 'bram2_6_load' <Predicate = (!icmp_ln1027)> <Delay = 3.25> <CoreInst = "RAM_1P_BRAM">   --->   Core 88 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_1 : Operation 44 [2/2] (3.25ns)   --->   "%bram2_7_load = load i3 %bram2_7_addr" [../../../../OneDrive/Desktop/vitis/bram_A.cpp:40]   --->   Operation 44 'load' 'bram2_7_load' <Predicate = (!icmp_ln1027)> <Delay = 3.25> <CoreInst = "RAM_1P_BRAM">   --->   Core 88 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_1 : Operation 45 [1/1] (1.58ns)   --->   "%store_ln38 = store i4 %j_V_2, i4 %j_V" [../../../../OneDrive/Desktop/vitis/bram_A.cpp:38]   --->   Operation 45 'store' 'store_ln38' <Predicate = (!icmp_ln1027)> <Delay = 1.58>
+ST_1 : Operation 60 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 60 'ret' 'ret_ln0' <Predicate = (icmp_ln1027)> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 5.55>
+ST_2 : Operation 46 [1/1] (0.00ns)   --->   "%specpipeline_ln39 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, void @empty_0" [../../../../OneDrive/Desktop/vitis/bram_A.cpp:39]   --->   Operation 46 'specpipeline' 'specpipeline_ln39' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 47 [1/1] (0.00ns)   --->   "%specloopname_ln1633 = specloopname void @_ssdm_op_SpecLoopName, void @empty_4"   --->   Operation 47 'specloopname' 'specloopname_ln1633' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 48 [1/2] (3.25ns)   --->   "%bram2_0_load = load i3 %bram2_0_addr" [../../../../OneDrive/Desktop/vitis/bram_A.cpp:40]   --->   Operation 48 'load' 'bram2_0_load' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM_1P_BRAM">   --->   Core 88 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_2 : Operation 49 [1/2] (3.25ns)   --->   "%bram2_1_load = load i3 %bram2_1_addr" [../../../../OneDrive/Desktop/vitis/bram_A.cpp:40]   --->   Operation 49 'load' 'bram2_1_load' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM_1P_BRAM">   --->   Core 88 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_2 : Operation 50 [1/2] (3.25ns)   --->   "%bram2_2_load = load i3 %bram2_2_addr" [../../../../OneDrive/Desktop/vitis/bram_A.cpp:40]   --->   Operation 50 'load' 'bram2_2_load' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM_1P_BRAM">   --->   Core 88 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_2 : Operation 51 [1/2] (3.25ns)   --->   "%bram2_3_load = load i3 %bram2_3_addr" [../../../../OneDrive/Desktop/vitis/bram_A.cpp:40]   --->   Operation 51 'load' 'bram2_3_load' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM_1P_BRAM">   --->   Core 88 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_2 : Operation 52 [1/2] (3.25ns)   --->   "%bram2_4_load = load i3 %bram2_4_addr" [../../../../OneDrive/Desktop/vitis/bram_A.cpp:40]   --->   Operation 52 'load' 'bram2_4_load' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM_1P_BRAM">   --->   Core 88 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_2 : Operation 53 [1/2] (3.25ns)   --->   "%bram2_5_load = load i3 %bram2_5_addr" [../../../../OneDrive/Desktop/vitis/bram_A.cpp:40]   --->   Operation 53 'load' 'bram2_5_load' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM_1P_BRAM">   --->   Core 88 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_2 : Operation 54 [1/2] (3.25ns)   --->   "%bram2_6_load = load i3 %bram2_6_addr" [../../../../OneDrive/Desktop/vitis/bram_A.cpp:40]   --->   Operation 54 'load' 'bram2_6_load' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM_1P_BRAM">   --->   Core 88 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_2 : Operation 55 [1/2] (3.25ns)   --->   "%bram2_7_load = load i3 %bram2_7_addr" [../../../../OneDrive/Desktop/vitis/bram_A.cpp:40]   --->   Operation 55 'load' 'bram2_7_load' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM_1P_BRAM">   --->   Core 88 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_2 : Operation 56 [1/1] (2.30ns)   --->   "%bundle2_V = mux i6 @_ssdm_op_Mux.ap_auto.8i6.i3, i6 %bram2_0_load, i6 %bram2_1_load, i6 %bram2_2_load, i6 %bram2_3_load, i6 %bram2_4_load, i6 %bram2_5_load, i6 %bram2_6_load, i6 %bram2_7_load, i3 %trunc_ln1_read" [../../../../OneDrive/Desktop/vitis/bram_A.cpp:40]   --->   Operation 56 'mux' 'bundle2_V' <Predicate = true> <Delay = 2.30> <CoreInst = "Multiplexer">   --->   Core 76 'Multiplexer' <Latency = 0> <II = 1> <Delay = 2.30> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 57 [1/1] (0.00ns)   --->   "%zext_ln40_1 = zext i6 %bundle2_V" [../../../../OneDrive/Desktop/vitis/bram_A.cpp:40]   --->   Operation 57 'zext' 'zext_ln40_1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 58 [1/1] (0.00ns)   --->   "%write_ln41 = write void @_ssdm_op_Write.axis.volatile.i8P128A, i8 %output_r, i8 %zext_ln40_1" [../../../../OneDrive/Desktop/vitis/bram_A.cpp:41]   --->   Operation 58 'write' 'write_ln41' <Predicate = true> <Delay = 0.00> <CoreInst = "axis">   --->   Core 115 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_2 : Operation 59 [1/1] (0.00ns)   --->   "%br_ln38 = br void %for.inc56" [../../../../OneDrive/Desktop/vitis/bram_A.cpp:38]   --->   Operation 59 'br' 'br_ln38' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 2.7ns.
+
+ <State 1>: 5.08ns
+The critical path consists of the following:
+	'alloca' operation ('j.V') [12]  (0 ns)
+	'load' operation ('j.V') on local variable 'j.V' [27]  (0 ns)
+	'add' operation ('add_ln1514') [37]  (1.83 ns)
+	'getelementptr' operation ('bram2_0_addr', ../../../../OneDrive/Desktop/vitis/bram_A.cpp:40) [40]  (0 ns)
+	'load' operation ('bram2_0_load', ../../../../OneDrive/Desktop/vitis/bram_A.cpp:40) on array 'bram2_0' [48]  (3.25 ns)
+
+ <State 2>: 5.56ns
+The critical path consists of the following:
+	'load' operation ('bram2_0_load', ../../../../OneDrive/Desktop/vitis/bram_A.cpp:40) on array 'bram2_0' [48]  (3.25 ns)
+	'mux' operation ('bundle2.V', ../../../../OneDrive/Desktop/vitis/bram_A.cpp:40) [56]  (2.3 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

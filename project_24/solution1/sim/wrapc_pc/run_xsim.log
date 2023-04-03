@@ -1,0 +1,95 @@
+all the read input sets passed
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 40
+
+C:\Users\velic\AppData\Roaming\Xilinx\Vitis\project_24\solution1\sim\verilog>set PATH= 
+
+C:\Users\velic\AppData\Roaming\Xilinx\Vitis\project_24\solution1\sim\verilog>call C:/Xilinx/Vivado/2022.2/bin/xelab xil_defaultlib.apatb_dut_top glbl -Oenable_linking_all_libraries  -prj dut.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm  -L floating_point_v7_0_20 -L floating_point_v7_1_15 --lib "ieee_proposed=./ieee_proposed" -s dut  
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_dut_top glbl -Oenable_linking_all_libraries -prj dut.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_0_20 -L floating_point_v7_1_15 --lib ieee_proposed=./ieee_proposed -s dut 
+Multi-threading is on. Using 2 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/velic/AppData/Roaming/Xilinx/Vitis/project_24/solution1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/velic/AppData/Roaming/Xilinx/Vitis/project_24/solution1/sim/verilog/AESL_axi_s_in_stream.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_in_stream
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/velic/AppData/Roaming/Xilinx/Vitis/project_24/solution1/sim/verilog/AESL_axi_s_out_stream.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_out_stream
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/velic/AppData/Roaming/Xilinx/Vitis/project_24/solution1/sim/verilog/AESL_deadlock_idx0_monitor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_idx0_monitor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/velic/AppData/Roaming/Xilinx/Vitis/project_24/solution1/sim/verilog/AESL_deadlock_kernel_monitor_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_kernel_monitor_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/velic/AppData/Roaming/Xilinx/Vitis/project_24/solution1/sim/verilog/AESL_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/velic/AppData/Roaming/Xilinx/Vitis/project_24/solution1/sim/verilog/dut.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_dut_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/velic/AppData/Roaming/Xilinx/Vitis/project_24/solution1/sim/verilog/dut.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/velic/AppData/Roaming/Xilinx/Vitis/project_24/solution1/sim/verilog/dut_dut_Pipeline_VITIS_LOOP_22_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_dut_Pipeline_VITIS_LOOP_22_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/velic/AppData/Roaming/Xilinx/Vitis/project_24/solution1/sim/verilog/dut_flow_control_loop_pipe_sequential_init.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_flow_control_loop_pipe_sequential_init
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/velic/AppData/Roaming/Xilinx/Vitis/project_24/solution1/sim/verilog/dut_regslice_both.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_regslice_both
+INFO: [VRFC 10-311] analyzing module dut_regslice_both_w1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/velic/AppData/Roaming/Xilinx/Vitis/project_24/solution1/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3645] port 'axis_block_info' remains unconnected for this instance [C:/Users/velic/AppData/Roaming/Xilinx/Vitis/project_24/solution1/sim/verilog/AESL_deadlock_kernel_monitor_top.v:20]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.dut_flow_control_loop_pipe_seque...
+Compiling module xil_defaultlib.dut_dut_Pipeline_VITIS_LOOP_22_1
+Compiling module xil_defaultlib.dut_regslice_both(DataWidth=8)
+Compiling module xil_defaultlib.dut_regslice_both
+Compiling module xil_defaultlib.dut
+Compiling module xil_defaultlib.fifo(DEPTH=4)
+Compiling module xil_defaultlib.AESL_axi_s_in_stream
+Compiling module xil_defaultlib.fifo(DEPTH=4,WIDTH=32)
+Compiling module xil_defaultlib.AESL_axi_s_out_stream
+Compiling module xil_defaultlib.AESL_deadlock_idx0_monitor
+Compiling module xil_defaultlib.AESL_deadlock_kernel_monitor_top...
+Compiling module xil_defaultlib.nodf_module_intf
+Compiling module xil_defaultlib.upc_loop_intf(FSM_WIDTH=1)
+Compiling module xil_defaultlib.dataflow_monitor_1
+Compiling module xil_defaultlib.apatb_dut_top
+Compiling module work.glbl
+Built simulation snapshot dut
+
+****** xsim v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/dut/xsim_script.tcl
+# xsim {dut} -autoloadwcfg -tclbatch {dut.tcl}
+Time resolution is 1 ps
+source dut.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 10 [0.00%] @ "125000"
+find kernel block.
+// RTL Simulation : 1 / 10 [100.00%] @ "255000"
+// RTL Simulation : 2 / 10 [100.00%] @ "365000"
+// RTL Simulation : 3 / 10 [100.00%] @ "475000"
+// RTL Simulation : 4 / 10 [100.00%] @ "585000"
+// RTL Simulation : 5 / 10 [100.00%] @ "695000"
+// RTL Simulation : 6 / 10 [100.00%] @ "805000"
+// RTL Simulation : 7 / 10 [100.00%] @ "915000"
+// RTL Simulation : 8 / 10 [100.00%] @ "1025000"
+// RTL Simulation : 9 / 10 [100.00%] @ "1135000"
+// RTL Simulation : 10 / 10 [100.00%] @ "1245000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 1305 ns : File "C:/Users/velic/AppData/Roaming/Xilinx/Vitis/project_24/solution1/sim/verilog/dut.autotb.v" Line 247
+## quit
+INFO: [Common 17-206] Exiting xsim at Mon Apr  3 17:55:12 2023...
+all the read input sets passed
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 40

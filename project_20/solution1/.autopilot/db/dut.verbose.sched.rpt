@@ -1,0 +1,181 @@
+
+
+================================================================
+== Vitis HLS Report for 'dut'
+================================================================
+* Date:           Sun Apr  2 17:25:24 2023
+
+* Version:        2022.2 (Build 3670227 on Oct 13 2022)
+* Project:        project_20
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  5.558 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       26|       26|  0.260 us|  0.260 us|   27|   27|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 7
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%start_index_read = read i8 @_ssdm_op_Read.ap_none.i8, i8 %start_index" [../../../../OneDrive/Desktop/vitis/bram_A.cpp:9]   --->   Operation 8 'read' 'start_index_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%trunc_ln33 = trunc i8 %start_index_read" [../../../../OneDrive/Desktop/vitis/bram_A.cpp:33]   --->   Operation 9 'trunc' 'trunc_ln33' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%trunc_ln1495 = trunc i8 %start_index_read"   --->   Operation 10 'trunc' 'trunc_ln1495' <Predicate = true> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 4.90>
+ST_2 : Operation 11 [1/1] (0.00ns)   --->   "%empty = wait i32 @_ssdm_op_Wait"   --->   Operation 11 'wait' 'empty' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 12 [2/2] (4.90ns)   --->   "%call_ln33 = call void @dut_Pipeline_VITIS_LOOP_33_2, i6 %trunc_ln33, i3 %trunc_ln1495, i8 %output_r, i3 %bram1_0, i4 %bram1_1, i5 %bram1_2, i4 %bram1_3, i6 %bram1_4, i6 %bram1_5, i5 %bram1_6, i4 %bram1_7" [../../../../OneDrive/Desktop/vitis/bram_A.cpp:33]   --->   Operation 12 'call' 'call_ln33' <Predicate = true> <Delay = 4.90> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 3 <SV = 2> <Delay = 5.55>
+ST_3 : Operation 13 [1/2] (5.55ns)   --->   "%call_ln33 = call void @dut_Pipeline_VITIS_LOOP_33_2, i6 %trunc_ln33, i3 %trunc_ln1495, i8 %output_r, i3 %bram1_0, i4 %bram1_1, i5 %bram1_2, i4 %bram1_3, i6 %bram1_4, i6 %bram1_5, i5 %bram1_6, i4 %bram1_7" [../../../../OneDrive/Desktop/vitis/bram_A.cpp:33]   --->   Operation 13 'call' 'call_ln33' <Predicate = true> <Delay = 5.55> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 14 [1/1] (0.00ns)   --->   "%empty_11 = wait i32 @_ssdm_op_Wait"   --->   Operation 14 'wait' 'empty_11' <Predicate = true> <Delay = 0.00>
+
+State 5 <SV = 4> <Delay = 5.07>
+ST_5 : Operation 15 [1/1] (0.00ns)   --->   "%empty_12 = wait i32 @_ssdm_op_Wait"   --->   Operation 15 'wait' 'empty_12' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 16 [2/2] (5.07ns)   --->   "%call_ln33 = call void @dut_Pipeline_VITIS_LOOP_38_3, i6 %trunc_ln33, i3 %trunc_ln1495, i8 %output_r, i6 %bram2_0, i6 %bram2_1, i6 %bram2_2, i6 %bram2_3, i6 %bram2_4, i6 %bram2_5, i6 %bram2_6, i6 %bram2_7" [../../../../OneDrive/Desktop/vitis/bram_A.cpp:33]   --->   Operation 16 'call' 'call_ln33' <Predicate = true> <Delay = 5.07> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 6 <SV = 5> <Delay = 5.55>
+ST_6 : Operation 17 [1/2] (5.55ns)   --->   "%call_ln33 = call void @dut_Pipeline_VITIS_LOOP_38_3, i6 %trunc_ln33, i3 %trunc_ln1495, i8 %output_r, i6 %bram2_0, i6 %bram2_1, i6 %bram2_2, i6 %bram2_3, i6 %bram2_4, i6 %bram2_5, i6 %bram2_6, i6 %bram2_7" [../../../../OneDrive/Desktop/vitis/bram_A.cpp:33]   --->   Operation 17 'call' 'call_ln33' <Predicate = true> <Delay = 5.55> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 7 <SV = 6> <Delay = 0.00>
+ST_7 : Operation 18 [1/1] (0.00ns)   --->   "%spectopmodule_ln9 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_3" [../../../../OneDrive/Desktop/vitis/bram_A.cpp:9]   --->   Operation 18 'spectopmodule' 'spectopmodule_ln9' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 19 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i8 %start_index"   --->   Operation 19 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 20 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %start_index, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 20 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 21 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %output_r, void @empty_1, i32 1, i32 1, void @empty_2, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 21 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 22 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i8 %output_r"   --->   Operation 22 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 23 [1/1] (0.00ns)   --->   "%specmemcore_ln14 = specmemcore void @_ssdm_op_SpecMemCore, i4 %bram1_7, i64 666, i64 18, i64 18446744073709551615" [../../../../OneDrive/Desktop/vitis/bram_A.cpp:14]   --->   Operation 23 'specmemcore' 'specmemcore_ln14' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 24 [1/1] (0.00ns)   --->   "%specmemcore_ln14 = specmemcore void @_ssdm_op_SpecMemCore, i5 %bram1_6, i64 666, i64 18, i64 18446744073709551615" [../../../../OneDrive/Desktop/vitis/bram_A.cpp:14]   --->   Operation 24 'specmemcore' 'specmemcore_ln14' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 25 [1/1] (0.00ns)   --->   "%specmemcore_ln14 = specmemcore void @_ssdm_op_SpecMemCore, i6 %bram1_5, i64 666, i64 18, i64 18446744073709551615" [../../../../OneDrive/Desktop/vitis/bram_A.cpp:14]   --->   Operation 25 'specmemcore' 'specmemcore_ln14' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 26 [1/1] (0.00ns)   --->   "%specmemcore_ln14 = specmemcore void @_ssdm_op_SpecMemCore, i6 %bram1_4, i64 666, i64 18, i64 18446744073709551615" [../../../../OneDrive/Desktop/vitis/bram_A.cpp:14]   --->   Operation 26 'specmemcore' 'specmemcore_ln14' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 27 [1/1] (0.00ns)   --->   "%specmemcore_ln14 = specmemcore void @_ssdm_op_SpecMemCore, i4 %bram1_3, i64 666, i64 18, i64 18446744073709551615" [../../../../OneDrive/Desktop/vitis/bram_A.cpp:14]   --->   Operation 27 'specmemcore' 'specmemcore_ln14' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 28 [1/1] (0.00ns)   --->   "%specmemcore_ln14 = specmemcore void @_ssdm_op_SpecMemCore, i5 %bram1_2, i64 666, i64 18, i64 18446744073709551615" [../../../../OneDrive/Desktop/vitis/bram_A.cpp:14]   --->   Operation 28 'specmemcore' 'specmemcore_ln14' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 29 [1/1] (0.00ns)   --->   "%specmemcore_ln14 = specmemcore void @_ssdm_op_SpecMemCore, i4 %bram1_1, i64 666, i64 18, i64 18446744073709551615" [../../../../OneDrive/Desktop/vitis/bram_A.cpp:14]   --->   Operation 29 'specmemcore' 'specmemcore_ln14' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 30 [1/1] (0.00ns)   --->   "%specmemcore_ln14 = specmemcore void @_ssdm_op_SpecMemCore, i3 %bram1_0, i64 666, i64 18, i64 18446744073709551615" [../../../../OneDrive/Desktop/vitis/bram_A.cpp:14]   --->   Operation 30 'specmemcore' 'specmemcore_ln14' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 31 [1/1] (0.00ns)   --->   "%specmemcore_ln17 = specmemcore void @_ssdm_op_SpecMemCore, i6 %bram2_7, i64 666, i64 18, i64 18446744073709551615" [../../../../OneDrive/Desktop/vitis/bram_A.cpp:17]   --->   Operation 31 'specmemcore' 'specmemcore_ln17' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 32 [1/1] (0.00ns)   --->   "%specmemcore_ln17 = specmemcore void @_ssdm_op_SpecMemCore, i6 %bram2_6, i64 666, i64 18, i64 18446744073709551615" [../../../../OneDrive/Desktop/vitis/bram_A.cpp:17]   --->   Operation 32 'specmemcore' 'specmemcore_ln17' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 33 [1/1] (0.00ns)   --->   "%specmemcore_ln17 = specmemcore void @_ssdm_op_SpecMemCore, i6 %bram2_5, i64 666, i64 18, i64 18446744073709551615" [../../../../OneDrive/Desktop/vitis/bram_A.cpp:17]   --->   Operation 33 'specmemcore' 'specmemcore_ln17' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 34 [1/1] (0.00ns)   --->   "%specmemcore_ln17 = specmemcore void @_ssdm_op_SpecMemCore, i6 %bram2_4, i64 666, i64 18, i64 18446744073709551615" [../../../../OneDrive/Desktop/vitis/bram_A.cpp:17]   --->   Operation 34 'specmemcore' 'specmemcore_ln17' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 35 [1/1] (0.00ns)   --->   "%specmemcore_ln17 = specmemcore void @_ssdm_op_SpecMemCore, i6 %bram2_3, i64 666, i64 18, i64 18446744073709551615" [../../../../OneDrive/Desktop/vitis/bram_A.cpp:17]   --->   Operation 35 'specmemcore' 'specmemcore_ln17' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 36 [1/1] (0.00ns)   --->   "%specmemcore_ln17 = specmemcore void @_ssdm_op_SpecMemCore, i6 %bram2_2, i64 666, i64 18, i64 18446744073709551615" [../../../../OneDrive/Desktop/vitis/bram_A.cpp:17]   --->   Operation 36 'specmemcore' 'specmemcore_ln17' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 37 [1/1] (0.00ns)   --->   "%specmemcore_ln17 = specmemcore void @_ssdm_op_SpecMemCore, i6 %bram2_1, i64 666, i64 18, i64 18446744073709551615" [../../../../OneDrive/Desktop/vitis/bram_A.cpp:17]   --->   Operation 37 'specmemcore' 'specmemcore_ln17' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 38 [1/1] (0.00ns)   --->   "%specmemcore_ln17 = specmemcore void @_ssdm_op_SpecMemCore, i6 %bram2_0, i64 666, i64 18, i64 18446744073709551615" [../../../../OneDrive/Desktop/vitis/bram_A.cpp:17]   --->   Operation 38 'specmemcore' 'specmemcore_ln17' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 39 [1/1] (0.00ns)   --->   "%ret_ln43 = ret" [../../../../OneDrive/Desktop/vitis/bram_A.cpp:43]   --->   Operation 39 'ret' 'ret_ln43' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 2.7ns.
+
+ <State 1>: 0ns
+The critical path consists of the following:
+
+ <State 2>: 4.9ns
+The critical path consists of the following:
+	'call' operation ('call_ln33', ../../../../OneDrive/Desktop/vitis/bram_A.cpp:33) to 'dut_Pipeline_VITIS_LOOP_33_2' [44]  (4.9 ns)
+
+ <State 3>: 5.56ns
+The critical path consists of the following:
+	'call' operation ('call_ln33', ../../../../OneDrive/Desktop/vitis/bram_A.cpp:33) to 'dut_Pipeline_VITIS_LOOP_33_2' [44]  (5.56 ns)
+
+ <State 4>: 0ns
+The critical path consists of the following:
+
+ <State 5>: 5.08ns
+The critical path consists of the following:
+	'call' operation ('call_ln33', ../../../../OneDrive/Desktop/vitis/bram_A.cpp:33) to 'dut_Pipeline_VITIS_LOOP_38_3' [47]  (5.08 ns)
+
+ <State 6>: 5.56ns
+The critical path consists of the following:
+	'call' operation ('call_ln33', ../../../../OneDrive/Desktop/vitis/bram_A.cpp:33) to 'dut_Pipeline_VITIS_LOOP_38_3' [47]  (5.56 ns)
+
+ <State 7>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

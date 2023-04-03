@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="bram_B.cpp" path="C:\Users\velic\OneDrive\Desktop\vitis\bram_B.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="input.dat" path="C:\Users\velic\AppData\Roaming\Xilinx\Vitis\input.dat"/>
+    <originFiles name="bram_B_tb.cpp" path="C:\Users\velic\OneDrive\Desktop\vitis\bram_B_tb.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

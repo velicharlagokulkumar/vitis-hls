@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BindInfo>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op lshr" ID="" IMPL="auto_pipe" LATENCY="0" OPTYPE="lshr" PRAGMA="" RTLNAME="lshr_ln24_fu_149_p2" SOURCE="../../../../OneDrive/Desktop/vitis/bram_B.cpp:24" VARIABLE="lshr_ln24" MODULE="dut" LOOP="VITIS_LOOP_22_1" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op add" ID="" IMPL="fabric" LATENCY="0" OPTYPE="add" PRAGMA="" RTLNAME="i_fu_164_p2" SOURCE="../../../../OneDrive/Desktop/vitis/bram_B.cpp:22" VARIABLE="i" MODULE="dut" LOOP="VITIS_LOOP_22_1" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op icmp" ID="" IMPL="auto" LATENCY="0" OPTYPE="icmp" PRAGMA="" RTLNAME="icmp_ln22_fu_170_p2" SOURCE="../../../../OneDrive/Desktop/vitis/bram_B.cpp:22" VARIABLE="icmp_ln22" MODULE="dut" LOOP="VITIS_LOOP_22_1" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+</BindInfo>
