@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="shift_reg.cpp" path="C:\Users\velic\OneDrive\Desktop\vitis\shift_reg.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="shift_reg_tb.cpp" path="C:\Users\velic\OneDrive\Desktop\vitis\shift_reg_tb.cpp"/>
+    <originFiles name="shift_reg_input.dat" path="C:\Users\velic\OneDrive\Desktop\vitis\shift_reg_input.dat"/>
+    <originFiles name="input2.dat" path="C:\Users\velic\AppData\Roaming\Xilinx\Vitis\input2.dat"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

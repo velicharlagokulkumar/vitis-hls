@@ -1,0 +1,44 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [
+        {
+          "functionName": "shift_register",
+          "label": "shift_register_label0",
+          "functionLabel": "",
+          "id": "1",
+          "sourceFile": "C:\/Users\/velic\/AppData\/Roaming\/Xilinx\/Vitis\/project_25\/solution1\/directives.tcl",
+          "sourceLine": "6",
+          "pragma": {"name": "PIPELINE"}
+        },
+        {
+          "functionName": "shift_register",
+          "label": "",
+          "functionLabel": "",
+          "id": "2",
+          "sourceFile": "C:\/Users\/velic\/AppData\/Roaming\/Xilinx\/Vitis\/project_25\/solution1\/directives.tcl",
+          "sourceLine": "7",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "shift_register"
+              }]
+          }
+        },
+        {
+          "functionName": "shift_register",
+          "label": "",
+          "functionLabel": "",
+          "id": "3",
+          "sourceFile": "C:\/Users\/velic\/AppData\/Roaming\/Xilinx\/Vitis\/project_25\/solution1\/csynth.tcl",
+          "sourceLine": "16",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "shift_register"
+              }]
+          }
+        }
+      ]
+    }]}

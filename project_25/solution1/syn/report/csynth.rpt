@@ -1,0 +1,140 @@
+
+
+================================================================
+== Synthesis Summary Report of 'shift_register'
+================================================================
++ General Information: 
+    * Date:           Thu Apr  6 11:22:21 2023
+    * Version:        2022.2 (Build 3670227 on Oct 13 2022)
+    * Project:        project_25
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z020-clg484-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +------------------+------+------+---------+---------+----------+---------+------+----------+------+----+-----------+-----------+-----+
+    |      Modules     | Issue|      | Latency | Latency | Iteration|         | Trip |          |      |    |           |           |     |
+    |      & Loops     | Type | Slack| (cycles)|   (ns)  |  Latency | Interval| Count| Pipelined| BRAM | DSP|     FF    |    LUT    | URAM|
+    +------------------+------+------+---------+---------+----------+---------+------+----------+------+----+-----------+-----------+-----+
+    |+ shift_register  |     -|  2.70|       31|  310.000|         -|       32|     -|        no|     -|   -|  512 (~0%)|  2974 (5%)|    -|
+    +------------------+------+------+---------+---------+----------+---------+------+----------+------+----+-----------+-----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* AXIS
++-----------+---------------+-------+--------+--------+
+| Interface | Register Mode | TDATA | TREADY | TVALID |
++-----------+---------------+-------+--------+--------+
+| data_in   | both          | 16    | 1      | 1      |
+| data_out  | both          | 16    | 1      | 1      |
++-----------+---------------+-------+--------+--------+
+
+* Other Ports
++-------------+---------+----------+
+| Interface   | Mode    | Bitwidth |
++-------------+---------+----------+
+| shift_flag  | ap_none | 1        |
+| shift_value | ap_none | 16       |
++-------------+---------+----------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------------------------------+
+| Interface | Type       | Ports                             |
++-----------+------------+-----------------------------------+
+| ap_clk    | clock      | ap_clk                            |
+| ap_rst_n  | reset      | ap_rst_n                          |
+| ap_ctrl   | ap_ctrl_hs | ap_done ap_idle ap_ready ap_start |
++-----------+------------+-----------------------------------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++-------------+-----------+-------------------------+
+| Argument    | Direction | Datatype                |
++-------------+-----------+-------------------------+
+| data_in     | in        | stream<ap_uint<16>, 0>& |
+| shift_value | in        | ap_uint<16>             |
+| shift_flag  | in        | bool                    |
+| data_out    | out       | stream<ap_uint<16>, 0>& |
++-------------+-----------+-------------------------+
+
+* SW-to-HW Mapping
++-------------+--------------+-----------+
+| Argument    | HW Interface | HW Type   |
++-------------+--------------+-----------+
+| data_in     | data_in      | interface |
+| shift_value | shift_value  | port      |
+| shift_flag  | shift_flag   | port      |
+| data_out    | data_out     | interface |
++-------------+--------------+-----------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++----------------------+-----+--------+-------------+-----+--------+---------+
+| Name                 | DSP | Pragma | Variable    | Op  | Impl   | Latency |
++----------------------+-----+--------+-------------+-----+--------+---------+
+| + shift_register     | 0   |        |             |     |        |         |
+|   tmp_fu_107_p17     | -   |        | sub_ln26    | sub | fabric | 0       |
+|   tmp_1_fu_136_p17   | -   |        | sub_ln26_1  | sub | fabric | 0       |
+|   tmp_2_fu_165_p17   | -   |        | sub_ln26_2  | sub | fabric | 0       |
+|   tmp_3_fu_194_p17   | -   |        | sub_ln26_3  | sub | fabric | 0       |
+|   tmp_4_fu_223_p17   | -   |        | sub_ln26_4  | sub | fabric | 0       |
+|   tmp_5_fu_252_p17   | -   |        | sub_ln26_5  | sub | fabric | 0       |
+|   tmp_6_fu_281_p17   | -   |        | sub_ln26_6  | sub | fabric | 0       |
+|   tmp_7_fu_310_p17   | -   |        | sub_ln26_7  | sub | fabric | 0       |
+|   tmp_8_fu_339_p17   | -   |        | sub_ln26_8  | sub | fabric | 0       |
+|   tmp_9_fu_368_p17   | -   |        | sub_ln26_9  | sub | fabric | 0       |
+|   tmp_s_fu_397_p17   | -   |        | sub_ln26_10 | sub | fabric | 0       |
+|   tmp_10_fu_426_p17  | -   |        | sub_ln26_11 | sub | fabric | 0       |
+|   tmp_11_fu_455_p17  | -   |        | sub_ln26_12 | sub | fabric | 0       |
+|   tmp_12_fu_484_p17  | -   |        | sub_ln26_13 | sub | fabric | 0       |
+|   tmp_13_fu_513_p17  | -   |        | sub_ln26_14 | sub | fabric | 0       |
+|   tmp_16_fu_594_p17  | -   |        | add_ln37    | add | fabric | 0       |
+|   tmp_17_fu_623_p17  | -   |        | add_ln37_1  | add | fabric | 0       |
+|   tmp_18_fu_652_p17  | -   |        | add_ln37_2  | add | fabric | 0       |
+|   tmp_19_fu_681_p17  | -   |        | add_ln37_3  | add | fabric | 0       |
+|   tmp_20_fu_710_p17  | -   |        | add_ln37_4  | add | fabric | 0       |
+|   tmp_21_fu_739_p17  | -   |        | add_ln37_5  | add | fabric | 0       |
+|   tmp_22_fu_768_p17  | -   |        | add_ln37_6  | add | fabric | 0       |
+|   tmp_24_fu_826_p17  | -   |        | add_ln37_7  | add | fabric | 0       |
+|   tmp_25_fu_855_p17  | -   |        | add_ln37_8  | add | fabric | 0       |
+|   tmp_26_fu_884_p17  | -   |        | add_ln37_9  | add | fabric | 0       |
+|   tmp_27_fu_913_p17  | -   |        | add_ln37_10 | add | fabric | 0       |
+|   tmp_28_fu_942_p17  | -   |        | add_ln37_11 | add | fabric | 0       |
+|   tmp_29_fu_971_p17  | -   |        | add_ln37_12 | add | fabric | 0       |
+|   tmp_30_fu_1000_p17 | -   |        | add_ln37_13 | add | fabric | 0       |
++----------------------+-----+--------+-------------+-----+--------+---------+
+
+
+================================================================
+== Bind Storage Report
+================================================================
+  No bind storage info in design
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------------+------------------------------------------+--------------------------------------------------------------------------------+
+| Type            | Options                                  | Location                                                                       |
++-----------------+------------------------------------------+--------------------------------------------------------------------------------+
+| interface       | mode=axis port=data_out register         | ../../../../OneDrive/Desktop/vitis/shift_reg.cpp:6 in shift_register, data_out |
+| interface       | mode=axis port=data_in register          | ../../../../OneDrive/Desktop/vitis/shift_reg.cpp:7 in shift_register, data_in  |
+| array_partition | dim=1 factor=16 type=block variable=dout | ../../../../OneDrive/Desktop/vitis/shift_reg.cpp:10 in shift_register, dout    |
+| array_partition | dim=1 factor=16 type=block variable=din  | ../../../../OneDrive/Desktop/vitis/shift_reg.cpp:12 in shift_register, din     |
+| unroll          |                                          | ../../../../OneDrive/Desktop/vitis/shift_reg.cpp:15 in shift_register          |
+| unroll          |                                          | ../../../../OneDrive/Desktop/vitis/shift_reg.cpp:21 in shift_register          |
+| unroll          |                                          | ../../../../OneDrive/Desktop/vitis/shift_reg.cpp:32 in shift_register          |
+| unroll          |                                          | ../../../../OneDrive/Desktop/vitis/shift_reg.cpp:43 in shift_register          |
++-----------------+------------------------------------------+--------------------------------------------------------------------------------+
+
+
