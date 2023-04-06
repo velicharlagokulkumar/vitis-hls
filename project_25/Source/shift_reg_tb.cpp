@@ -30,7 +30,7 @@ int main()
 
        inputFile.close();
 
-  ifstream outputFile("output.dat");
+  // ifstream outputFile("output.dat");
 
      for(int i=0;i<8;i++){
         shift_value=data[i][16];
