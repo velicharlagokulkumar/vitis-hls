@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_V_1' is power-on initialization." projectName="project_28" solutionName="solution1" date="2023-04-10T16:46:11.226+0530" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_V_2' is power-on initialization." projectName="project_28" solutionName="solution1" date="2023-04-10T16:46:11.226+0530" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_V_0' is power-on initialization." projectName="project_28" solutionName="solution1" date="2023-04-10T16:46:11.211+0530" type="Warning"/>
+      </synLog>
+      <simLog>
+        <logs message="WARNING: [HLS 200-626] This design is unable to schedule all read ports in the first II cycle. The RTL testbench may treat the design as non-pipelined" projectName="project_28" solutionName="solution1" date="2023-04-10T16:46:32.504+0530" type="Warning"/>
+      </simLog>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

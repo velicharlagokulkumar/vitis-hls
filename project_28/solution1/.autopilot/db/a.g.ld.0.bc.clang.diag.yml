@@ -1,0 +1,302 @@
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h', 
+                   Line: 808, Column: 9 }
+Function:        _ZN13ap_fixed_baseILi48ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEaSILi32ELi32ELb1ELS0_5ELS1_3ELi0EEERS2_RKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h', 
+                       Line: 1420, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_fixed_base<48, 24, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<48, 24, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h', 
+                       Line: 801, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h', 
+                   Line: 530, Column: 146 }
+Function:        _ZN13ap_fixed_baseILi48ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2Ei
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_fixed_base<48, 24, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<48, 24, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h', 
+                       Line: 801, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_fixed_base<48, 24, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(int)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h', 
+                       Line: 530, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+Function:        _ZN8ap_fixedILi48ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2Ei
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_fixed_base<48, 24, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(int)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h', 
+                       Line: 530, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_fixed<48, 24, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(int)'
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h', 
+                   Line: 1270, Column: 55 }
+Function:        _ZNK13ap_fixed_baseILi24ELi12ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEmlILi24ELi12ELb1ELS0_5ELS1_3ELi0EEENS2_5RTypeIXT_EXT0_EXT1_EE4multERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_fixed_base<48, 24, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(int)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h', 
+                       Line: 530, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_fixed_base<24, 12, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<24, 12, true>::mult ap_fixed_base<24, 12, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator*<24, 12, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<24, 12, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h', 
+                       Line: 1269, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h', 
+                   Line: 1270, Column: 61 }
+Function:        _ZNK13ap_fixed_baseILi24ELi12ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEmlILi24ELi12ELb1ELS0_5ELS1_3ELi0EEENS2_5RTypeIXT_EXT0_EXT1_EE4multERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_fixed_base<48, 24, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(int)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h', 
+                       Line: 530, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_fixed_base<24, 12, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<24, 12, true>::mult ap_fixed_base<24, 12, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator*<24, 12, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<24, 12, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h', 
+                       Line: 1269, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h', 
+                   Line: 808, Column: 9 }
+Function:        _ZN13ap_fixed_baseILi49ELi25ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEaSILi32ELi32ELb1ELS0_5ELS1_3ELi0EEERS2_RKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h', 
+                       Line: 1420, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_fixed_base<49, 25, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<49, 25, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h', 
+                       Line: 801, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h', 
+                   Line: 530, Column: 146 }
+Function:        _ZN13ap_fixed_baseILi49ELi25ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2Ei
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_fixed_base<49, 25, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<49, 25, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h', 
+                       Line: 801, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_fixed_base<49, 25, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(int)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h', 
+                       Line: 530, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h', 
+                   Line: 808, Column: 9 }
+Function:        _ZN13ap_fixed_baseILi49ELi25ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEaSILi48ELi24ELb1ELS0_5ELS1_3ELi0EEERS2_RKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_fixed_base<48, 24, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h', 
+                       Line: 1420, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_fixed_base<49, 25, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<49, 25, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<48, 24, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<48, 24, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h', 
+                       Line: 801, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h', 
+                   Line: 401, Column: 80 }
+Function:        _ZN13ap_fixed_baseILi49ELi25ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi48ELi24ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          _ZN8ssdm_intILi49ELb1EEC2EDq49_i
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_common.h', 
+                       Line: 515, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_fixed_base<49, 25, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<48, 24, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<48, 24, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h', 
+                       Line: 401, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h', 
+                   Line: 403, Column: 5 }
+Function:        _ZN13ap_fixed_baseILi49ELi25ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi48ELi24ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_fixed_base<49, 25, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<49, 25, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<48, 24, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<48, 24, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h', 
+                       Line: 801, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_fixed_base<49, 25, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<48, 24, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<48, 24, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h', 
+                       Line: 401, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h', 
+                   Line: 1347, Column: 325 }
+Function:        _ZNK13ap_fixed_baseILi48ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEplILi48ELi24ELb1ELS0_5ELS1_3ELi0EEENS2_5RTypeIXT_EXT0_EXT1_EE4plusERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_fixed_base<49, 25, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(int)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h', 
+                       Line: 530, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_fixed_base<48, 24, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<48, 24, true>::plus ap_fixed_base<48, 24, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+<48, 24, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<48, 24, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h', 
+                       Line: 1347, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h', 
+                   Line: 1347, Column: 345 }
+Function:        _ZNK13ap_fixed_baseILi48ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEplILi48ELi24ELb1ELS0_5ELS1_3ELi0EEENS2_5RTypeIXT_EXT0_EXT1_EE4plusERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_fixed_base<49, 25, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<48, 24, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<48, 24, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h', 
+                       Line: 401, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_fixed_base<48, 24, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<48, 24, true>::plus ap_fixed_base<48, 24, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+<48, 24, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<48, 24, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h', 
+                       Line: 1347, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h', 
+                   Line: 1347, Column: 333 }
+Function:        _ZNK13ap_fixed_baseILi48ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEplILi48ELi24ELb1ELS0_5ELS1_3ELi0EEENS2_5RTypeIXT_EXT0_EXT1_EE4plusERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_fixed_base<49, 25, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<48, 24, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<48, 24, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h', 
+                       Line: 401, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_fixed_base<48, 24, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<48, 24, true>::plus ap_fixed_base<48, 24, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+<48, 24, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<48, 24, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h', 
+                       Line: 1347, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h', 
+                   Line: 808, Column: 9 }
+Function:        _ZN13ap_fixed_baseILi48ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEaSILi49ELi25ELb1ELS0_5ELS1_3ELi0EEERS2_RKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_fixed_base<49, 25, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h', 
+                       Line: 1420, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_fixed_base<48, 24, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<48, 24, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<49, 25, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<49, 25, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h', 
+                       Line: 801, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h', 
+                   Line: 1367, Column: 248 }
+Function:        _ZN13ap_fixed_baseILi48ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEpLILi48ELi24ELb1ELS0_5ELS1_3ELi0EEERS2_RKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_fixed_base<48, 24, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<48, 24, true>::plus ap_fixed_base<48, 24, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+<48, 24, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<48, 24, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h', 
+                       Line: 1347, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_fixed_base<48, 24, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<48, 24, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+=<48, 24, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<48, 24, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h', 
+                       Line: 1367, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h', 
+                   Line: 1367, Column: 246 }
+Function:        _ZN13ap_fixed_baseILi48ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEpLILi48ELi24ELb1ELS0_5ELS1_3ELi0EEERS2_RKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_fixed_base<48, 24, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<48, 24, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<49, 25, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<49, 25, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h', 
+                       Line: 801, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_fixed_base<48, 24, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<48, 24, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+=<48, 24, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<48, 24, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h', 
+                       Line: 1367, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ../../../../OneDrive/Desktop/vitis-hls/fir_fixed.cpp, 
+                   Line: 19, Column: 8 }
+Function:        _Z3firP8ap_fixedILi48ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi24ELi12ELS0_5ELS1_3ELi0EES4_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_fixed_base<48, 24, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<48, 24, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+=<48, 24, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<48, 24, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h', 
+                       Line: 1367, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'fir(ap_fixed<48, 24, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<24, 12, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<24, 12, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: ../../../../OneDrive/Desktop/vitis-hls/fir_fixed.cpp, 
+                       Line: 3, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ../../../../OneDrive/Desktop/vitis-hls/fir_fixed.cpp, 
+                   Line: 19, Column: 14 }
+Function:        _Z3firP8ap_fixedILi48ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi24ELi12ELS0_5ELS1_3ELi0EES4_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_fixed_base<24, 12, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<24, 12, true>::mult ap_fixed_base<24, 12, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator*<24, 12, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<24, 12, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h', 
+                       Line: 1269, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'fir(ap_fixed<48, 24, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<24, 12, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<24, 12, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: ../../../../OneDrive/Desktop/vitis-hls/fir_fixed.cpp, 
+                       Line: 3, Column: 0 }
+  - String:          ''''
+...

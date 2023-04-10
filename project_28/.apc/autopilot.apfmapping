@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="fir_float.cpp" path="C:\Users\velic\OneDrive\Desktop\vitis-hls\fir_float.cpp"/>
+    <originFiles name="fir_fixed.cpp" path="C:\Users\velic\OneDrive\Desktop\vitis-hls\fir_fixed.cpp"/>
+    <originFiles name="fir.h" path="C:\Users\velic\OneDrive\Desktop\vitis-hls\fir.h"/>
+  </source>
+  <testbench>
+    <originFiles name="fir_tb.cpp" path="C:\Users\velic\OneDrive\Desktop\vitis-hls\fir_tb.cpp"/>
+    <originFiles name="fir_coeffs.dat" path="C:\Users\velic\OneDrive\Desktop\vitis-hls\fir_coeffs.dat"/>
+    <originFiles name="fir_signal.dat" path="C:\Users\velic\OneDrive\Desktop\vitis-hls\fir_signal.dat"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>
