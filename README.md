@@ -4,6 +4,7 @@ This repository contains the design examples which are essential for designing b
 Assignment-1: Design of 8bit X 8bit Multiplier using ap_none interface
 
 Assignment-2: 
+
               - Design of 32bit X 32bit Multiplier
 
               - Design of Multiplier using the arbitrary precision data type
