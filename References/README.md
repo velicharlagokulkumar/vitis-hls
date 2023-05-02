@@ -12,3 +12,5 @@ https://github.com/Xilinx/Vitis-Tutorials
 https://github.com/Xilinx/Vitis-HLS-Introductory-Examples
 
 https://wikidocs.net/89988
+
+Chat-GPT
