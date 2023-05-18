@@ -1,0 +1,15 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+    <sourceFile name="">
+        <directive functionName="cyclic_prefix_removal" label="" functionLabel="">
+            <pragma name="TOP">
+                <option name="name" value="cyclic_prefix_removal"/>
+            </pragma>
+        </directive>
+        <directive functionName="cyclic_prefix_removal" label="" functionLabel="">
+            <pragma name="TOP">
+                <option name="name" value="cyclic_prefix_removal"/>
+            </pragma>
+        </directive>
+    </sourceFile>
+</AutoPilot:ProjectResources>
+

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="cp_removal.h" path="C:\Users\velic\OneDrive\Desktop\vitis-hls\project_31\Sources\cp_removal.h"/>
+    <originFiles name="cyclic_prefix.cpp" path="C:\Users\velic\OneDrive\Desktop\vitis-hls\project_31\Sources\cyclic_prefix.cpp"/>
+    <originFiles name="data_gen.cpp" path="C:\Users\velic\OneDrive\Desktop\vitis-hls\project_31\Sources\data_gen.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="cyclic_prefix_tb.cpp" path="C:\Users\velic\OneDrive\Desktop\vitis-hls\project_31\Sources\cyclic_prefix_tb.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

@@ -1,0 +1,30 @@
+C:\Users\velic\OneDrive\Desktop\vitis-hls\project_31\solution1\.autopilot\db\data_gen.pp.0.cpp:1332:7: warning: Added loop label VITIS_LOOP_1211_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1211_1: 
+C:\Users\velic\OneDrive\Desktop\vitis-hls\project_31\solution1\.autopilot\db\data_gen.pp.0.cpp:1332:7: note: FIX-IT applied suggested code changes
+C:\Users\velic\OneDrive\Desktop\vitis-hls\project_31\solution1\.autopilot\db\data_gen.pp.0.cpp:2306:5: warning: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_676_1: 
+C:\Users\velic\OneDrive\Desktop\vitis-hls\project_31\solution1\.autopilot\db\data_gen.pp.0.cpp:2306:5: note: FIX-IT applied suggested code changes
+C:\Users\velic\OneDrive\Desktop\vitis-hls\project_31\solution1\.autopilot\db\data_gen.pp.0.cpp:2320:5: warning: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_690_1: 
+C:\Users\velic\OneDrive\Desktop\vitis-hls\project_31\solution1\.autopilot\db\data_gen.pp.0.cpp:2320:5: note: FIX-IT applied suggested code changes
+C:\Users\velic\OneDrive\Desktop\vitis-hls\project_31\solution1\.autopilot\db\data_gen.pp.0.cpp:2334:5: warning: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_704_1: 
+C:\Users\velic\OneDrive\Desktop\vitis-hls\project_31\solution1\.autopilot\db\data_gen.pp.0.cpp:2334:5: note: FIX-IT applied suggested code changes
+C:\Users\velic\OneDrive\Desktop\vitis-hls\project_31\solution1\.autopilot\db\data_gen.pp.0.cpp:3933:7: warning: Added loop label VITIS_LOOP_1245_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1245_1: 
+C:\Users\velic\OneDrive\Desktop\vitis-hls\project_31\solution1\.autopilot\db\data_gen.pp.0.cpp:3933:7: note: FIX-IT applied suggested code changes
+C:\Users\velic\OneDrive\Desktop\vitis-hls\project_31\solution1\.autopilot\db\data_gen.pp.0.cpp:38351:5: warning: Added loop label VITIS_LOOP_9_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < (4096 + 320) + (4096 + 288); i++) {
+    ^~~
+    VITIS_LOOP_9_1: 
+C:\Users\velic\OneDrive\Desktop\vitis-hls\project_31\solution1\.autopilot\db\data_gen.pp.0.cpp:38351:5: note: FIX-IT applied suggested code changes
