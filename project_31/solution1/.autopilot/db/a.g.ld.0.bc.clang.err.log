@@ -1,2 +1,0 @@
-remark: project_31/Sources/cyclic_prefix.cpp:3:0: Implementing stream: may cause mismatch if read and write accesses are not in sequential order on port 'in_samples'
-remark: project_31/Sources/cyclic_prefix.cpp:3:0: Implementing stream: may cause mismatch if read and write accesses are not in sequential order on port 'out_samples'
