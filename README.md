@@ -21,4 +21,4 @@ Assignment-6: Implementing a 16-bit shift register
 
 Assignment-7: Designing of basic FIR filter
 
-Assignment-7: Designing of Cyclic Prefix removal in 5G NR
+Assignment-7: Designing of Cyclic Prefix removal in 5G NR.
