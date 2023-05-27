@@ -13,4 +13,6 @@ https://github.com/Xilinx/Vitis-HLS-Introductory-Examples
 
 https://wikidocs.net/89988
 
+https://www.h-schmidt.net/FloatConverter/IEEE754.html
+
 Chat-GPT
