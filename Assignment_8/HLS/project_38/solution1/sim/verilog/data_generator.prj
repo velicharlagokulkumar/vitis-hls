@@ -1,0 +1,13 @@
+sv work "glbl.v"
+sv xil_defaultlib "AESL_axi_s_gout.v"
+sv xil_defaultlib "AESL_deadlock_idx0_monitor.v"
+sv xil_defaultlib "AESL_deadlock_kernel_monitor_top.v"
+sv xil_defaultlib "AESL_fifo.v"
+sv xil_defaultlib "data_generator.autotb.v"
+sv xil_defaultlib "data_generator.v"
+sv xil_defaultlib "data_generator_arr_imag_ROM_AUTO_1R.v"
+sv xil_defaultlib "data_generator_arr_real_ROM_AUTO_1R.v"
+sv xil_defaultlib "data_generator_flow_control_loop_pipe.v"
+sv xil_defaultlib "data_generator_regslice_both.v"
+sv xil_defaultlib "dataflow_monitor.sv"
+

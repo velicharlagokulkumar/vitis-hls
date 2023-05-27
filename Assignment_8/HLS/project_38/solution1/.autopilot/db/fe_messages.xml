@@ -1,0 +1,24 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/velic/OneDrive/Desktop/project_38/solution1/csynth.tcl:18:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="data_generator" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=data_generator" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="vitis-hls/Assignment_8/HLS/Source/data_generator.cpp:5:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="data_generator" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=axis register_mode=both port=gout register" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="vitis-hls/Assignment_8/HLS/Source/data_generator.cpp:1769:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="data_generator" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="vitis-hls/Assignment_8/HLS/Source/cp_removal.cpp:4:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="cyclic_prefix_removal" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=axis register_mode=both port=out_samples register" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="vitis-hls/Assignment_8/HLS/Source/cp_removal.cpp:5:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="cyclic_prefix_removal" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=axis register_mode=both port=in_samples register" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="vitis-hls/Assignment_8/HLS/Source/cp_removal.cpp:10:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="cyclic_prefix_removal" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="vitis-hls/Assignment_8/HLS/Source/cp_removal.cpp:16:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="cyclic_prefix_removal" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

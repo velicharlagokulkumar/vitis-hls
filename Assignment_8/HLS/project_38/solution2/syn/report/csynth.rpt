@@ -1,0 +1,123 @@
+
+
+================================================================
+== Synthesis Summary Report of 'cyclic_prefix_removal'
+================================================================
++ General Information: 
+    * Date:           Fri May 26 18:16:40 2023
+    * Version:        2022.2 (Build 3670227 on Oct 13 2022)
+    * Project:        project_38
+    * Solution:       solution2 (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z020-clg484-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +---------------------------------------------------+------+------+---------+-----------+----------+---------+------+----------+----------+----+----------+-----------+-----+
+    |                      Modules                      | Issue|      | Latency |  Latency  | Iteration|         | Trip |          |          |    |          |           |     |
+    |                      & Loops                      | Type | Slack| (cycles)|    (ns)   |  Latency | Interval| Count| Pipelined|   BRAM   | DSP|    FF    |    LUT    | URAM|
+    +---------------------------------------------------+------+------+---------+-----------+----------+---------+------+----------+----------+----+----------+-----------+-----+
+    |+ cyclic_prefix_removal                            |     -|  1.84|    17002|  1.700e+05|         -|    17003|     -|        no|  64 (22%)|   -|  43 (~0%)|  374 (~0%)|    -|
+    | + cyclic_prefix_removal_Pipeline_VITIS_LOOP_9_1   |     -|  1.84|     8802|  8.802e+04|         -|     8802|     -|        no|         -|   -|  16 (~0%)|   69 (~0%)|    -|
+    |  o VITIS_LOOP_9_1                                 |     -|  7.30|     8800|  8.800e+04|         1|        1|  8800|       yes|         -|   -|         -|          -|    -|
+    | + cyclic_prefix_removal_Pipeline_VITIS_LOOP_15_2  |     -|  2.23|     8194|  8.194e+04|         -|     8194|     -|        no|         -|   -|  18 (~0%)|  167 (~0%)|    -|
+    |  o VITIS_LOOP_15_2                                |     -|  7.30|     8192|  8.192e+04|         2|        1|  8192|       yes|         -|   -|         -|          -|    -|
+    +---------------------------------------------------+------+------+---------+-----------+----------+---------+------+----------+----------+----+----------+-----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* AXIS
++-------------+---------------+-------+--------+--------+
+| Interface   | Register Mode | TDATA | TREADY | TVALID |
++-------------+---------------+-------+--------+--------+
+| in_samples  | both          | 64    | 1      | 1      |
+| out_samples | both          | 64    | 1      | 1      |
++-------------+---------------+-------+--------+--------+
+
+* AP_FIFO
++-----------+------------+
+| Interface | Data Width |
++-----------+------------+
+| t_last    | 1          |
++-----------+------------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------------------------------+
+| Interface | Type       | Ports                             |
++-----------+------------+-----------------------------------+
+| ap_clk    | clock      | ap_clk                            |
+| ap_rst_n  | reset      | ap_rst_n                          |
+| ap_ctrl   | ap_ctrl_hs | ap_done ap_idle ap_ready ap_start |
++-----------+------------+-----------------------------------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++-------------+-----------+----------------------+
+| Argument    | Direction | Datatype             |
++-------------+-----------+----------------------+
+| in_samples  | in        | stream<ComplexT, 0>& |
+| out_samples | out       | stream<ComplexT, 0>& |
+| t_last      | out       | stream<bool, 0>&     |
++-------------+-----------+----------------------+
+
+* SW-to-HW Mapping
++-------------+--------------+-----------+
+| Argument    | HW Interface | HW Type   |
++-------------+--------------+-----------+
+| in_samples  | in_samples   | interface |
+| out_samples | out_samples  | interface |
+| t_last      | t_last       | interface |
++-------------+--------------+-----------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++---------------------------------------------------+-----+--------+----------+-----+--------+---------+
+| Name                                              | DSP | Pragma | Variable | Op  | Impl   | Latency |
++---------------------------------------------------+-----+--------+----------+-----+--------+---------+
+| + cyclic_prefix_removal                           | 0   |        |          |     |        |         |
+|  + cyclic_prefix_removal_Pipeline_VITIS_LOOP_9_1  | 0   |        |          |     |        |         |
+|    add_ln9_fu_96_p2                               | -   |        | add_ln9  | add | fabric | 0       |
+|  + cyclic_prefix_removal_Pipeline_VITIS_LOOP_15_2 | 0   |        |          |     |        |         |
+|    add_ln15_fu_125_p2                             | -   |        | add_ln15 | add | fabric | 0       |
+|    add_ln21_fu_147_p2                             | -   |        | add_ln21 | add | fabric | 0       |
+|    add_ln18_fu_159_p2                             | -   |        | add_ln18 | add | fabric | 0       |
++---------------------------------------------------+-----+--------+----------+-----+--------+---------+
+
+
+================================================================
+== Bind Storage Report
+================================================================
++-------------------------+------+------+--------+----------+---------+------+---------+
+| Name                    | BRAM | URAM | Pragma | Variable | Storage | Impl | Latency |
++-------------------------+------+------+--------+----------+---------+------+---------+
+| + cyclic_prefix_removal | 64   | 0    |        |          |         |      |         |
+|   arr_real_U            | 32   | -    |        | arr_real | ram_1p  | auto | 1       |
+|   arr_imag_U            | 32   | -    |        | arr_imag | ram_1p  | auto | 1       |
++-------------------------+------+------+--------+----------+---------+------+---------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------+--------------------------------------------------------+------------------------------------------------------------------------------------------+
+| Type      | Options                                                | Location                                                                                 |
++-----------+--------------------------------------------------------+------------------------------------------------------------------------------------------+
+| interface | mode=axis register_mode=both port=out_samples register | vitis-hls/Assignment_8/HLS/Source/cp_removal.cpp:4 in cyclic_prefix_removal, out_samples |
+| interface | mode=axis register_mode=both port=in_samples register  | vitis-hls/Assignment_8/HLS/Source/cp_removal.cpp:5 in cyclic_prefix_removal, in_samples  |
+| pipeline  | II=1                                                   | vitis-hls/Assignment_8/HLS/Source/cp_removal.cpp:10 in cyclic_prefix_removal             |
+| pipeline  | II=1                                                   | vitis-hls/Assignment_8/HLS/Source/cp_removal.cpp:16 in cyclic_prefix_removal             |
+| interface | mode=axis register_mode=both port=gout register        | vitis-hls/Assignment_8/HLS/Source/data_generator.cpp:5 in data_generator, gout           |
+| pipeline  | II=1                                                   | vitis-hls/Assignment_8/HLS/Source/data_generator.cpp:1769 in data_generator              |
++-----------+--------------------------------------------------------+------------------------------------------------------------------------------------------+
+
+

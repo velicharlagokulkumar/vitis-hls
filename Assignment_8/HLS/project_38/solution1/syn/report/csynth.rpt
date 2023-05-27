@@ -1,0 +1,103 @@
+
+
+================================================================
+== Synthesis Summary Report of 'data_generator'
+================================================================
++ General Information: 
+    * Date:           Fri May 26 18:06:36 2023
+    * Version:        2022.2 (Build 3670227 on Oct 13 2022)
+    * Project:        project_38
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z020-clg484-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +----------------------+------+------+---------+-----------+----------+---------+------+----------+----------+----+----------+----------+-----+
+    |        Modules       | Issue|      | Latency |  Latency  | Iteration|         | Trip |          |          |    |          |          |     |
+    |        & Loops       | Type | Slack| (cycles)|    (ns)   |  Latency | Interval| Count| Pipelined|   BRAM   | DSP|    FF    |    LUT   | URAM|
+    +----------------------+------+------+---------+-----------+----------+---------+------+----------+----------+----+----------+----------+-----+
+    |+ data_generator      |     -|  3.50|     8803|  8.803e+04|         -|     8804|     -|        no|  64 (22%)|   -|  19 (~0%)|  84 (~0%)|    -|
+    | o VITIS_LOOP_1768_1  |     -|  7.30|     8801|  8.801e+04|         3|        1|  8800|       yes|         -|   -|         -|         -|    -|
+    +----------------------+------+------+---------+-----------+----------+---------+------+----------+----------+----+----------+----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* AXIS
++-----------+---------------+-------+--------+--------+
+| Interface | Register Mode | TDATA | TREADY | TVALID |
++-----------+---------------+-------+--------+--------+
+| gout      | both          | 64    | 1      | 1      |
++-----------+---------------+-------+--------+--------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------------------------------+
+| Interface | Type       | Ports                             |
++-----------+------------+-----------------------------------+
+| ap_clk    | clock      | ap_clk                            |
+| ap_rst_n  | reset      | ap_rst_n                          |
+| ap_ctrl   | ap_ctrl_hs | ap_done ap_idle ap_ready ap_start |
++-----------+------------+-----------------------------------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+----------------------+
+| Argument | Direction | Datatype             |
++----------+-----------+----------------------+
+| gout     | out       | stream<ComplexT, 0>& |
++----------+-----------+----------------------+
+
+* SW-to-HW Mapping
++----------+--------------+-----------+
+| Argument | HW Interface | HW Type   |
++----------+--------------+-----------+
+| gout     | gout         | interface |
++----------+--------------+-----------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++-----------------------+-----+--------+------------+-----+--------+---------+
+| Name                  | DSP | Pragma | Variable   | Op  | Impl   | Latency |
++-----------------------+-----+--------+------------+-----+--------+---------+
+| + data_generator      | 0   |        |            |     |        |         |
+|   add_ln1768_fu_99_p2 | -   |        | add_ln1768 | add | fabric | 0       |
++-----------------------+-----+--------+------------+-----+--------+---------+
+
+
+================================================================
+== Bind Storage Report
+================================================================
++------------------+------+------+--------+----------+---------+------+---------+
+| Name             | BRAM | URAM | Pragma | Variable | Storage | Impl | Latency |
++------------------+------+------+--------+----------+---------+------+---------+
+| + data_generator | 64   | 0    |        |          |         |      |         |
+|   arr_real_U     | 32   | -    |        | arr_real | rom_1p  | auto | 1       |
+|   arr_imag_U     | 32   | -    |        | arr_imag | rom_1p  | auto | 1       |
++------------------+------+------+--------+----------+---------+------+---------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------+--------------------------------------------------------+------------------------------------------------------------------------------------------+
+| Type      | Options                                                | Location                                                                                 |
++-----------+--------------------------------------------------------+------------------------------------------------------------------------------------------+
+| interface | mode=axis register_mode=both port=out_samples register | vitis-hls/Assignment_8/HLS/Source/cp_removal.cpp:4 in cyclic_prefix_removal, out_samples |
+| interface | mode=axis register_mode=both port=in_samples register  | vitis-hls/Assignment_8/HLS/Source/cp_removal.cpp:5 in cyclic_prefix_removal, in_samples  |
+| pipeline  | II=1                                                   | vitis-hls/Assignment_8/HLS/Source/cp_removal.cpp:10 in cyclic_prefix_removal             |
+| pipeline  | II=1                                                   | vitis-hls/Assignment_8/HLS/Source/cp_removal.cpp:16 in cyclic_prefix_removal             |
+| interface | mode=axis register_mode=both port=gout register        | vitis-hls/Assignment_8/HLS/Source/data_generator.cpp:5 in data_generator, gout           |
+| pipeline  | II=1                                                   | vitis-hls/Assignment_8/HLS/Source/data_generator.cpp:1769 in data_generator              |
++-----------+--------------------------------------------------------+------------------------------------------------------------------------------------------+
+
+

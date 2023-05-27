@@ -1,0 +1,16 @@
+C:/Users/velic/OneDrive/Desktop/project_38/solution2/csynth.tcl:19:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=top_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=cyclic_prefix_removal_XLX_SEP_ PragmaOptions=name=cyclic_prefix_removal_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE TOP name=cyclic_prefix_removal
+        ^
+vitis-hls/Assignment_8/HLS/Source/cp_removal.cpp:4:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=cyclic_prefix_removal_XLX_SEP_ PragmaOptions=mode=axis register_mode=both port=out_samples register_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE mode=axis register_mode=both port=out_samples register
+        ^
+vitis-hls/Assignment_8/HLS/Source/cp_removal.cpp:5:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=cyclic_prefix_removal_XLX_SEP_ PragmaOptions=mode=axis register_mode=both port=in_samples register_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE mode=axis register_mode=both port=in_samples register
+        ^
+vitis-hls/Assignment_8/HLS/Source/cp_removal.cpp:10:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=cyclic_prefix_removal_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+vitis-hls/Assignment_8/HLS/Source/cp_removal.cpp:16:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=cyclic_prefix_removal_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+5 warnings generated.

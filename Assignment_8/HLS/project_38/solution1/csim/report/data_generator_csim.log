@@ -1,0 +1,9 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../vitis-hls/Assignment_8/HLS/Source/cp_removal.cpp in debug mode
+   Generating csim.exe
+Matched with reference output !
+WARNING [HLS SIM]: hls::stream 'hls::stream<bool, 0>0' contains leftover data, which may result in RTL simulation hanging.
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 8800
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

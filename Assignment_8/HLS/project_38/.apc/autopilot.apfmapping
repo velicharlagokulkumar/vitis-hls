@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="cp_removal.cpp" path="C:\Users\velic\OneDrive\Desktop\vitis-hls\Assignment_8\HLS\Source\cp_removal.cpp"/>
+    <originFiles name="cp_removal.h" path="C:\Users\velic\OneDrive\Desktop\vitis-hls\Assignment_8\HLS\Source\cp_removal.h"/>
+    <originFiles name="data_generator.cpp" path="C:\Users\velic\OneDrive\Desktop\vitis-hls\Assignment_8\HLS\Source\data_generator.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="cp_tb.cpp" path="C:\Users\velic\OneDrive\Desktop\vitis-hls\Assignment_8\HLS\Source\cp_tb.cpp"/>
+    <originFiles name="puschTxAfterChannelImag.txt" path="C:\Users\velic\OneDrive\Desktop\vitis-hls\Assignment_8\HLS\Source\puschTxAfterChannelImag.txt"/>
+    <originFiles name="puschTxAfterChannelReal.txt" path="C:\Users\velic\OneDrive\Desktop\vitis-hls\Assignment_8\HLS\Source\puschTxAfterChannelReal.txt"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

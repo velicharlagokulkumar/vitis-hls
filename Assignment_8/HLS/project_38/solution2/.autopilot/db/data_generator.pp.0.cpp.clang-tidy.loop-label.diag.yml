@@ -1,0 +1,13 @@
+---
+MainSourceFile:  'C:/Users/velic/OneDrive/Desktop/project_38/solution2/.autopilot/db/data_generator.pp.0.cpp'
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1768_1:  '
+    FileOffset:      1768
+    FilePath:        'C:\Users\velic\OneDrive\Desktop\vitis-hls\Assignment_8\HLS\Source\data_generator.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\velic\OneDrive\Desktop\project_38\solution2\.autopilot\db\data_generator.pp.0.cpp'
+        Offset:          1224657
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1768_1: '
+...

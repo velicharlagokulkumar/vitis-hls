@@ -1,0 +1,1 @@
+remark: vitis-hls/Assignment_8/HLS/Source/cp_removal.cpp:3:0: Aggregating fifo (hls::stream) variable 't_last' with compact=bit mode in 1-bits

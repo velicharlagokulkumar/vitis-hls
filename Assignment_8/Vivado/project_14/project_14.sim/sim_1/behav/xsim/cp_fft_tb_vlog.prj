@@ -1,0 +1,28 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../project_14.gen/sources_1/bd/design_1/ipshared/260d/hdl/verilog" --include "../../../../project_14.gen/sources_1/bd/design_1/ipshared/d36f/hdl/verilog" \
+"../../../../project_14.gen/sources_1/bd/design_1/ipshared/260d/hdl/verilog/data_generator_arr_imag_ROM_AUTO_1R.v" \
+"../../../../project_14.gen/sources_1/bd/design_1/ipshared/260d/hdl/verilog/data_generator_arr_real_ROM_AUTO_1R.v" \
+"../../../../project_14.gen/sources_1/bd/design_1/ipshared/260d/hdl/verilog/data_generator_flow_control_loop_pipe.v" \
+"../../../../project_14.gen/sources_1/bd/design_1/ipshared/260d/hdl/verilog/data_generator_hls_deadlock_idx0_monitor.v" \
+"../../../../project_14.gen/sources_1/bd/design_1/ipshared/260d/hdl/verilog/data_generator_regslice_both.v" \
+"../../../../project_14.gen/sources_1/bd/design_1/ipshared/260d/hdl/verilog/data_generator.v" \
+"../../../../project_14.ip_user_files/bd/design_1/ip/design_1_data_generator_0_0/sim/design_1_data_generator_0_0.v" \
+"../../../../project_14.gen/sources_1/bd/design_1/ipshared/d36f/hdl/verilog/cyclic_prefix_removal_arr_real_RAM_AUTO_1R1W.v" \
+"../../../../project_14.gen/sources_1/bd/design_1/ipshared/d36f/hdl/verilog/cyclic_prefix_removal_cyclic_prefix_removal_Pipeline_VITIS_LOOP_9_1.v" \
+"../../../../project_14.gen/sources_1/bd/design_1/ipshared/d36f/hdl/verilog/cyclic_prefix_removal_cyclic_prefix_removal_Pipeline_VITIS_LOOP_15_2.v" \
+"../../../../project_14.gen/sources_1/bd/design_1/ipshared/d36f/hdl/verilog/cyclic_prefix_removal_flow_control_loop_pipe_sequential_init.v" \
+"../../../../project_14.gen/sources_1/bd/design_1/ipshared/d36f/hdl/verilog/cyclic_prefix_removal_hls_deadlock_idx0_monitor.v" \
+"../../../../project_14.gen/sources_1/bd/design_1/ipshared/d36f/hdl/verilog/cyclic_prefix_removal_regslice_both.v" \
+"../../../../project_14.gen/sources_1/bd/design_1/ipshared/d36f/hdl/verilog/cyclic_prefix_removal.v" \
+"../../../../project_14.ip_user_files/bd/design_1/ip/design_1_cyclic_prefix_removal_0_0/sim/design_1_cyclic_prefix_removal_0_0.v" \
+"../../../../project_14.ip_user_files/bd/design_1/ip/design_1_xlconstant_0_0/sim/design_1_xlconstant_0_0.v" \
+"../../../../project_14.ip_user_files/bd/design_1/ip/design_1_xlconstant_1_0/sim/design_1_xlconstant_1_0.v" \
+"../../../../project_14.ip_user_files/bd/design_1/sim/design_1.v" \
+"../../../../project_14.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v" \
+"../../../../project_14.srcs/sim_1/new/cp_fft_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

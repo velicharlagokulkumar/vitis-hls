@@ -1,0 +1,7 @@
+Running: xsim.dir/cyclic_prefix_removal/xsimk.exe -simmode gui -wdb cyclic_prefix_removal.wdb -simrunnum 0 -socket 49758
+Design successfully loaded
+Design Loading Memory Usage: 7932 KB (Peak: 7932 KB)
+Design Loading CPU Usage: 46 ms
+Simulation completed
+Simulation Memory Usage: 10616 KB (Peak: 10616 KB)
+Simulation CPU Usage: 546 ms

@@ -1,0 +1,10 @@
+<pragmas>
+<pragma file="" line="0" pragmaType="inline" parentfunction="write" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="read" off="0" region="0" recursive="0"/>
+<pragma file="vitis-hls/Assignment_8/HLS/Source/cp_removal.cpp" line="16" pragmaType="pipeline" parentfunction="cyclic_prefix_removal" off="0" ii="1" rewind="0" style=""/>
+<pragma file="vitis-hls/Assignment_8/HLS/Source/cp_removal.cpp" line="10" pragmaType="pipeline" parentfunction="cyclic_prefix_removal" off="0" ii="1" rewind="0" style=""/>
+<pragma file="vitis-hls/Assignment_8/HLS/Source/cp_removal.cpp" line="4" pragmaType="interface" parentfunction="cyclic_prefix_removal" mode="axis" port="out_samples" register="1" register_mode="both" name="" depth="-1"/>
+<pragma file="vitis-hls/Assignment_8/HLS/Source/cp_removal.cpp" line="5" pragmaType="interface" parentfunction="cyclic_prefix_removal" mode="axis" port="in_samples" register="1" register_mode="both" name="" depth="-1"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="write" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="read" off="0" region="0" recursive="0"/>
+</pragmas>

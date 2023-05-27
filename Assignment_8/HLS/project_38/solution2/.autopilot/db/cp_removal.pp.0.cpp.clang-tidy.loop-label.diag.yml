@@ -1,0 +1,22 @@
+---
+MainSourceFile:  'C:/Users/velic/OneDrive/Desktop/project_38/solution2/.autopilot/db/cp_removal.pp.0.cpp'
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_9_1:  '
+    FileOffset:      9
+    FilePath:        'C:\Users\velic\OneDrive\Desktop\vitis-hls\Assignment_8\HLS\Source\cp_removal.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\velic\OneDrive\Desktop\project_38\solution2\.autopilot\db\cp_removal.pp.0.cpp'
+        Offset:          1041058
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_9_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_15_2:  '
+    FileOffset:      15
+    FilePath:        'C:\Users\velic\OneDrive\Desktop\vitis-hls\Assignment_8\HLS\Source\cp_removal.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\velic\OneDrive\Desktop\project_38\solution2\.autopilot\db\cp_removal.pp.0.cpp'
+        Offset:          1041159
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_15_2: '
+...

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BindInfo>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op icmp" ID="" IMPL="auto" LATENCY="0" OPTYPE="icmp" PRAGMA="" RTLNAME="icmp_ln1768_fu_93_p2" SOURCE="vitis-hls/Assignment_8/HLS/Source/data_generator.cpp:1768" VARIABLE="icmp_ln1768" MODULE="data_generator" LOOP="VITIS_LOOP_1768_1" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op add" ID="" IMPL="fabric" LATENCY="0" OPTYPE="add" PRAGMA="" RTLNAME="add_ln1768_fu_99_p2" SOURCE="vitis-hls/Assignment_8/HLS/Source/data_generator.cpp:1768" VARIABLE="add_ln1768" MODULE="data_generator" LOOP="VITIS_LOOP_1768_1" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="storage" DISPLAY="bind_storage rom_1p" ID="" IMPL="auto" LATENCY="1" OPTYPE="rom_1p" PRAGMA="" RTLNAME="arr_real_U" SOURCE="" VARIABLE="arr_real" MODULE="data_generator" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="32" URAM="0"/>
+	<BindNode BINDTYPE="storage" DISPLAY="bind_storage rom_1p" ID="" IMPL="auto" LATENCY="1" OPTYPE="rom_1p" PRAGMA="" RTLNAME="arr_imag_U" SOURCE="" VARIABLE="arr_imag" MODULE="data_generator" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="32" URAM="0"/>
+</BindInfo>

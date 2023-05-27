@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1685105199324">
+  <ports id="1" name="in_samples" type="PortType" coreId="1852142702" bitwidth="64">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="2" name="arr_real" type="PortType" coreName="RAM" coreId="0" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="8800">
+    <dataInputObjs>getelementptr</dataInputObjs>
+  </ports>
+  <ports id="3" name="arr_imag" type="PortType" coreName="RAM" coreId="0" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="8800">
+    <dataInputObjs>getelementptr</dataInputObjs>
+  </ports>
+  <edges id="36" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="37" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="38" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="39" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="42" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="45" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="46" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="47" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="48" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="51" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="52" source_obj="//@regions.0/@basic_blocks.1/@node_objs.2" sink_obj="//@ports.1"/>
+  <edges id="55" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.2"/>
+  <edges id="56" source_obj="//@regions.0/@basic_blocks.1/@node_objs.3" sink_obj="//@ports.2"/>
+  <edges id="58" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.3"/>
+  <edges id="59" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.4"/>
+  <edges id="60" source_obj="//@regions.0/@basic_blocks.1/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.5"/>
+  <edges id="61" source_obj="//@regions.0/@basic_blocks.1/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.6"/>
+  <edges id="62" source_obj="//@regions.0/@basic_blocks.1/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.6"/>
+  <edges id="65" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.7"/>
+  <edges id="70" source_obj="//@regions.0/@basic_blocks.1/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.8"/>
+  <edges id="71" source_obj="//@regions.0/@basic_blocks.1/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.9"/>
+  <edges id="72" source_obj="//@regions.0/@basic_blocks.1/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.9"/>
+  <edges id="73" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.10"/>
+  <edges id="74" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.10"/>
+  <edges id="75" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.11"/>
+  <edges id="118" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0"/>
+  <edges id="119" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="120" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1"/>
+  <edges id="121" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0" is_back_edge="1"/>
+  <edges id="122" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="123" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.10"/>
+  <edges id="124" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.10"/>
+  <blocks id="8" name="newFuncRoot" type="BlockType">
+    <controlOutputObjs>for.inc</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="4" name="i" originalName="i" coreId="1715" bitwidth="14" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="6" name="i_write_ln0" coreId="1715" opcode="store" m_display="0" m_delay="1.58" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="7" name="br_ln0" coreId="3935824040" opcode="br" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <controlInputObjs>for.inc</controlInputObjs>
+    </node_objs>
+  </blocks>
+  <blocks id="31" name="for.body5.preheader.exitStub" type="BlockType">
+    <controlInputObjs>for.inc</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="30" name="_ln0" coreId="4024122768" opcode="ret" m_display="0" m_topoIndex="20" m_clusterGroupNumber="-1"/>
+  </blocks>
+  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" iiViolation="" id="106" pipe_depth="1" RegionName="VITIS_LOOP_9_1">
+    <basic_blocks id="14" name="for.inc" type="BlockType">
+      <controlInputObjs>newFuncRoot</controlInputObjs>
+      <controlInputObjs>for.inc.split</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>for.body5.preheader.exitStub</controlOutputObjs>
+      <controlOutputObjs>for.inc.split</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="9" name="i_1" lineNumber="9" originalName="i" fileName="vitis-hls/Assignment_8/HLS/Source/cp_removal.cpp" fileDirectory=".." coreId="1715" contextFuncName="cyclic_prefix_removal" bitwidth="14" opcode="load" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="vitis-hls/Assignment_8/HLS/Source/cp_removal.cpp" linenumber="9" fileDirectory="C:\Users\velic\OneDrive\Desktop" functionName="cyclic_prefix_removal"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="10" name="icmp_ln9" lineNumber="9" fileName="vitis-hls/Assignment_8/HLS/Source/cp_removal.cpp" fileDirectory=".." rtlName="icmp_ln9_fu_90_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="cyclic_prefix_removal" bitwidth="1" opcode="icmp" m_display="0" m_delay="2.2" m_topoIndex="5" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="vitis-hls/Assignment_8/HLS/Source/cp_removal.cpp" linenumber="9" fileDirectory="C:\Users\velic\OneDrive\Desktop" functionName="cyclic_prefix_removal"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="12" name="add_ln9" lineNumber="9" fileName="vitis-hls/Assignment_8/HLS/Source/cp_removal.cpp" fileDirectory=".." rtlName="add_ln9_fu_96_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="cyclic_prefix_removal" bitwidth="14" opcode="add" m_display="0" m_delay="1.81" m_topoIndex="6" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="vitis-hls/Assignment_8/HLS/Source/cp_removal.cpp" linenumber="9" fileDirectory="C:\Users\velic\OneDrive\Desktop" functionName="cyclic_prefix_removal"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="13" name="br_ln9" lineNumber="9" fileName="vitis-hls/Assignment_8/HLS/Source/cp_removal.cpp" fileDirectory=".." coreId="3935821240" contextFuncName="cyclic_prefix_removal" opcode="br" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="vitis-hls/Assignment_8/HLS/Source/cp_removal.cpp" linenumber="9" fileDirectory="C:\Users\velic\OneDrive\Desktop" functionName="cyclic_prefix_removal"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <controlInputObjs>for.inc.split</controlInputObjs>
+        <controlInputObjs>for.body5.preheader.exitStub</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="vitis-hls/Assignment_8/HLS/Source/cp_removal.cpp">
+        <validLinenumbers>9</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="29" name="for.inc.split" type="BlockType">
+      <controlInputObjs>for.inc</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>for.inc</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="15" name="zext_ln9" lineNumber="9" fileName="vitis-hls/Assignment_8/HLS/Source/cp_removal.cpp" fileDirectory=".." rtlName="zext_ln9_fu_102_p1" coreId="4022868240" contextFuncName="cyclic_prefix_removal" bitwidth="64" opcode="zext" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="vitis-hls/Assignment_8/HLS/Source/cp_removal.cpp" linenumber="9" fileDirectory="C:\Users\velic\OneDrive\Desktop" functionName="cyclic_prefix_removal"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="18" name="var" lineNumber="11" originalName="var" fileName="vitis-hls/Assignment_8/HLS/Source/cp_removal.cpp" fileDirectory=".." coreName="axis" implIndex="axi4stream" control="no" opType="adapter" coreId="115" contextFuncName="cyclic_prefix_removal" bitwidth="64" opcode="read" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="vitis-hls/Assignment_8/HLS/Source/cp_removal.cpp" linenumber="11" fileDirectory="C:\Users\velic\OneDrive\Desktop" functionName="cyclic_prefix_removal"/>
+        <dataInputObjs>in_samples</dataInputObjs>
+        <dataOutputObjs>trunc</dataOutputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="19" name="arr_real_addr" lineNumber="12" fileName="vitis-hls/Assignment_8/HLS/Source/cp_removal.cpp" fileDirectory=".." coreId="4019820816" contextFuncName="cyclic_prefix_removal" bitwidth="14" opcode="getelementptr" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="vitis-hls/Assignment_8/HLS/Source/cp_removal.cpp" linenumber="12" fileDirectory="C:\Users\velic\OneDrive\Desktop" functionName="cyclic_prefix_removal"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>arr_real</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="20" name="arr_imag_addr" lineNumber="12" fileName="vitis-hls/Assignment_8/HLS/Source/cp_removal.cpp" fileDirectory=".." coreId="4024184539" contextFuncName="cyclic_prefix_removal" bitwidth="14" opcode="getelementptr" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="vitis-hls/Assignment_8/HLS/Source/cp_removal.cpp" linenumber="12" fileDirectory="C:\Users\velic\OneDrive\Desktop" functionName="cyclic_prefix_removal"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>arr_imag</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="21" name="trunc_ln12" lineNumber="12" fileName="vitis-hls/Assignment_8/HLS/Source/cp_removal.cpp" fileDirectory=".." rtlName="trunc_ln12_fu_108_p1" coreId="3935823480" contextFuncName="cyclic_prefix_removal" bitwidth="32" opcode="trunc" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="vitis-hls/Assignment_8/HLS/Source/cp_removal.cpp" linenumber="12" fileDirectory="C:\Users\velic\OneDrive\Desktop" functionName="cyclic_prefix_removal"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>bitcast</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="22" name="bitcast_ln12" lineNumber="12" fileName="vitis-hls/Assignment_8/HLS/Source/cp_removal.cpp" fileDirectory=".." rtlName="arr_real_d0" coreId="1715" contextFuncName="cyclic_prefix_removal" bitwidth="32" opcode="bitcast" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="vitis-hls/Assignment_8/HLS/Source/cp_removal.cpp" linenumber="12" fileDirectory="C:\Users\velic\OneDrive\Desktop" functionName="cyclic_prefix_removal"/>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="23" name="arr_real_addr_write_ln12" lineNumber="12" fileName="vitis-hls/Assignment_8/HLS/Source/cp_removal.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" contextFuncName="cyclic_prefix_removal" opcode="store" m_display="0" m_delay="3.25" m_topoIndex="14" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="vitis-hls/Assignment_8/HLS/Source/cp_removal.cpp" linenumber="12" fileDirectory="C:\Users\velic\OneDrive\Desktop" functionName="cyclic_prefix_removal"/>
+        <dataInputObjs>bitcast</dataInputObjs>
+        <dataInputObjs>getelementptr</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="24" name="tmp1" lineNumber="12" fileName="vitis-hls/Assignment_8/HLS/Source/cp_removal.cpp" fileDirectory=".." rtlName="tmp1_fu_117_p4" coreId="4024122768" contextFuncName="cyclic_prefix_removal" bitwidth="32" opcode="partselect" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="vitis-hls/Assignment_8/HLS/Source/cp_removal.cpp" linenumber="12" fileDirectory="C:\Users\velic\OneDrive\Desktop" functionName="cyclic_prefix_removal"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>bitcast</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="25" name="bitcast_ln12_1" lineNumber="12" fileName="vitis-hls/Assignment_8/HLS/Source/cp_removal.cpp" fileDirectory=".." rtlName="arr_imag_d0" coreId="4294967295" contextFuncName="cyclic_prefix_removal" bitwidth="32" opcode="bitcast" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="vitis-hls/Assignment_8/HLS/Source/cp_removal.cpp" linenumber="12" fileDirectory="C:\Users\velic\OneDrive\Desktop" functionName="cyclic_prefix_removal"/>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="26" name="arr_imag_addr_write_ln12" lineNumber="12" fileName="vitis-hls/Assignment_8/HLS/Source/cp_removal.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" contextFuncName="cyclic_prefix_removal" opcode="store" m_display="0" m_delay="3.25" m_topoIndex="17" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="vitis-hls/Assignment_8/HLS/Source/cp_removal.cpp" linenumber="12" fileDirectory="C:\Users\velic\OneDrive\Desktop" functionName="cyclic_prefix_removal"/>
+        <dataInputObjs>bitcast</dataInputObjs>
+        <dataInputObjs>getelementptr</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="27" name="i_write_ln9" lineNumber="9" fileName="vitis-hls/Assignment_8/HLS/Source/cp_removal.cpp" fileDirectory=".." coreId="3999775504" contextFuncName="cyclic_prefix_removal" opcode="store" m_display="0" m_delay="1.58" m_topoIndex="18" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="vitis-hls/Assignment_8/HLS/Source/cp_removal.cpp" linenumber="9" fileDirectory="C:\Users\velic\OneDrive\Desktop" functionName="cyclic_prefix_removal"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="28" name="br_ln9" lineNumber="9" fileName="vitis-hls/Assignment_8/HLS/Source/cp_removal.cpp" fileDirectory=".." coreId="4024122768" contextFuncName="cyclic_prefix_removal" opcode="br" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="vitis-hls/Assignment_8/HLS/Source/cp_removal.cpp" linenumber="9" fileDirectory="C:\Users\velic\OneDrive\Desktop" functionName="cyclic_prefix_removal"/>
+        <controlInputObjs>for.inc</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="vitis-hls/Assignment_8/HLS/Source/cp_removal.cpp">
+        <validLinenumbers>9</validLinenumbers>
+        <validLinenumbers>11</validLinenumbers>
+        <validLinenumbers>12</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <regnodes realName="i_reg_137">
+    <nodeIds>4</nodeIds>
+  </regnodes>
+  <expressionNodes realName="trunc_ln12_fu_108">
+    <nodeIds>21</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="arr_imag_addr_gep_fu_63">
+    <nodeIds>20</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="bitcast_ln12_1_fu_127">
+    <nodeIds>25</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="bitcast_ln12_fu_112">
+    <nodeIds>22</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_fu_46">
+    <nodeIds>4</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln9_fu_96">
+    <nodeIds>12</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln9_fu_90">
+    <nodeIds>10</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp1_fu_117">
+    <nodeIds>24</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln9_fu_102">
+    <nodeIds>15</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="arr_real_addr_gep_fu_56">
+    <nodeIds>19</nodeIds>
+  </expressionNodes>
+  <ioNodes realName="store_ln0_store_fu_82">
+    <nodeIds>6</nodeIds>
+  </ioNodes>
+  <ioNodes realName="i_1_load_fu_87">
+    <nodeIds>9</nodeIds>
+  </ioNodes>
+  <ioNodes realName="var_read_fu_50">
+    <nodeIds>18</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln9_store_fu_132">
+    <nodeIds>27</nodeIds>
+  </ioNodes>
+  <memoryPorts dataString="arr_imag">
+    <nodeIds>26</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="arr_real">
+    <nodeIds>23</nodeIds>
+  </memoryPorts>
+  <ioPorts name="arr_imag(p0)">
+    <contents name="store">
+      <nodeIds>26</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="arr_real(p0)">
+    <contents name="store">
+      <nodeIds>23</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="in_samples">
+    <contents name="read">
+      <nodeIds>18</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="4" stage="1" latency="1"/>
+      <operations id="5" stage="1" latency="1"/>
+      <operations id="6" stage="1" latency="1"/>
+      <operations id="7" stage="1" latency="1"/>
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="30" stage="1" latency="1"/>
+    </states>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="cyclic_prefix_removal_Pipeline_VITIS_LOOP_9_1" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="8802" mMaxLatency="8802">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <subRegions>4</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>8</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="VITIS_LOOP_9_1" mII="1" mDepth="1" mMinTripCount="8800" mMaxTripCount="8800" mMinLatency="8800" mMaxLatency="8800" mType="1">
+      <basicBlocks>14</basicBlocks>
+      <basicBlocks>29</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="4" mTag="Return" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>31</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

@@ -1,0 +1,17 @@
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: vitis-hls/Assignment_8/HLS/Source/cp_removal.cpp, 
+                   Line: 3, Column: 0 }
+Function:        _Z21cyclic_prefix_removalRN3hls6streamI8ComplexTLi0EEES3_RNS0_IbLi0EEE
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        'fifo (hls::stream)'
+  - String:          ' variable '''
+  - Name:            t_last
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '1'
+  - String:          '-bits'
+...
