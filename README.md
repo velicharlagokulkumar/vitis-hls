@@ -20,3 +20,5 @@ Assignment-5: Designing a DUT for accessing and retrieving data from BRAM
 Assignment-6: Implementing a 16-bit shift register
 
 Assignment-7: Designing of basic FIR filter
+
+Assignment-7: Designing of Cyclic Prefix removal in 5G NR
