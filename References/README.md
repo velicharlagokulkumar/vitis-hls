@@ -23,4 +23,4 @@ Youtube (https://www.youtube.com/@algorithmstoarchitectureii1574/playlists)
 
 Google
 
-Chat-GPT
+Chat-GPT..
