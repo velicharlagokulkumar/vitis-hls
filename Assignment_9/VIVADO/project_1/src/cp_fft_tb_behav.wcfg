@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="cp_fft_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="cp_fft_tb" />
+            <top_module name="glbl" />
+            <top_module name="vcomponents" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="17.126666 us"></ZoomStartTime>
+      <ZoomEndTime time="640.626667 us"></ZoomEndTime>
+      <Cursor1Time time="536.710000 us"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="208"></NameColumnWidth>
+      <ValueColumnWidth column_width="81"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="15" />
+   <wvobject fp_name="/cp_fft_tb/ap_clk_0" type="logic">
+      <obj_property name="ElementShortName">ap_clk_0</obj_property>
+      <obj_property name="ObjectShortName">ap_clk_0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cp_fft_tb/ap_rst_n_0" type="logic">
+      <obj_property name="ElementShortName">ap_rst_n_0</obj_property>
+      <obj_property name="ObjectShortName">ap_rst_n_0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cp_fft_tb/in1/design_1_i/data_generator_0/gout_TDATA" type="array">
+      <obj_property name="ElementShortName">gout_TDATA[63:0]</obj_property>
+      <obj_property name="ObjectShortName">gout_TDATA[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cp_fft_tb/in1/design_1_i/data_generator_0/gout_TVALID" type="logic">
+      <obj_property name="ElementShortName">gout_TVALID</obj_property>
+      <obj_property name="ObjectShortName">gout_TVALID</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cp_fft_tb/in1/design_1_i/cyclic_prefix_removal_0/in_samples_TDATA" type="array">
+      <obj_property name="ElementShortName">in_samples_TDATA[63:0]</obj_property>
+      <obj_property name="ObjectShortName">in_samples_TDATA[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cp_fft_tb/in1/design_1_i/cyclic_prefix_removal_0/in_samples_TVALID" type="logic">
+      <obj_property name="ElementShortName">in_samples_TVALID</obj_property>
+      <obj_property name="ObjectShortName">in_samples_TVALID</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cp_fft_tb/in1/design_1_i/cyclic_prefix_removal_0/out_samples_TDATA" type="array">
+      <obj_property name="ElementShortName">out_samples_TDATA[63:0]</obj_property>
+      <obj_property name="ObjectShortName">out_samples_TDATA[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cp_fft_tb/in1/design_1_i/cyclic_prefix_removal_0/out_samples_TVALID" type="logic">
+      <obj_property name="ElementShortName">out_samples_TVALID</obj_property>
+      <obj_property name="ObjectShortName">out_samples_TVALID</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cp_fft_tb/in1/design_1_i/cyclic_prefix_removal_0/t_last_write" type="logic">
+      <obj_property name="ElementShortName">t_last_write</obj_property>
+      <obj_property name="ObjectShortName">t_last_write</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cp_fft_tb/in1/design_1_i/xfft_0/s_axis_data_tdata" type="array">
+      <obj_property name="ElementShortName">s_axis_data_tdata[63:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axis_data_tdata[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cp_fft_tb/in1/design_1_i/xfft_0/s_axis_data_tvalid" type="logic">
+      <obj_property name="ElementShortName">s_axis_data_tvalid</obj_property>
+      <obj_property name="ObjectShortName">s_axis_data_tvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cp_fft_tb/s_axis_data_tready_0" type="logic">
+      <obj_property name="ElementShortName">s_axis_data_tready_0</obj_property>
+      <obj_property name="ObjectShortName">s_axis_data_tready_0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cp_fft_tb/m_axis_data_tdata_0" type="array">
+      <obj_property name="ElementShortName">m_axis_data_tdata_0[63:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_data_tdata_0[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cp_fft_tb/m_axis_data_tlast_0" type="logic">
+      <obj_property name="ElementShortName">m_axis_data_tlast_0</obj_property>
+      <obj_property name="ObjectShortName">m_axis_data_tlast_0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cp_fft_tb/m_axis_data_tvalid_0" type="logic">
+      <obj_property name="ElementShortName">m_axis_data_tvalid_0</obj_property>
+      <obj_property name="ObjectShortName">m_axis_data_tvalid_0</obj_property>
+   </wvobject>
+</wave_config>

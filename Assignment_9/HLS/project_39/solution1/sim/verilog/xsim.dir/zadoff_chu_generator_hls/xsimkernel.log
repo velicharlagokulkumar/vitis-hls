@@ -1,0 +1,7 @@
+Running: xsim.dir/zadoff_chu_generator_hls/xsimk.exe -simmode gui -wdb zadoff_chu_generator_hls.wdb -simrunnum 0 -socket 54284
+Design successfully loaded
+Design Loading Memory Usage: 21812 KB (Peak: 21812 KB)
+Design Loading CPU Usage: 93 ms
+Simulation completed
+Simulation Memory Usage: 25904 KB (Peak: 25904 KB)
+Simulation CPU Usage: 2249 ms

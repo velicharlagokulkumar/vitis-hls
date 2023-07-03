@@ -1,0 +1,37 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Sat Jul  1 16:29:44 2023
+# Process ID: 4888
+# Current directory: C:/Users/velic/OneDrive/Desktop/vitis-hls/Assignment_9/HLS/project_39/solution1/impl/ip
+# Command line: vivado.exe -notrace -mode batch -source run_ippack.tcl
+# Log file: C:/Users/velic/OneDrive/Desktop/vitis-hls/Assignment_9/HLS/project_39/solution1/impl/ip/vivado.log
+# Journal file: C:/Users/velic/OneDrive/Desktop/vitis-hls/Assignment_9/HLS/project_39/solution1/impl/ip\vivado.jou
+# Running On: GOKUL-KUMAR, OS: Windows, CPU Frequency: 2712 MHz, CPU Physical cores: 2, Host memory: 8336 MB
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/velic/OneDrive/Desktop/vitis-hls/Assignment_9/HLS/project_39/solution1/impl/ip'
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:27 . Memory (MB): peak = 394.590 ; gain = 65.324
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
+WARNING: [IP_Flow 19-4832] The IP name 'zadoff_chu_generator_hls_ddiv_64ns_64ns_64_22_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+create_ip: Time (s): cpu = 00:00:05 ; elapsed = 00:00:45 . Memory (MB): peak = 465.398 ; gain = 70.809
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'zadoff_chu_generator_hls_ddiv_64ns_64ns_64_22_no_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'zadoff_chu_generator_hls_ddiv_64ns_64ns_64_22_no_dsp_1_ip'...
+generate_target: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 465.398 ; gain = 0.000
+WARNING: [IP_Flow 19-4832] The IP name 'zadoff_chu_generator_hls_dmul_64ns_64ns_64_5_max_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'zadoff_chu_generator_hls_dmul_64ns_64ns_64_5_max_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'zadoff_chu_generator_hls_dmul_64ns_64ns_64_5_max_dsp_1_ip'...
+WARNING: [IP_Flow 19-4832] The IP name 'zadoff_chu_generator_hls_fptrunc_64ns_32_2_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'zadoff_chu_generator_hls_fptrunc_64ns_32_2_no_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'zadoff_chu_generator_hls_fptrunc_64ns_32_2_no_dsp_1_ip'...
+WARNING: [IP_Flow 19-4832] The IP name 'zadoff_chu_generator_hls_sitodp_32ns_64_4_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'zadoff_chu_generator_hls_sitodp_32ns_64_4_no_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'zadoff_chu_generator_hls_sitodp_32ns_64_4_no_dsp_1_ip'...
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Sat Jul  1 16:31:51 2023...

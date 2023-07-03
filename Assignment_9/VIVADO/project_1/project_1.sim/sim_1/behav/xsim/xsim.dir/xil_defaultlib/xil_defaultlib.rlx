@@ -1,0 +1,17 @@
+0.7
+2020.2
+Oct 14 2022
+05:20:55
+C:/Users/velic/OneDrive/Desktop/vitis-hls/Assignment_9/VIVADO/project_1/project_1.gen/sources_1/bd/design_2/hdl/design_2_wrapper.v,1688258199,verilog,,C:/Users/velic/OneDrive/Desktop/vitis-hls/Assignment_9/VIVADO/project_1/project_1.srcs/sim_1/new/zff_chu_post.v,,design_2_wrapper,,,,,,,,
+C:/Users/velic/OneDrive/Desktop/vitis-hls/Assignment_9/VIVADO/project_1/project_1.ip_user_files/bd/design_2/ip/design_2_zadoff_chu_0_2/sim/design_2_zadoff_chu_0_2.v,1688258200,verilog,,C:/Users/velic/OneDrive/Desktop/vitis-hls/Assignment_9/VIVADO/project_1/project_1.ip_user_files/bd/design_2/sim/design_2.v,,design_2_zadoff_chu_0_2,,,,,,,,
+C:/Users/velic/OneDrive/Desktop/vitis-hls/Assignment_9/VIVADO/project_1/project_1.ip_user_files/bd/design_2/sim/design_2.v,1688258199,verilog,,C:/Users/velic/OneDrive/Desktop/vitis-hls/Assignment_9/VIVADO/project_1/project_1.gen/sources_1/bd/design_2/hdl/design_2_wrapper.v,,design_2,,,,,,,,
+C:/Users/velic/OneDrive/Desktop/vitis-hls/Assignment_9/VIVADO/project_1/project_1.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,,,,,,,
+C:/Users/velic/OneDrive/Desktop/vitis-hls/Assignment_9/VIVADO/project_1/project_1.srcs/sim_1/new/Zff_Chu_tb.v,1688296667,verilog,,,,Zff_Chu_tb,,,../../../../project_1.gen/sources_1/bd/design_1/ipshared/2be0/hdl/verilog,,,,,
+C:/Users/velic/OneDrive/Desktop/vitis-hls/Assignment_9/VIVADO/project_1/project_1.srcs/sim_1/new/test_1_tb.v,1688301428,verilog,,,,Zff_Chu_tb1,,,../../../../project_1.gen/sources_1/bd/design_1/ipshared/2be0/hdl/verilog,,,,,
+C:/Users/velic/OneDrive/Desktop/vitis-hls/Assignment_9/VIVADO/project_1/project_1.srcs/sim_1/new/zadd_off_tb.v,1688282513,verilog,,,,cordic_tb,,,,,,,,
+C:/Users/velic/OneDrive/Desktop/vitis-hls/Assignment_9/VIVADO/project_1/project_1.srcs/sim_1/new/zff_chu_post.v,1688218693,verilog,,,,zff_chu_post,,,,,,,,
+C:/Users/velic/OneDrive/Desktop/vitis-hls/Assignment_9/VIVADO/project_1/project_1.srcs/sources_1/new/Sine_Cosine.v,1688288054,verilog,,C:/Users/velic/OneDrive/Desktop/vitis-hls/Assignment_9/VIVADO/project_1/project_1.srcs/sources_1/new/cordic_testbench.v,,Sine_Cosine,,,../../../../project_1.gen/sources_1/bd/design_1/ipshared/2be0/hdl/verilog,,,,,
+C:/Users/velic/OneDrive/Desktop/vitis-hls/Assignment_9/VIVADO/project_1/project_1.srcs/sources_1/new/cordic_testbench.v,1688288051,verilog,,,,cordic_testbench,,,../../../../project_1.gen/sources_1/bd/design_1/ipshared/2be0/hdl/verilog,,,,,
+C:/Users/velic/OneDrive/Desktop/vitis-hls/Assignment_9/VIVADO/project_1/project_1.srcs/sources_1/new/test_1.v,1688300913,verilog,,C:/Users/velic/OneDrive/Desktop/vitis-hls/Assignment_9/VIVADO/project_1/project_1.srcs/sim_1/new/test_1_tb.v,,zadoff_chu_generator,,,../../../../project_1.gen/sources_1/bd/design_1/ipshared/2be0/hdl/verilog,,,,,
+C:/Users/velic/OneDrive/Desktop/vitis-hls/Assignment_9/VIVADO/project_1/project_1.srcs/sources_1/new/zadd_off.v,1688299434,verilog,,C:/Users/velic/OneDrive/Desktop/vitis-hls/Assignment_9/VIVADO/project_1/project_1.srcs/sim_1/new/zadd_off_tb.v,,cordic2,,,../../../../project_1.gen/sources_1/bd/design_1/ipshared/2be0/hdl/verilog,,,,,
+C:/Users/velic/OneDrive/Desktop/vitis-hls/Assignment_9/VIVADO/project_1/project_1.srcs/sources_1/new/zff_chu.v,1688298097,verilog,,C:/Users/velic/OneDrive/Desktop/vitis-hls/Assignment_9/VIVADO/project_1/project_1.srcs/sim_1/new/Zff_Chu_tb.v,,zadoff_chu,,,../../../../project_1.gen/sources_1/bd/design_1/ipshared/2be0/hdl/verilog,,,,,

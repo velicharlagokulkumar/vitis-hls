@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sat Jul  1 18:46:27 2023" VIVADOVERSION="2022.2">
+
+  <SYSTEMINFO ARCH="zynquplus" BOARD="xilinx.com:zcu106:part0:2.6" DEVICE="xczu7ev" NAME="design_3" PACKAGE="ffvc1156" SPEEDGRADE="-2"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="I" LEFT="7" NAME="N_0_0" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_N_0_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="design_2_wrapper_0" PORT="N_0"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="clk_0_0" SIGIS="undef" SIGNAME="External_Ports_clk_0_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="design_2_wrapper_0" PORT="clk_0"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="7" NAME="u_0_0" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_u_0_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="design_2_wrapper_0" PORT="u_0"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="t_last_0_0" SIGIS="undef" SIGNAME="design_2_wrapper_0_t_last_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="design_2_wrapper_0" PORT="t_last_0"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE COREREVISION="2" FULLNAME="/design_2_wrapper_0" HWVERSION="1.0" INSTANCE="design_2_wrapper_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="design_2_wrapper" VLNV="xilinx.com:user:design_2_wrapper:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_3_design_2_wrapper_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="7" NAME="N_0" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_N_0_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="N_0_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="clk_0" SIGIS="undef" SIGNAME="External_Ports_clk_0_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_0_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="t_last_0" SIGIS="undef" SIGNAME="design_2_wrapper_0_t_last_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="t_last_0_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="u_0" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_u_0_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="u_0_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

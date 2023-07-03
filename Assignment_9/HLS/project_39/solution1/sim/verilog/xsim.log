@@ -1,0 +1,29 @@
+#-----------------------------------------------------------
+# xsim v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Sat Jul  1 13:03:11 2023
+# Process ID: 16448
+# Current directory: C:/Users/velic/OneDrive/Desktop/vitis-hls/Assignment_9/HLS/project_39/solution1/sim/verilog
+# Command line: xsim.exe -mode tcl -source {xsim.dir/zadoff_chu_generator_hls/xsim_script.tcl}
+# Log file: C:/Users/velic/OneDrive/Desktop/vitis-hls/Assignment_9/HLS/project_39/solution1/sim/verilog/xsim.log
+# Journal file: C:/Users/velic/OneDrive/Desktop/vitis-hls/Assignment_9/HLS/project_39/solution1/sim/verilog\xsim.jou
+# Running On: GOKUL-KUMAR, OS: Windows, CPU Frequency: 2712 MHz, CPU Physical cores: 2, Host memory: 8336 MB
+#-----------------------------------------------------------
+source xsim.dir/zadoff_chu_generator_hls/xsim_script.tcl
+# xsim {zadoff_chu_generator_hls} -autoloadwcfg -tclbatch {zadoff_chu_generator_hls.tcl}
+Time resolution is 1 ps
+source zadoff_chu_generator_hls.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 1 [n/a] @ "125000"
+// RTL Simulation : 1 / 1 [n/a] @ "2105000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 2165 ns : File "C:/Users/velic/OneDrive/Desktop/vitis-hls/Assignment_9/HLS/project_39/solution1/sim/verilog/zadoff_chu_generator_hls.autotb.v" Line 379
+## quit
+INFO: [Common 17-206] Exiting xsim at Sat Jul  1 13:03:15 2023...

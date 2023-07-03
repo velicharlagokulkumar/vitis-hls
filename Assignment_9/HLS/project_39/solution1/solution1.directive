@@ -1,0 +1,10 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+    <sourceFile name="">
+        <directive functionName="zadoff_chu_generator_hls" label="" functionLabel="">
+            <pragma name="TOP">
+                <option name="name" value="zadoff_chu_generator_hls"/>
+            </pragma>
+        </directive>
+    </sourceFile>
+</AutoPilot:ProjectResources>
+

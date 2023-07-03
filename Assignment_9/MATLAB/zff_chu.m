@@ -1,0 +1,11 @@
+seq = zadoffChuSeq(25,139);
+X=real(seq);
+Y=imag(seq);
+file1 = fopen('real_matlab.txt', 'w');
+fprintf(file1, '%f\n', X);
+fclose(file1);
+%disp(X);
+file2 = fopen('imag_matlab.txt', 'w');
+fprintf(file2, '%f\n', Y);
+fclose(file2);
+disp(seq);

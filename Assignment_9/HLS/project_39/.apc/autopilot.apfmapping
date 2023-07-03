@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="zff_chu.cpp" path="C:\Users\velic\OneDrive\Desktop\vitis-hls\Assignment_9\HLS\project_39\Sources\zff_chu.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="zff_chu_tb.cpp" path="C:\Users\velic\OneDrive\Desktop\vitis-hls\Assignment_9\HLS\project_39\Sources\zff_chu_tb.cpp"/>
+    <originFiles name="imag_matlab.txt" path="C:\Users\velic\OneDrive\Desktop\vitis-hls\Assignment_9\MATLAB\imag_matlab.txt"/>
+    <originFiles name="real_matlab.txt" path="C:\Users\velic\OneDrive\Desktop\vitis-hls\Assignment_9\MATLAB\real_matlab.txt"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

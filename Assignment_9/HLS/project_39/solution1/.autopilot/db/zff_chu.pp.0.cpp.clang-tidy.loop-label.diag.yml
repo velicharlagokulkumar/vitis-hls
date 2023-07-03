@@ -1,0 +1,13 @@
+---
+MainSourceFile:  'C:/Users/velic/OneDrive/Desktop/vitis-hls/Assignment_9/HLS/project_39/solution1/.autopilot/db/zff_chu.pp.0.cpp'
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_12_1:  '
+    FileOffset:      12
+    FilePath:        'C:\Users\velic\OneDrive\Desktop\vitis-hls\Assignment_9\HLS\project_39\Sources\zff_chu.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\velic\OneDrive\Desktop\vitis-hls\Assignment_9\HLS\project_39\solution1\.autopilot\db\zff_chu.pp.0.cpp'
+        Offset:          876083
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_12_1: '
+...

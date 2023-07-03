@@ -1,0 +1,5 @@
+C:\Users\velic\OneDrive\Desktop\vitis-hls\Assignment_9\HLS\project_39\solution1\.autopilot\db\zff_chu.pp.0.cpp:30504:5: warning: Added loop label VITIS_LOOP_12_1:   [xilinx-label-all-loops]
+    for (int m = 0; m < length; m++) {
+    ^~~
+    VITIS_LOOP_12_1: 
+C:\Users\velic\OneDrive\Desktop\vitis-hls\Assignment_9\HLS\project_39\solution1\.autopilot\db\zff_chu.pp.0.cpp:30504:5: note: FIX-IT applied suggested code changes
