@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Sun Jul  9 17:25:16 2023
+# Process ID: 16256
+# Current directory: C:/Users/velic/OneDrive/Desktop/vitis-hls/Assignment_9/VIVADO/project_1/project_1.runs/synth_1
+# Command line: vivado.exe -log zadoff_chu.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source zadoff_chu.tcl
+# Log file: C:/Users/velic/OneDrive/Desktop/vitis-hls/Assignment_9/VIVADO/project_1/project_1.runs/synth_1/zadoff_chu.vds
+# Journal file: C:/Users/velic/OneDrive/Desktop/vitis-hls/Assignment_9/VIVADO/project_1/project_1.runs/synth_1\vivado.jou
+# Running On: GOKUL-KUMAR, OS: Windows, CPU Frequency: 2712 MHz, CPU Physical cores: 2, Host memory: 8336 MB
+#-----------------------------------------------------------
+source zadoff_chu.tcl -notrace

@@ -1,0 +1,94 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x88A9F66CE30C68FF",
+      "device": "xczu7ev-ffvc1156-2-e",
+      "gen_directory": "../../../../project_2.gen/sources_1/bd/design_1",
+      "name": "design_1",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2022.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "zadoff_chu_0": ""
+    },
+    "ports": {
+      "clk_0": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "design_1_clk_0",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "u_0": {
+        "direction": "I",
+        "left": "7",
+        "right": "0"
+      },
+      "N_0": {
+        "direction": "I",
+        "left": "7",
+        "right": "0"
+      },
+      "Z_0": {
+        "direction": "O",
+        "left": "31",
+        "right": "0"
+      }
+    },
+    "components": {
+      "zadoff_chu_0": {
+        "vlnv": "xilinx.com:user:zadoff_chu:1.0",
+        "xci_name": "design_1_zadoff_chu_0_0",
+        "xci_path": "ip\\design_1_zadoff_chu_0_0\\design_1_zadoff_chu_0_0.xci",
+        "inst_hier_path": "zadoff_chu_0"
+      }
+    },
+    "nets": {
+      "N_0_1": {
+        "ports": [
+          "N_0",
+          "zadoff_chu_0/N"
+        ]
+      },
+      "clk_0_1": {
+        "ports": [
+          "clk_0",
+          "zadoff_chu_0/clk"
+        ]
+      },
+      "u_0_1": {
+        "ports": [
+          "u_0",
+          "zadoff_chu_0/u"
+        ]
+      },
+      "zadoff_chu_0_Z": {
+        "ports": [
+          "zadoff_chu_0/Z",
+          "Z_0"
+        ]
+      }
+    }
+  }
+}

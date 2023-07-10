@@ -1,0 +1,25 @@
+
+*** Running vivado
+    with args -log design_3_cordic_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_3_cordic_0_0.tcl
+
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source design_3_cordic_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 393.211 ; gain = 66.992
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/users/velic/onedrive/desktop/vitis-hls'.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Users/velic/OneDrive/Desktop/vitis-hls/Assignment_9/VIVADO/project_1/project_1.srcs'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Users/velic/OneDrive/Desktop/vitis-hls/Assignment_9/HLS/project_39'. The path is contained within another repository.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
+update_ip_catalog: Time (s): cpu = 00:00:05 ; elapsed = 00:00:14 . Memory (MB): peak = 435.707 ; gain = 42.496
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/velic/OneDrive/Desktop/vitis-hls/Assignment_9/VIVADO/project_1/project_1.cache/ip 
+WARNING: [Vivado 12-818] No files matched 'c:/Users/velic/OneDrive/Desktop/vitis-hls/Assignment_9/VIVADO/project_1/project_1.gen/sources_1/bd/design_3/ip/design_3_cordic_0_0/design_3_cordic_0_0_ooc.xdc'
+ERROR: [Common 17-55] 'set_property' expects at least one object.
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+INFO: [Common 17-206] Exiting Vivado at Sun Jul  9 17:15:10 2023...

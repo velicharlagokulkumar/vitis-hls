@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sun Jul  9 17:37:33 2023" VIVADOVERSION="2022.2">
+
+  <SYSTEMINFO ARCH="zynquplus" BOARD="xilinx.com:zcu106:part0:2.6" DEVICE="xczu7ev" NAME="design_5" PACKAGE="ffvc1156" SPEEDGRADE="-2"/>
+
+  <EXTERNALPORTS>
+    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk_0" SIGIS="clk" SIGNAME="External_Ports_clk_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="zadoff_chu_0" PORT="clk"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="7" NAME="u_0" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_u_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="zadoff_chu_0" PORT="u"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="7" NAME="N_0" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_N_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="zadoff_chu_0" PORT="N"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="15" NAME="fixed_point_tc_0" RIGHT="0" SIGIS="undef" SIGNAME="zadoff_chu_0_fixed_point_tc">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="zadoff_chu_0" PORT="fixed_point_tc"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="tlast_0" SIGIS="undef" SIGNAME="zadoff_chu_0_tlast">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="zadoff_chu_0" PORT="tlast"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE COREREVISION="2" FULLNAME="/zadoff_chu_0" HWVERSION="1.0" INSTANCE="zadoff_chu_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="zadoff_chu" VLNV="xilinx.com:user:zadoff_chu:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="PI" VALUE="3.14159265358979"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_5_zadoff_chu_0_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="u" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_u_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="u_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="N" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_N_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="N_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="fixed_point_tc" RIGHT="0" SIGIS="undef" SIGNAME="zadoff_chu_0_fixed_point_tc">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="fixed_point_tc_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="tlast" SIGIS="undef" SIGNAME="zadoff_chu_0_tlast">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="tlast_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

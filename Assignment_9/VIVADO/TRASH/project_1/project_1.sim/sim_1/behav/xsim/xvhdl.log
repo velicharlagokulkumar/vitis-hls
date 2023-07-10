@@ -1,0 +1,2 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/velic/OneDrive/Desktop/vitis-hls/Assignment_9/VIVADO/project_1/project_1.ip_user_files/bd/design_5/ip/design_5_zadoff_chu_0_1/project_1.srcs/sources_1/bd/design_3/ip/design_3_cordic_0_0/sim/design_3_cordic_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_3_cordic_0_0'

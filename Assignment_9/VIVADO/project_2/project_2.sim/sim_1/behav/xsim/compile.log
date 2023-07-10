@@ -1,0 +1,48 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/velic/OneDrive/Desktop/vitis-hls/Assignment_9/VIVADO/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_zadoff_chu_0_0/sources_1/ip/phase_optimizer_cordic_0/hdl/verilog/phase_optimizer_cordic_fdiv_32ns_32ns_32_9_no_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module phase_optimizer_cordic_fdiv_32ns_32ns_32_9_no_dsp_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/velic/OneDrive/Desktop/vitis-hls/Assignment_9/VIVADO/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_zadoff_chu_0_0/sources_1/ip/phase_optimizer_cordic_0/hdl/verilog/phase_optimizer_cordic_fmul_32ns_32ns_32_3_max_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module phase_optimizer_cordic_fmul_32ns_32ns_32_3_max_dsp_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/velic/OneDrive/Desktop/vitis-hls/Assignment_9/VIVADO/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_zadoff_chu_0_0/sources_1/ip/phase_optimizer_cordic_0/hdl/verilog/phase_optimizer_cordic_fpext_32ns_64_2_no_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module phase_optimizer_cordic_fpext_32ns_64_2_no_dsp_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/velic/OneDrive/Desktop/vitis-hls/Assignment_9/VIVADO/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_zadoff_chu_0_0/sources_1/ip/phase_optimizer_cordic_0/hdl/verilog/phase_optimizer_cordic_fsub_32ns_32ns_32_4_full_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module phase_optimizer_cordic_fsub_32ns_32ns_32_4_full_dsp_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/velic/OneDrive/Desktop/vitis-hls/Assignment_9/VIVADO/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_zadoff_chu_0_0/sources_1/ip/phase_optimizer_cordic_0/hdl/verilog/phase_optimizer_cordic_hls_deadlock_idx0_monitor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module phase_optimizer_cordic_hls_deadlock_idx0_monitor
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/velic/OneDrive/Desktop/vitis-hls/Assignment_9/VIVADO/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_zadoff_chu_0_0/sources_1/ip/phase_optimizer_cordic_0/hdl/verilog/phase_optimizer_cordic_sitofp_32ns_32_4_no_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module phase_optimizer_cordic_sitofp_32ns_32_4_no_dsp_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/velic/OneDrive/Desktop/vitis-hls/Assignment_9/VIVADO/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_zadoff_chu_0_0/sources_1/ip/phase_optimizer_cordic_0/hdl/verilog/phase_optimizer_cordic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module phase_optimizer_cordic
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/velic/OneDrive/Desktop/vitis-hls/Assignment_9/VIVADO/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_zadoff_chu_0_0/sources_1/ip/phase_optimizer_cordic_0/hdl/ip/phase_optimizer_cordic_fdiv_32ns_32ns_32_9_no_dsp_1_ip.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module phase_optimizer_cordic_fdiv_32ns_32ns_32_9_no_dsp_1_ip
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/velic/OneDrive/Desktop/vitis-hls/Assignment_9/VIVADO/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_zadoff_chu_0_0/sources_1/ip/phase_optimizer_cordic_0/hdl/ip/phase_optimizer_cordic_fmul_32ns_32ns_32_3_max_dsp_1_ip.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module phase_optimizer_cordic_fmul_32ns_32ns_32_3_max_dsp_1_ip
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/velic/OneDrive/Desktop/vitis-hls/Assignment_9/VIVADO/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_zadoff_chu_0_0/sources_1/ip/phase_optimizer_cordic_0/hdl/ip/phase_optimizer_cordic_fpext_32ns_64_2_no_dsp_1_ip.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module phase_optimizer_cordic_fpext_32ns_64_2_no_dsp_1_ip
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/velic/OneDrive/Desktop/vitis-hls/Assignment_9/VIVADO/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_zadoff_chu_0_0/sources_1/ip/phase_optimizer_cordic_0/hdl/ip/phase_optimizer_cordic_fsub_32ns_32ns_32_4_full_dsp_1_ip.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module phase_optimizer_cordic_fsub_32ns_32ns_32_4_full_dsp_1_ip
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/velic/OneDrive/Desktop/vitis-hls/Assignment_9/VIVADO/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_zadoff_chu_0_0/sources_1/ip/phase_optimizer_cordic_0/hdl/ip/phase_optimizer_cordic_sitofp_32ns_32_4_no_dsp_1_ip.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module phase_optimizer_cordic_sitofp_32ns_32_4_no_dsp_1_ip
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/velic/OneDrive/Desktop/vitis-hls/Assignment_9/VIVADO/project_2/project_2.ip_user_files/bd/design_1/ip/design_1_zadoff_chu_0_0/sources_1/ip/phase_optimizer_cordic_0/sim/phase_optimizer_cordic_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module phase_optimizer_cordic_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/velic/OneDrive/Desktop/vitis-hls/Assignment_9/VIVADO/project_2/project_2.ip_user_files/bd/design_1/ip/design_1_zadoff_chu_0_0/sources_1/ip/floating_point_0_4/sim/floating_point_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module floating_point_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/velic/OneDrive/Desktop/vitis-hls/Assignment_9/VIVADO/project_2/project_2.ip_user_files/bd/design_1/ip/design_1_zadoff_chu_0_0/sources_1/ip/float_div/sim/float_div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module float_div
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/velic/OneDrive/Desktop/vitis-hls/Assignment_9/VIVADO/project_2/project_2.ip_user_files/bd/design_1/ip/design_1_zadoff_chu_0_0/sources_1/ip/float_multi/sim/float_multi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module float_multi
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/velic/OneDrive/Desktop/vitis-hls/Assignment_9/VIVADO/project_2/project_2.ip_user_files/bd/design_1/ip/design_1_zadoff_chu_0_0/sources_1/ip/fixed_to_float/sim/fixed_to_float.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fixed_to_float
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/velic/OneDrive/Desktop/vitis-hls/Assignment_9/VIVADO/project_2/project_2.ip_user_files/bd/design_1/ipshared/56bd/sources_1/new/zff_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module zadoff_chu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/velic/OneDrive/Desktop/vitis-hls/Assignment_9/VIVADO/project_2/project_2.ip_user_files/bd/design_1/ip/design_1_zadoff_chu_0_0/sim/design_1_zadoff_chu_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_zadoff_chu_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/velic/OneDrive/Desktop/vitis-hls/Assignment_9/VIVADO/project_2/project_2.ip_user_files/bd/design_1/sim/design_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/velic/OneDrive/Desktop/vitis-hls/Assignment_9/VIVADO/project_2/project_2.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/velic/OneDrive/Desktop/vitis-hls/Assignment_9/VIVADO/project_2/project_2.srcs/sim_1/new/zff_post_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module zff_post_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/velic/OneDrive/Desktop/vitis-hls/Assignment_9/VIVADO/project_2/project_2.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/velic/OneDrive/Desktop/vitis-hls/Assignment_9/VIVADO/project_2/project_2.ip_user_files/bd/design_1/ip/design_1_zadoff_chu_0_0/sources_1/ip/cordic_0_1/sim/cordic_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'cordic_0'

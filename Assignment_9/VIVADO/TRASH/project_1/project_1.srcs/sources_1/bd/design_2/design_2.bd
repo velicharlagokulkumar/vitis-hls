@@ -1,0 +1,166 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x71F27D0A454C1086",
+      "device": "xczu7ev-ffvc1156-2-e",
+      "gen_directory": "../../../../project_1.gen/sources_1/bd/design_2",
+      "name": "design_2",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2022.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "cordic_0": "",
+      "xlconstant_0": ""
+    },
+    "ports": {
+      "aclk_0": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "design_2_aclk_0",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "1000000"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "m_axis_dout_tvalid_0": {
+        "direction": "O"
+      },
+      "m_axis_dout_tdata_0": {
+        "direction": "O",
+        "left": "31",
+        "right": "0"
+      },
+      "s_axis_phase_tdata_0": {
+        "direction": "I",
+        "left": "15",
+        "right": "0"
+      },
+      "s_axis_phase_tready_0": {
+        "direction": "O"
+      },
+      "m_axis_dout_tlast_0": {
+        "direction": "O"
+      },
+      "s_axis_phase_tlast_0": {
+        "direction": "I"
+      }
+    },
+    "components": {
+      "cordic_0": {
+        "vlnv": "xilinx.com:ip:cordic:6.0",
+        "xci_name": "design_2_cordic_0_0",
+        "xci_path": "ip\\design_2_cordic_0_0\\design_2_cordic_0_0.xci",
+        "inst_hier_path": "cordic_0",
+        "parameters": {
+          "ACLKEN": {
+            "value": "false"
+          },
+          "Architectural_Configuration": {
+            "value": "Parallel"
+          },
+          "Coarse_Rotation": {
+            "value": "true"
+          },
+          "Data_Format": {
+            "value": "SignedFraction"
+          },
+          "Functional_Selection": {
+            "value": "Sin_and_Cos"
+          },
+          "Input_Width": {
+            "value": "10"
+          },
+          "Output_Width": {
+            "value": "10"
+          },
+          "Pipelining_Mode": {
+            "value": "Maximum"
+          },
+          "flow_control": {
+            "value": "Blocking"
+          },
+          "out_tlast_behv": {
+            "value": "Pass_Phase_TLAST"
+          },
+          "phase_has_tlast": {
+            "value": "true"
+          }
+        }
+      },
+      "xlconstant_0": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "xci_name": "design_2_xlconstant_0_0",
+        "xci_path": "ip\\design_2_xlconstant_0_0\\design_2_xlconstant_0_0.xci",
+        "inst_hier_path": "xlconstant_0"
+      }
+    },
+    "nets": {
+      "aclk_0_1": {
+        "ports": [
+          "aclk_0",
+          "cordic_0/aclk"
+        ]
+      },
+      "cordic_0_m_axis_dout_tdata": {
+        "ports": [
+          "cordic_0/m_axis_dout_tdata",
+          "m_axis_dout_tdata_0"
+        ]
+      },
+      "cordic_0_m_axis_dout_tlast": {
+        "ports": [
+          "cordic_0/m_axis_dout_tlast",
+          "m_axis_dout_tlast_0"
+        ]
+      },
+      "cordic_0_m_axis_dout_tvalid": {
+        "ports": [
+          "cordic_0/m_axis_dout_tvalid",
+          "m_axis_dout_tvalid_0"
+        ]
+      },
+      "cordic_0_s_axis_phase_tready": {
+        "ports": [
+          "cordic_0/s_axis_phase_tready",
+          "s_axis_phase_tready_0"
+        ]
+      },
+      "s_axis_phase_tdata_0_1": {
+        "ports": [
+          "s_axis_phase_tdata_0",
+          "cordic_0/s_axis_phase_tdata"
+        ]
+      },
+      "s_axis_phase_tlast_0_1": {
+        "ports": [
+          "s_axis_phase_tlast_0",
+          "cordic_0/s_axis_phase_tlast"
+        ]
+      },
+      "xlconstant_0_dout": {
+        "ports": [
+          "xlconstant_0/dout",
+          "cordic_0/s_axis_phase_tvalid"
+        ]
+      }
+    }
+  }
+}

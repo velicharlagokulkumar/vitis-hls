@@ -1,7 +1,0 @@
-Running: xsim.dir/zadd_off_tb_behav/xsimk.exe -simmode gui -wdb zadd_off_tb_behav.wdb -simrunnum 0 -socket 52357
-Design successfully loaded
-Design Loading Memory Usage: 7760 KB (Peak: 7760 KB)
-Design Loading CPU Usage: 15 ms
-Simulation completed
-Simulation Memory Usage: 16336 KB (Peak: 16336 KB)
-Simulation CPU Usage: 2046 ms

@@ -1,0 +1,87 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x1F4B3F89F14DDB90",
+      "device": "xczu7ev-ffvc1156-2-e",
+      "gen_directory": "../../../../project_1.gen/sources_1/bd/design_5",
+      "name": "design_5",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2022.2"
+    },
+    "design_tree": {
+      "zadoff_chu_0": "",
+      "floating_point_0": ""
+    },
+    "ports": {
+      "clk_0": {
+        "type": "clk",
+        "direction": "I"
+      },
+      "u_0": {
+        "direction": "I",
+        "left": "7",
+        "right": "0"
+      },
+      "N_0": {
+        "direction": "I",
+        "left": "7",
+        "right": "0"
+      },
+      "fixed_point_tc_0": {
+        "direction": "O",
+        "left": "15",
+        "right": "0"
+      },
+      "tlast_0": {
+        "direction": "O"
+      }
+    },
+    "components": {
+      "zadoff_chu_0": {
+        "vlnv": "xilinx.com:user:zadoff_chu:1.0",
+        "xci_name": "design_5_zadoff_chu_0_1",
+        "xci_path": "ip\\design_5_zadoff_chu_0_1\\design_5_zadoff_chu_0_1.xci",
+        "inst_hier_path": "zadoff_chu_0"
+      },
+      "floating_point_0": {
+        "vlnv": "xilinx.com:ip:floating_point:7.1",
+        "xci_name": "design_5_floating_point_0_0",
+        "xci_path": "ip\\design_5_floating_point_0_0\\design_5_floating_point_0_0.xci",
+        "inst_hier_path": "floating_point_0"
+      }
+    },
+    "nets": {
+      "N_0_1": {
+        "ports": [
+          "N_0",
+          "zadoff_chu_0/N"
+        ]
+      },
+      "clk_0_1": {
+        "ports": [
+          "clk_0",
+          "zadoff_chu_0/clk"
+        ]
+      },
+      "u_0_1": {
+        "ports": [
+          "u_0",
+          "zadoff_chu_0/u"
+        ]
+      },
+      "zadoff_chu_0_fixed_point_tc": {
+        "ports": [
+          "zadoff_chu_0/fixed_point_tc",
+          "fixed_point_tc_0"
+        ]
+      },
+      "zadoff_chu_0_tlast": {
+        "ports": [
+          "zadoff_chu_0/tlast",
+          "tlast_0"
+        ]
+      }
+    }
+  }
+}

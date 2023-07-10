@@ -1,0 +1,210 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Sun Jul  9 17:46:14 2023
+| Host         : GOKUL-KUMAR running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu7ev-ffvc1156-2-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_3_zadoff_chu_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the conversion of design_3_zadoff_chu_0_0 (xilinx.com:user:zadoff_chu:1.0 (Rev. 2)) to Vivado generation flows.
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_3_zadoff_chu_0_0'. These changes may impact your design.
+
+
+-Upgraded port 'fixed_point_tc' width 16 differs from original width 10
+
+-Upgrade has added port 'tlast'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Sun Jul  9 17:14:12 2023
+| Host         : GOKUL-KUMAR running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu7ev-ffvc1156-2-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_3_zadoff_chu_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_3_zadoff_chu_0_0 (xilinx.com:user:zadoff_chu:1.0 (Rev. 2)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Sun Jul  9 17:10:45 2023
+| Host         : GOKUL-KUMAR running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu7ev-ffvc1156-2-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_3_zadoff_chu_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_3_zadoff_chu_0_0 (xilinx.com:user:zadoff_chu:1.0 (Rev. 2)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Sun Jul  9 13:35:05 2023
+| Host         : GOKUL-KUMAR running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu7ev-ffvc1156-2-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_3_zadoff_chu_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the conversion of design_3_zadoff_chu_0_0 (xilinx.com:user:zadoff_chu:1.0 (Rev. 2)) to Vivado generation flows.
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_3_zadoff_chu_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'angle'
+
+-Upgrade has added port 'fixed_point_tc'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Sun Jul  9 13:29:38 2023
+| Host         : GOKUL-KUMAR running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu7ev-ffvc1156-2-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_3_zadoff_chu_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_3_zadoff_chu_0_0 (xilinx.com:user:zadoff_chu:1.0 (Rev. 2)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Sat Jul  8 16:46:42 2023
+| Host         : GOKUL-KUMAR running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu7ev-ffvc1156-2-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_3_zadoff_chu_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_3_zadoff_chu_0_0 (xilinx.com:user:zadoff_chu:1.0 (Rev. 2)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Wed Jul  5 11:02:24 2023
+| Host         : GOKUL-KUMAR running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu7ev-ffvc1156-2-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_3_zadoff_chu_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_3_zadoff_chu_0_0 (xilinx.com:user:zadoff_chu:1.0 (Rev. 2)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Tue Jul  4 16:34:42 2023
+| Host         : GOKUL-KUMAR running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu7ev-ffvc1156-2-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_3_zadoff_chu_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_3_zadoff_chu_0_0 (xilinx.com:user:zadoff_chu:1.0 (Rev. 2)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Tue Jul  4 15:29:14 2023
+| Host         : GOKUL-KUMAR running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu7ev-ffvc1156-2-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_3_zadoff_chu_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_3_zadoff_chu_0_0 (xilinx.com:user:zadoff_chu:1.0 (Rev. 2)) to Vivado generation flows.
+

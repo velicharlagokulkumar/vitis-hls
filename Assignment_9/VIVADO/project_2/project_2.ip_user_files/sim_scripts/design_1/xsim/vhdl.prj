@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../bd/design_1/ip/design_1_zadoff_chu_0_0/sources_1/ip/cordic_0_1/sim/cordic_0.vhd" \
+
+nosort

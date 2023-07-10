@@ -1,0 +1,18 @@
+verilog xil_defaultlib --include "../../../ipstatic/hdl/verilog" \
+"../../../ipstatic/hdl/verilog/phase_optimizer_cordic_fdiv_32ns_32ns_32_9_no_dsp_1.v" \
+"../../../ipstatic/hdl/verilog/phase_optimizer_cordic_fmul_32ns_32ns_32_3_max_dsp_1.v" \
+"../../../ipstatic/hdl/verilog/phase_optimizer_cordic_fpext_32ns_64_2_no_dsp_1.v" \
+"../../../ipstatic/hdl/verilog/phase_optimizer_cordic_fsub_32ns_32ns_32_4_full_dsp_1.v" \
+"../../../ipstatic/hdl/verilog/phase_optimizer_cordic_hls_deadlock_idx0_monitor.v" \
+"../../../ipstatic/hdl/verilog/phase_optimizer_cordic_sitofp_32ns_32_4_no_dsp_1.v" \
+"../../../ipstatic/hdl/verilog/phase_optimizer_cordic.v" \
+"../../../ipstatic/hdl/ip/phase_optimizer_cordic_fdiv_32ns_32ns_32_9_no_dsp_1_ip.v" \
+"../../../ipstatic/hdl/ip/phase_optimizer_cordic_fmul_32ns_32ns_32_3_max_dsp_1_ip.v" \
+"../../../ipstatic/hdl/ip/phase_optimizer_cordic_fpext_32ns_64_2_no_dsp_1_ip.v" \
+"../../../ipstatic/hdl/ip/phase_optimizer_cordic_fsub_32ns_32ns_32_4_full_dsp_1_ip.v" \
+"../../../ipstatic/hdl/ip/phase_optimizer_cordic_sitofp_32ns_32_4_no_dsp_1_ip.v" \
+"../../../../project_2.gen/sources_1/ip/phase_optimizer_cordic_0/sim/phase_optimizer_cordic_0.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

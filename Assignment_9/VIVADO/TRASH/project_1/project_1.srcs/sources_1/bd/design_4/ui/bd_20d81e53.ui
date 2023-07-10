@@ -1,0 +1,25 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.975822",
+   "Default View_TopLeft":"-185,-61",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port port-id_s_axis_a_tready_0 -pg 1 -lvl 3 -x 630 -y 20 -defaultsOSRD
+preplace port port-id_aclk_0 -pg 1 -lvl 0 -x 0 -y 220 -defaultsOSRD
+preplace port port-id_m_axis_result_tvalid_0 -pg 1 -lvl 3 -x 630 -y 150 -defaultsOSRD
+preplace portBus m_axis_result_tdata_0 -pg 1 -lvl 3 -x 630 -y 110 -defaultsOSRD
+preplace portBus s_axis_a_tdata_0 -pg 1 -lvl 0 -x 0 -y 100 -defaultsOSRD
+preplace inst floating_point_0 -pg 1 -lvl 2 -x 400 -y 120 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 1 -x 100 -y 160 -defaultsOSRD
+preplace netloc aclk_0_1 1 0 2 NJ 220 190J
+preplace netloc floating_point_0_m_axis_result_tdata 1 2 1 NJ 110
+preplace netloc floating_point_0_m_axis_result_tvalid 1 2 1 NJ 150
+preplace netloc floating_point_0_s_axis_a_tready 1 1 2 180 20 NJ
+preplace netloc s_axis_a_tdata_0_1 1 0 2 NJ 100 NJ
+preplace netloc xlconstant_0_dout 1 1 2 180 220 610
+levelinfo -pg 1 0 100 400 630
+pagesize -pg 1 -db -bbox -sgen -210 0 880 240
+"
+}
+0

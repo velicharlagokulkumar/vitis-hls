@@ -1,0 +1,29 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.13807",
+   "Default View_TopLeft":"-130,-113",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port port-id_clk_0 -pg 1 -lvl 0 -x -30 -y 20 -defaultsOSRD
+preplace port port-id_m_axis_dout_tvalid_0 -pg 1 -lvl 3 -x 680 -y 140 -defaultsOSRD
+preplace port port-id_s_axis_phase_tready_0 -pg 1 -lvl 3 -x 680 -y 110 -defaultsOSRD
+preplace portBus u_0 -pg 1 -lvl 0 -x -30 -y 80 -defaultsOSRD
+preplace portBus N_0 -pg 1 -lvl 0 -x -30 -y 110 -defaultsOSRD
+preplace portBus m_axis_dout_tdata_0 -pg 1 -lvl 3 -x 680 -y 80 -defaultsOSRD
+preplace inst cordic_0 -pg 1 -lvl 2 -x 450 -y 110 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 1 -x 110 -y 210 -defaultsOSRD
+preplace inst zadoff_chu_0 -pg 1 -lvl 1 -x 110 -y 90 -defaultsOSRD
+preplace netloc N_0_1 1 0 1 NJ 110
+preplace netloc clk_0_1 1 0 2 -10 10 240
+preplace netloc cordic_0_m_axis_dout_tdata 1 2 1 650J 80n
+preplace netloc cordic_0_m_axis_dout_tvalid 1 2 1 650J 130n
+preplace netloc u_0_1 1 0 1 -10J 80n
+preplace netloc xlconstant_0_dout 1 1 1 250 130n
+preplace netloc zadoff_chu_0_angle 1 1 1 230 80n
+preplace netloc cordic_0_s_axis_phase_tready 1 1 2 250 10 660J
+levelinfo -pg 1 -30 110 450 680
+pagesize -pg 1 -db -bbox -sgen -130 -10 900 270
+"
+}
+0

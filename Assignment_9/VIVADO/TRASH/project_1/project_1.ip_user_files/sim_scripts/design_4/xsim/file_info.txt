@@ -1,0 +1,4 @@
+design_4_floating_point_0_0.v,verilog,xil_defaultlib,../../../bd/design_4/ip/design_4_floating_point_0_0/sim/design_4_floating_point_0_0.v,
+design_4_xlconstant_0_0.v,verilog,xil_defaultlib,../../../bd/design_4/ip/design_4_xlconstant_0_0/sim/design_4_xlconstant_0_0.v,
+design_4.v,verilog,xil_defaultlib,../../../bd/design_4/sim/design_4.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v
