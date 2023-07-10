@@ -1,0 +1,4 @@
+Running: xsim.dir/zff_post_tb_behav/xsimk.exe -simmode gui -wdb zff_post_tb_behav.wdb -simrunnum 0 -socket 61779
+Design successfully loaded
+Design Loading Memory Usage: 19172 KB (Peak: 19172 KB)
+Design Loading CPU Usage: 93 ms
