@@ -22,3 +22,5 @@ Assignment-6: Implementing a 16-bit shift register
 Assignment-7: Designing of basic FIR filter
 
 Assignment-8: Designing of Cyclic Prefix removal in 5G NR.
+
+Assignment-9:Zadoff-chu Sequence generator.
