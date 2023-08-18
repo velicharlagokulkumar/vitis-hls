@@ -20,7 +20,3 @@ https://www.h-schmidt.net/FloatConverter/IEEE754.html
 https://hdlbits.01xz.net/wiki/Vector1
 
 Youtube (https://www.youtube.com/@algorithmstoarchitectureii1574/playlists)
-
-Google
-
-Chat-GPT..
